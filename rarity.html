@@ -11,6 +11,7 @@
     <!-- Stylesheets-->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Libre+Franklin:200,300,500,600,300italic">
     <link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/styles_3421.css"  />
     <link rel="stylesheet" href="css/style.css">
 	  <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
@@ -32,7 +33,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="css/styles_3421.css"  />
+   
     <script>
       var meta;
       fetch("data/BASC_Final_Rank.json")
@@ -101,9 +102,10 @@
       </header>
 
       <!-- Page Content-->
-      <div class="nfts_holder" style="margin-top: 14px;">
+          <div class="wrap content1 nft_list">
+      <div class="nfts_holder" style="margin-top: 0px;">
         <div class="nfts_sidebar">
-          <span>Item Filters</span>
+          <span><img src="img/attribute.svg" alt="att" /> Item filters</span>
           <form id="filters_form">
 
             <label>ID</label>
@@ -111,7 +113,6 @@
             <label>Rank</label>
             <input type="text" name="ranks" id="ranks" value="" placeholder="Rank" onblur="filterByRank()">
             <hr>
-            <div id="form_filters">
               <!--	  
                   <label for="BACKGROUND">Background</label>
 		  <div class="custom-selectx">
@@ -156,7 +157,6 @@
                   <option value="">Please select</option>
                 </select>
               </div>
-            </div>
           </form>
           <script>
             loadStatData();
@@ -187,61 +187,9 @@
           </div>
         </div>
       </div>
-      <!-- Page Footer-->
-      
-      <footer class="footer-corporate">
-        <div class="shell">
-          <div class="footer-corporate__inner">
-            <p class="rights">
-              Created by Exxempt - Bored Ape Solana Club
-            </p>
-            <ul class="list-inline-xxs">
-              <li><a class="icon icon-xxs icon-primary fa fa-facebook" href="https://www.facebook.com/BoredApeSolanaClub/"></a></li>
-              <li><a class="icon icon-xxs icon-primary fa fa-twitter" href="https://twitter.com/BoredApeSolClub"></a></li>
-              <li><a class="icon icon-xxs icon-primary fa fa-instagram" href="https://www.instagram.com/boredape_solclub/"></a></li>
-              <li><a class="icon icon-xxs icon-primary fa fa-video-camera" href="https://www.tiktok.com/@boredapesolanaclub"></a></li>
-            </ul>
-          </div>
-        </div>
-      </footer>
     </div>
-    <!-- Global Mailform Output-->
-    <div class="snackbars" id="form-output-global"></div>
-    <!-- PhotoSwipe Gallery-->
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="pswp__bg"></div>
-      <div class="pswp__scroll-wrap">
-        <div class="pswp__container">
-          <div class="pswp__item"></div>
-          <div class="pswp__item"></div>
-          <div class="pswp__item"></div>
-        </div>
-        <div class="pswp__ui pswp__ui--hidden">
-          <div class="pswp__top-bar">
-            <div class="pswp__counter"></div>
-            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-            <button class="pswp__button pswp__button--share" title="Share"></button>
-            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-            <div class="pswp__preloader">
-              <div class="pswp__preloader__icn">
-                <div class="pswp__preloader__cut">
-                  <div class="pswp__preloader__donut"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-            <div class="pswp__share-tooltip"></div>
-          </div>
-          <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-          <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-          <div class="pswp__caption">
-            <div class="pswp__caption__cent"></div>
-          </div>
-        </div>
-      </div>
-    </div>
+	
+	
     <!-- Javascript-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
