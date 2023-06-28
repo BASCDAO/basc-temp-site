@@ -528,7 +528,7 @@ a.back:hover {background-color: #fff; }
 
 .stats_full .stat span.active {color:#1998DB; }
 
-.nfts_holder {width:100%; overflow:hidden; /*margin-top: 32px;*/} 
+.nfts_holder {width:100%; overflow:hidden; /*margin-top: 32px;*/ background: white;} 
 
 .nfts_sidebar {float:left; width: 288px; background:#303030; border-radius: 8px; padding: 16px;}
 
