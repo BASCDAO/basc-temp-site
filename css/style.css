@@ -27215,7 +27215,7 @@ button {
   bottom: 0;
   left: 40%;
   transform: translateX(-20%);
-  transform: translateY(-37%);
+  transform: translateY(-39%);
   width: 40%; /* Adjust the width as per your requirement */
   height: 40%; /* Adjust the height as per your requirement */
   z-index: 2; /* Ensure the cup is above the NFT image */
