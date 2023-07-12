@@ -471,6 +471,10 @@ code,
   color: #2ed3ae;
 }
 
+.page .icon-primary1 {
+  color: #FFFFFF;
+}
+
 .page .icon-secondary-2 {
   color: #ff596d;
 }
@@ -4463,6 +4467,9 @@ h3 + .panel-custom-group-wrap {
   .parallax-header__content {
     padding: 120px 0 130px;
   }
+  .parallax-header__content1 {
+    padding: 40px 0 30px;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -5755,6 +5762,12 @@ h6 + .rating-list {
 .bg-secondary-7 a:focus, .bg-gray-dark a:focus, .bg-gray-base a:focus, .bg-gray-darker a:focus, .bg-image-4 a:focus, .bg-image-6 a:focus {
   color: inherit;
 }
+
+.bg-primary1 a {
+  color: #000000;
+}
+
+
 
 .context-dark a:hover, .bg-primary a:hover,
 .bg-secondary-7 a:hover, .bg-gray-dark a:hover, .bg-gray-base a:hover, .bg-gray-darker a:hover, .bg-image-4 a:hover, .bg-image-6 a:hover {
@@ -8081,6 +8094,12 @@ html.lt-ie-10 .range-narrow > * + [class*='cell'],
     -ms-flex-preferred-size: 66.66667%;
     flex-basis: 66.66667%;
     max-width: 66.66667%;
+  }
+    .range > .cell-lg-81 {
+    -webkit-flex-basis: 66.66667%;
+    -ms-flex-preferred-size: 66.66667%;
+    flex-basis: 100%;
+    max-width: 100%;
   }
   .range > .cell-lg-9 {
     -webkit-flex-basis: 75%;
@@ -27121,5 +27140,111 @@ yx-axis
 .linear-icon-copyright:before {
   content: "\a9";
 }
+
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+input[type="text"] {
+  padding: 8px;
+  margin-top: 10px;
+  width: 300px;
+}
+
+button {
+  padding: 8px 16px;
+  margin-top: 10px;
+}
+
+.image-container {
+  position: relative; /* Add this line to make the container a positioned element */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 300px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.gmcup-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  transform: translateX(-20%);
+  transform: translateY(-37%);
+  width: 40%; /* Adjust the width as per your requirement */
+  height: 40%; /* Adjust the height as per your requirement */
+  z-index: 2; /* Ensure the cup is above the NFT image */
+  border: none; /* Remove the border */
+}
+
+/* Phone Styles */
+@media screen and (max-width: 767px) {
+  .image-container {
+    flex-direction: row; /* Change flex-direction to display elements in a row on phone layout */
+  }
+
+  .image-container img {
+    margin-bottom: 0; /* Remove the margin-bottom to align elements horizontally */
+  }
+
+  .gmcup-overlay {
+    width: 40%; /* Adjust the width as per your requirement */
+    height: 40%; /* Adjust the height as per your requirement */
+  }
+}
+.dropdown-container {
+  margin-top: 10px;
+}
+
+#gmcup-dropdown {
+  padding: 8px;
+  width: 300px;
+}
+
 
 /*# sourceMappingURL=style.css.map */
