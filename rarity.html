@@ -3,39 +3,71 @@
   <head>
     <!-- Site Title-->
     <title>BASC - Rarity</title>
-    <meta name="format-detection" content="telephone=no">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <!-- Stylesheets-->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Libre+Franklin:200,300,500,600,300italic">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Bored Ape Solana Club - ID &amp; Rank Search Tool">
-    <meta name="keywords" content="NFT, Rarity,  Bored Ape Solana Club">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="css/styles_3421.css" rel="stylesheet" type="text/css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Libre+Franklin:200,300,500,600,300italic"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Bored Ape Solana Club - ID &amp; Rank Search Tool"
+    />
+    <meta name="keywords" content="NFT, Rarity,  Bored Ape Solana Club" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/styles_3421.css" rel="stylesheet" type="text/css" />
     <script>
       var meta;
       fetch("data/BASC_Final_Rank.json")
-        .then(Response => Response.json())
-        .then(data => meta = data)
+        .then((Response) => Response.json())
+        .then((data) => (meta = data));
     </script>
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/jquery.autocompletem.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>  
-		<!--[if lt IE 10]>
-    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
-    <script src="js/html5shiv.min.js"></script>
-		<![endif]-->
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <!--[if lt IE 10]>
+      <div
+        style="
+          background: #212121;
+          padding: 10px 0;
+          box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
+          clear: both;
+          text-align: center;
+          position: relative;
+          z-index: 1;
+        "
+      >
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/"
+          ><img
+            src="images/ie8-panel/warning_bar_0000_us.jpg"
+            border="0"
+            height="42"
+            width="820"
+            alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."
+        /></a>
+      </div>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
   </head>
   <body>
     <!-- Page -->
-        <div class="page">       
+    <div class="page">
       <div id="page-loader">
         <div class="cssload-container">
           <div class="cssload-speeding-wheel"></div>
@@ -45,39 +77,60 @@
       <header class="page-header">
         <!-- RD Navbar-->
         <div class="rd-navbar-wrap">
-          <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-sm-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-static" data-md-device-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-lg-layout="rd-navbar-static" data-stick-up-clone="false" data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true" data-md-stick-up-offset="69px" data-lg-stick-up-offset="1px">
+          <nav
+            class="rd-navbar"
+            data-layout="rd-navbar-fixed"
+            data-sm-layout="rd-navbar-fixed"
+            data-sm-device-layout="rd-navbar-fixed"
+            data-md-layout="rd-navbar-static"
+            data-md-device-layout="rd-navbar-static"
+            data-lg-device-layout="rd-navbar-static"
+            data-lg-layout="rd-navbar-static"
+            data-stick-up-clone="false"
+            data-sm-stick-up="true"
+            data-md-stick-up="true"
+            data-lg-stick-up="true"
+            data-md-stick-up-offset="69px"
+            data-lg-stick-up-offset="1px"
+          >
             <div class="rd-navbar-inner">
               <!-- RD Navbar Panel -->
               <div class="rd-navbar-panel">
-                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                <button
+                  class="rd-navbar-toggle"
+                  data-rd-navbar-toggle=".rd-navbar-nav-wrap"
+                >
+                  <span></span>
+                </button>
                 <!-- RD Navbar Brand-->
-                <div class="rd-navbar-brand"><a class="brand-name" href="index.html"><img src="images/logo-174x32.png" alt="" width="87" height="16"/></a></div>
+                <div class="rd-navbar-brand">
+                  <a class="brand-name" href="index.html"
+                    ><img
+                      src="images/logo-174x32.png"
+                      alt=""
+                      width="87"
+                      height="16"
+                  /></a>
+                </div>
               </div>
               <!-- RD Navbar Nav-->
               <div class="rd-navbar-nav-wrap">
                 <ul class="rd-navbar-nav">
-                  <li><a href="index.html">Home</a>
-                    
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="ourstory.html">Our Story</a></li>
+                  <li><a href="dao.html">The DAOS</a></li>
+                  <li><a href="theteam.html">The Team</a></li>
+                  <li class="active">
+                    <a href="https://www.bascdao.net/tools.html">Tools</a>
                   </li>
-                  <li><a href="ourstory.html">Our Story</a>
-                    
+                  <li>
+                    <a href="https://bascmerch.shop/" target="_blank">Shop</a>
                   </li>
-                   <li><a href="dao.html">The DAOS</a>
-                
-                  </li>
-                  <li><a href="theteam.html">The Team</a>
-                    
-                  </li>
-				  <li   class="active"><a href="https://www.bascdao.net/tools.html">Tools</a>
- 
-                  </li>
-                  <li><a href="https://bascmerch.shop/" target="_blank">Shop</a>
-
-                  </li>
-                  <li><a href="partnerships.html">Partnerships</a>
-                  </li>
-                  <li><a href="https://discord.gg/bascdao"  target="_blank">Contact Us</a>
-                    
+                  <li><a href="partnerships.html">Partnerships</a></li>
+                  <li>
+                    <a href="https://discord.gg/bascdao" target="_blank"
+                      >Contact Us</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -87,16 +140,29 @@
       </header>
 
       <!-- Page Content-->
-      <div class="nfts_holder" style="margin-top: 0px;">
+      <div class="nfts_holder" style="margin-top: 0px">
         <div class="nfts_sidebar">
           <span>Item filters</span>
           <form id="filters_form">
-
             <label>ID</label>
-            <input type="text" name="ids" id="ids" value="" placeholder="ID # / Token" onblur="filterByIDs()">
+            <input
+              type="text"
+              name="ids"
+              id="ids"
+              value=""
+              placeholder="ID # / Token"
+              onblur="filterByIDs()"
+            />
             <label>Rank</label>
-            <input type="text" name="ranks" id="ranks" value="" placeholder="Rank" onblur="filterByRank()">
-            <hr>
+            <input
+              type="text"
+              name="ranks"
+              id="ranks"
+              value=""
+              placeholder="Rank"
+              onblur="filterByRank()"
+            />
+            <hr />
             <div id="form_filters">
               <!--	  
                   <label for="BACKGROUND">Background</label>
@@ -152,9 +218,12 @@
           <div class="nfts_top pager-only">
             <!-- <div class="nfts_top_right"> -->
             <!-- </div> -->
-            <div class="pager" style="border: none; margin: 0;">
+            <div class="pager" style="border: none; margin: 0">
               <span class="results_count">6001 results</span>
-              <div class="goto" style="top: 3px; right: 55px; width: 220px; height: 72px;">
+              <div
+                class="goto"
+                style="top: 3px; right: 55px; width: 220px; height: 72px"
+              >
                 <div class="sorting custom-selectx">
                   <select name="sort_by" id="sort_by" onchange="changeSort()">
                     <option value="id">Sort by Mint</option>
@@ -164,23 +233,40 @@
               </div>
             </div>
           </div>
-          <div class="nfts">
-          </div>
+          <div class="nfts"></div>
         </div>
       </div>
       <!-- Page Footer-->
-      
+
       <footer class="footer-corporate">
         <div class="shell">
           <div class="footer-corporate__inner">
-            <p class="rights">
-              Bored Ape Solana Club
-            </p>
+            <p class="rights">Bored Ape Solana Club</p>
             <ul class="list-inline-xxs">
-              <li><a class="icon icon-xxs icon-primary fa fa-facebook" href="https://www.facebook.com/BoredApeSolanaClub/"></a></li>
-              <li><a class="icon icon-xxs icon-primary fa fa-twitter" href="https://twitter.com/BoredApeSolClub"></a></li>
-              <li><a class="icon icon-xxs icon-primary fa fa-instagram" href="https://www.instagram.com/boredape_solclub/"></a></li>
-              <li><a class="icon icon-xxs icon-primary fa fa-video-camera" href="https://www.tiktok.com/@boredapesolanaclub"></a></li>
+              <li>
+                <a
+                  class="icon icon-xxs icon-primary fa fa-facebook"
+                  href="https://www.facebook.com/BoredApeSolanaClub/"
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="icon icon-xxs icon-primary fa fa-twitter"
+                  href="https://twitter.com/BoredApeSolClub"
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="icon icon-xxs icon-primary fa fa-instagram"
+                  href="https://www.instagram.com/boredape_solclub/"
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="icon icon-xxs icon-primary fa fa-video-camera"
+                  href="https://www.tiktok.com/@boredapesolanaclub"
+                ></a>
+              </li>
             </ul>
           </div>
         </div>
@@ -200,10 +286,22 @@
         <div class="pswp__ui pswp__ui--hidden">
           <div class="pswp__top-bar">
             <div class="pswp__counter"></div>
-            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-            <button class="pswp__button pswp__button--share" title="Share"></button>
-            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+            <button
+              class="pswp__button pswp__button--close"
+              title="Close (Esc)"
+            ></button>
+            <button
+              class="pswp__button pswp__button--share"
+              title="Share"
+            ></button>
+            <button
+              class="pswp__button pswp__button--fs"
+              title="Toggle fullscreen"
+            ></button>
+            <button
+              class="pswp__button pswp__button--zoom"
+              title="Zoom in/out"
+            ></button>
             <div class="pswp__preloader">
               <div class="pswp__preloader__icn">
                 <div class="pswp__preloader__cut">
@@ -212,11 +310,19 @@
               </div>
             </div>
           </div>
-          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div
+            class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"
+          >
             <div class="pswp__share-tooltip"></div>
           </div>
-          <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-          <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+          <button
+            class="pswp__button pswp__button--arrow--left"
+            title="Previous (arrow left)"
+          ></button>
+          <button
+            class="pswp__button pswp__button--arrow--right"
+            title="Next (arrow right)"
+          ></button>
           <div class="pswp__caption">
             <div class="pswp__caption__cent"></div>
           </div>
@@ -226,146 +332,159 @@
     <!-- Javascript-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
-	
-	
-	 <script>
-     $(function() {
-       var $win = $(window);
 
-       $win.scroll(function() {
-         if ($win.scrollTop() == 0)
-           console.log("");
+    <script>
+      $(function () {
+        var $win = $(window);
 
-         var checktraits = document.getElementById("CLOTHES");
-         if (checktraits.length !== 45) {
-           function populateFilterData(var1, var2, var3) {
-             var opt = document.createElement("option");
-             opt.value = var1;
-             opt.textContent = var2;
-             let look2 = document.getElementById(var3);
-             look2.appendChild(opt);
-           }
+        $win.scroll(function () {
+          if ($win.scrollTop() == 0) console.log("");
 
-           Array.prototype.uniqueBG = function() {
-             let arr = [];
-             for (let i = 0; i < this.length; i++) {
-               if (!arr.includes(this[i].BACKGROUND)) {
-                 arr.push(this[i].BACKGROUND);
-                 populateFilterData(this[i].BACKGROUND, this[i].BACKGROUND, "BACKGROUND")
-               }
-             }
-           }
+          var checktraits = document.getElementById("CLOTHES");
+          if (checktraits.length !== 45) {
+            function populateFilterData(var1, var2, var3) {
+              var opt = document.createElement("option");
+              opt.value = var1;
+              opt.textContent = var2;
+              let look2 = document.getElementById(var3);
+              look2.appendChild(opt);
+            }
 
-           Array.prototype.uniqueFUR = function() {
-             let arr = [];
-             for (let i = 0; i < this.length; i++) {
-               if (!arr.includes(this[i].FUR)) {
-                 arr.push(this[i].FUR);
-                 populateFilterData(this[i].FUR, this[i].FUR, "FUR")
-               }
-             }
-           }
+            Array.prototype.uniqueBG = function () {
+              let arr = [];
+              for (let i = 0; i < this.length; i++) {
+                if (!arr.includes(this[i].BACKGROUND)) {
+                  arr.push(this[i].BACKGROUND);
+                  populateFilterData(
+                    this[i].BACKGROUND,
+                    this[i].BACKGROUND,
+                    "BACKGROUND"
+                  );
+                }
+              }
+            };
 
-           Array.prototype.uniqueCLOTHES = function() {
-             let arr = [];
-             for (let i = 0; i < this.length; i++) {
-               if (!arr.includes(this[i].CLOTHES)) {
-                 arr.push(this[i].CLOTHES);
-                 populateFilterData(this[i].CLOTHES, this[i].CLOTHES, "CLOTHES")
-               }
-             }
-           }
+            Array.prototype.uniqueFUR = function () {
+              let arr = [];
+              for (let i = 0; i < this.length; i++) {
+                if (!arr.includes(this[i].FUR)) {
+                  arr.push(this[i].FUR);
+                  populateFilterData(this[i].FUR, this[i].FUR, "FUR");
+                }
+              }
+            };
 
-           Array.prototype.uniqueEYES = function() {
-             let arr = [];
-             for (let i = 0; i < this.length; i++) {
-               if (!arr.includes(this[i].EYES)) {
-                 arr.push(this[i].EYES);
-                 populateFilterData(this[i].EYES, this[i].EYES, "EYES")
-               }
-             }
-           }
+            Array.prototype.uniqueCLOTHES = function () {
+              let arr = [];
+              for (let i = 0; i < this.length; i++) {
+                if (!arr.includes(this[i].CLOTHES)) {
+                  arr.push(this[i].CLOTHES);
+                  populateFilterData(
+                    this[i].CLOTHES,
+                    this[i].CLOTHES,
+                    "CLOTHES"
+                  );
+                }
+              }
+            };
 
-           Array.prototype.uniqueMOUTH = function() {
-             let arr = [];
-             for (let i = 0; i < this.length; i++) {
-               if (!arr.includes(this[i].MOUTH)) {
-                 arr.push(this[i].MOUTH);
-                 populateFilterData(this[i].MOUTH, this[i].MOUTH, "MOUTH")
-               }
-             }
-           }
+            Array.prototype.uniqueEYES = function () {
+              let arr = [];
+              for (let i = 0; i < this.length; i++) {
+                if (!arr.includes(this[i].EYES)) {
+                  arr.push(this[i].EYES);
+                  populateFilterData(this[i].EYES, this[i].EYES, "EYES");
+                }
+              }
+            };
 
-           Array.prototype.uniqueHATS = function() {
-             let arr = [];
-             for (let i = 0; i < this.length; i++) {
-               if (!arr.includes(this[i].HATS)) {
-                 arr.push(this[i].HATS);
-                 populateFilterData(this[i].HATS, this[i].HATS, "HATS")
-               }
-             }
-           }
+            Array.prototype.uniqueMOUTH = function () {
+              let arr = [];
+              for (let i = 0; i < this.length; i++) {
+                if (!arr.includes(this[i].MOUTH)) {
+                  arr.push(this[i].MOUTH);
+                  populateFilterData(this[i].MOUTH, this[i].MOUTH, "MOUTH");
+                }
+              }
+            };
 
-           Array.prototype.uniqueEARRING = function() {
-             let arr = [];
-             for (let i = 0; i < this.length; i++) {
-               if (!arr.includes(this[i].EARRING)) {
-                 arr.push(this[i].EARRING);
-                 populateFilterData(this[i].EARRING, this[i].EARRING, "EARRING")
-               }
-             }
-           }
-	 function delay(time) {
-	  return new Promise(resolve => setTimeout(resolve, time));
-	}
+            Array.prototype.uniqueHATS = function () {
+              let arr = [];
+              for (let i = 0; i < this.length; i++) {
+                if (!arr.includes(this[i].HATS)) {
+                  arr.push(this[i].HATS);
+                  populateFilterData(this[i].HATS, this[i].HATS, "HATS");
+                }
+              }
+            };
 
-	async function test() {
-	  await delay(1000);
-	}
+            Array.prototype.uniqueEARRING = function () {
+              let arr = [];
+              for (let i = 0; i < this.length; i++) {
+                if (!arr.includes(this[i].EARRING)) {
+                  arr.push(this[i].EARRING);
+                  populateFilterData(
+                    this[i].EARRING,
+                    this[i].EARRING,
+                    "EARRING"
+                  );
+                }
+              }
+            };
+            function delay(time) {
+              return new Promise((resolve) => setTimeout(resolve, time));
+            }
 
-	test();
-           //meta.uniqueBG();
-           meta.uniqueFUR();
-           meta.uniqueCLOTHES();
-           meta.uniqueEYES();
-           meta.uniqueMOUTH();
-           meta.uniqueHATS();
-           meta.uniqueEARRING();
-         } else if ($win.height() + $win.scrollTop() ==
-           $(document).height()) {
-           if (loadcountertotal != 0) {
-             if (loadcounter === loadcountertotal - 1) {
-               metafiltered = null;
-             }
-             if (loadcounter < loadcountertotal - 1) {
-               if (metafiltered === null) {
-                 var tempmet = meta
-               } else {
-                 var tempmet = metafiltered
-               }
-               var tempcount = loadcounter + 17
-               while (loadcounter <= tempcount && loadcounter <= loadcountertotal - 1) {
-                 let v1 = getNestedValue(tempmet, loadcounter + ".edition");
-                 let v2 = getNestedValue(tempmet, loadcounter + ".rank");
-                 let v3 = getNestedValue(tempmet, loadcounter + ".image");
-                 populateCard(v1, v2, v3);
-                 loadcounter = loadcounter + 1;
-               }
-	     	var s = document.getElementsByClassName("results_count")[1]
-		if ( loadcounter === tempmet.length) {
-			s.innerText = loadcounter + " / " + tempmet.length +" Results";
-			loadcounter = 0;
-                        loadcountertotal = 0;
-		}
-		else {
-			s.innerText = loadcounter + " / " + tempmet.length +" - Scroll Down";
-		}
-             }
-           }
-         }
-       });
-     });
-     /*
+            async function test() {
+              await delay(1000);
+            }
+
+            test();
+            //meta.uniqueBG();
+            meta.uniqueFUR();
+            meta.uniqueCLOTHES();
+            meta.uniqueEYES();
+            meta.uniqueMOUTH();
+            meta.uniqueHATS();
+            meta.uniqueEARRING();
+          } else if ($win.height() + $win.scrollTop() == $(document).height()) {
+            if (loadcountertotal != 0) {
+              if (loadcounter === loadcountertotal - 1) {
+                metafiltered = null;
+              }
+              if (loadcounter < loadcountertotal - 1) {
+                if (metafiltered === null) {
+                  var tempmet = meta;
+                } else {
+                  var tempmet = metafiltered;
+                }
+                var tempcount = loadcounter + 17;
+                while (
+                  loadcounter <= tempcount &&
+                  loadcounter <= loadcountertotal - 1
+                ) {
+                  let v1 = getNestedValue(tempmet, loadcounter + ".edition");
+                  let v2 = getNestedValue(tempmet, loadcounter + ".rank");
+                  let v3 = getNestedValue(tempmet, loadcounter + ".image");
+                  populateCard(v1, v2, v3);
+                  loadcounter = loadcounter + 1;
+                }
+                var s = document.getElementsByClassName("results_count")[1];
+                if (loadcounter === tempmet.length) {
+                  s.innerText =
+                    loadcounter + " / " + tempmet.length + " Results";
+                  loadcounter = 0;
+                  loadcountertotal = 0;
+                } else {
+                  s.innerText =
+                    loadcounter + " / " + tempmet.length + " - Scroll Down";
+                }
+              }
+            }
+          }
+        });
+      });
+      /*
      $('#autocomplete_search').autocomplete({
      	serviceUrl: '/lookup_collections/',
        onSelect: function (suggestion) {
@@ -373,43 +492,58 @@
        }
      });
      */
-     $('.nfts_sidebar > span').on('click', function() {
-       $(this).toggleClass('open');
-       $('.nfts_sidebar').each(heightopenclose);
-     });
+      function cleanupSelects() {
+        let selects = document.getElementsByClassName(
+          "select2 select2-container"
+        );
+        if (selects.length != 0) {
+          selects[6].remove();
+          selects[5].remove();
+          selects[4].remove();
+          selects[3].remove();
+          selects[2].remove();
+          selects[1].remove();
+          selects[0].remove();
+        }
+      }
+      cleanupSelects();
+      $(".nfts_sidebar > span").on("click", function () {
+        $(this).toggleClass("open");
+        $(".nfts_sidebar").each(heightopenclose);
+      });
 
-     $('.info_toggle').on('click', function() {
-       $('#nft_desc').each(heightopenclose);
-     });
+      $(".info_toggle").on("click", function () {
+        $("#nft_desc").each(heightopenclose);
+      });
 
-     $('#ids').on('keyup', function(o) {
-       if (o.keyCode === 13) {
-         filterByIDs();
-       }
-     });
+      $("#ids").on("keyup", function (o) {
+        if (o.keyCode === 13) {
+          filterByIDs();
+        }
+      });
 
-     $('#ranks').on('keyup', function(e) {
-       if (e.keyCode === 13) {
-         filterByRank();
-       }
-     });
-	
-	function backClick() {
-		window.location.reload(true);
-	}
-     function reloadForm() {
-       window.location.reload(true);
-     }
-$(window).on('load', function() {
-	function delay(time) {
-	  return new Promise(resolve => setTimeout(resolve, time));
-	}
+      $("#ranks").on("keyup", function (e) {
+        if (e.keyCode === 13) {
+          filterByRank();
+        }
+      });
 
-	async function test() {
-	  await delay(2000);
-	}
-      test();
-})
+      function backClick() {
+        window.location.reload(true);
+      }
+      function reloadForm() {
+        window.location.reload(true);
+      }
+      $(window).on("load", function () {
+        function delay(time) {
+          return new Promise((resolve) => setTimeout(resolve, time));
+        }
+
+        async function test() {
+          await delay(2000);
+        }
+        test();
+      });
     </script>
   </body>
 </html>
