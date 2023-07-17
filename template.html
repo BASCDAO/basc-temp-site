@@ -2,7 +2,7 @@
 <html class="wide wow-animation smoothscroll" lang="en">
   <head>
     <!-- Site Title-->
-    <title>BASC - Comparison Tool</title>
+    <title>BASC - Staking</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,39 +12,10 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Libre+Franklin:200,300,500,600,300italic">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/stylegmcup.css">
 		<!--[if lt IE 10]>
     <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <script src="js/html5shiv.min.js"></script>
 		<![endif]-->
-		  <style>
-   
-    .input-container {
-	margin-top: 20px;
-      margin-bottom: 20px;
-    }
-
-    .image-container1 {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      max-width: 100%;
-    }
-
-    .image-container1 .image-wrapper {
-      text-align: center;
-      margin: 0 10px 10px;
-    }
-
-    .image-container1 img {
-      max-width: 100%;
-      max-height: 400px;
-    }
-
-    .image-container1 .image-label {
-      text-align: center;
-    }
-  </style>
   </head>
   <body>
     <!-- Page -->
@@ -81,8 +52,10 @@
                   <li><a href="https://www.bascdao.net/theteam.html">The Team</a>
                     
                   </li>
-
-				  <li class="active"><a href="https://www.bascdao.net/tools.html">Tools</a>
+				  <li><a href="https://www.bascdao.net/tools.html">Tools</a>
+ 
+                  </li>
+				  <li class="active"><a href="TO BE ADDED"  target="_blank">Staking</a>
  
                   </li>
                   <li><a href="https://bascmerch.shop/" target="_blank">Shop</a>
@@ -110,9 +83,13 @@
                 <div class="shell">
                   <div class="range range-xs-center">
                     <div class="cell-sm-10 cell-lg-81">
-                      <h2>Welcome to</br>Bored Ape Solana Club</br>Art Comparison Tool</h2>
-					  </br>Check out how your BASC NFT has envolved through art changes!
-
+                      <h2>Welcome to</br>Bored Ape Solana Club</br>Staking</h2>
+					  <font color="#000000"><strong><p>In partnership with Inception Studios</br></br></strong></font>
+					  <img src="images/inception.jpg" alt="" width="100" height="100"/>
+					  <ul class="list-inline-xxs">
+              <li><a class="icon icon-xxs icon-primary100 fa fa-twitter" href="https://twitter.com/InceptionAIO"></a></li>
+			  <li><a class="icon icon-xxs icon-primary100 fa fa-link" href="https://www.inceptionaio.io/" target="_blank"></a></li>
+            </ul>
 					  </p>
                     </div>
                   </div>
@@ -127,62 +104,13 @@
         <div class="shell">
           <div class="range range-lg-center range-50">
             <div class="cell-lg-9">
-              <div class="input-container" style="border-top:2px;">
-	<input type="text" id="nft-id" placeholder="Enter NFT ID">
-    <button onclick="fetchNFT()">Fetch NFT</button>
-  </div>
-  
-  <div class="image-container1"></div>
+              <h3>Test</h3>
+              <p>Testing 1 2 3</p>
             </div>
           </div>
 
         </div>
       </section>
-	  
-	  <script>
-    function fetchNFT() {
-      const idInput = document.getElementById('nft-id');
-      const id = idInput.value;
-
-      const imageContainer = document.querySelector('.image-container1');
-      imageContainer.innerHTML = '';
-
-      // Define the URLs for the PNG files in different folders
-      const folder1URL = `https://raw.githubusercontent.com/akh1lsol/Bascdao.net/main/Old%20Collection/${id}.png`;
-      const folder2URL = `https://raw.githubusercontent.com/akh1lsol/Bascdao.net/main/New%20Collection/${id}.png`;
-
-      // Create image elements and set the source to the respective URLs
-      const image1 = document.createElement('img');
-      image1.src = folder1URL;
-
-      const image2 = document.createElement('img');
-      image2.src = folder2URL;
-
-      // Create label elements for the images
-      const label1 = document.createElement('div');
-      label1.textContent = 'Old Art';
-      label1.classList.add('image-label');
-
-      const label2 = document.createElement('div');
-      label2.textContent = 'Current Art';
-      label2.classList.add('image-label');
-
-      // Create wrappers to contain each image and its label
-      const wrapper1 = document.createElement('div');
-      wrapper1.classList.add('image-wrapper');
-      wrapper1.appendChild(image1);
-      wrapper1.appendChild(label1);
-
-      const wrapper2 = document.createElement('div');
-      wrapper2.classList.add('image-wrapper');
-      wrapper2.appendChild(image2);
-      wrapper2.appendChild(label2);
-
-      // Append the image wrappers to the image container
-      imageContainer.appendChild(wrapper1);
-      imageContainer.appendChild(wrapper2);
-    }
-  </script>
 	  
 	        
 
