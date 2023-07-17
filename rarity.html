@@ -506,7 +506,13 @@
           selects[0].remove();
         }
       }
-      cleanupSelects();
+
+      document.addEventListener("readystatechange", (event) => {
+        if (event.target.readyState === "interactive") {
+          cleanupSelects();
+        }
+      });
+
       $(".nfts_sidebar > span").on("click", function () {
         $(this).toggleClass("open");
         $(".nfts_sidebar").each(heightopenclose);
