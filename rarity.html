@@ -400,9 +400,16 @@
      function reloadForm() {
        window.location.reload(true);
      }
-     $(window).on('load', function() {
+$(window).on('load', function() {
+	function delay(time) {
+	  return new Promise(resolve => setTimeout(resolve, time));
+	}
 
-     })
+	async function test() {
+	  await delay(2000);
+	}
+      test();
+})
     </script>
   </body>
 </html>
