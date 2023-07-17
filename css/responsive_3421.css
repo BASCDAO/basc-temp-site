@@ -130,7 +130,9 @@
 	
 	.nfts_top .sorting {width: 180px;}
 	
-	.nfts_top {padding: 8px 200px 8px 32px;}
+	/* .nfts_top {padding: 8px 200px 8px 32px;} */
+
+	.nfts_top {padding: 8px 92px 8px 32px;}
 	
 	.nfts_detail_img {width: 400px;}
 	
