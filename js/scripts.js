@@ -376,14 +376,14 @@ function filterChange() {
     populateCard(v1, v2, v3)
     loadcounter = loadcounter + 1;
   }
-    var s = document.getElementsByClassName("results_count")[1]
+    // var s = document.getElementsByClassName("results_count")[1]
 	if ( loadcounter === metafiltered.length) {
-		s.innerText = loadcounter + " / " + metafiltered.length +" Results";
+		// s.innerText = loadcounter + " / " + metafiltered.length +" Results";
 		loadcounter = 0;
 		loadcountertotal = 0;
 	}
 	else {
-		s.innerText = loadcounter + " / " + metafiltered.length +" - Scroll Down";
+		// s.innerText = loadcounter + " / " + metafiltered.length +" - Scroll Down";
 	}
 }
   
@@ -431,8 +431,8 @@ function filterByRank() {
 
     var s = document.getElementsByClassName("results_count")[0]
     s.innerText = metafiltered.length + " RESULT"
-    var s = document.getElementsByClassName("results_count")[1]
-    s.innerText = metafiltered.length + " RESULT"
+    // var s = document.getElementsByClassName("results_count")[1]
+    // s.innerText = metafiltered.length + " RESULT"
     
     loadcounter = 0
     loadcountertotal = metafiltered.length
@@ -443,8 +443,8 @@ function filterByRank() {
       populateCard(v1, v2, v3)
       loadcounter = loadcounter + 1;
     }
-      var s = document.getElementsByClassName("results_count")[1]
-      s.innerText = loadcounter + " / " + metafiltered.length +" Result";
+      // var s = document.getElementsByClassName("results_count")[1]
+      // s.innerText = loadcounter + " / " + metafiltered.length +" Result";
   }
   document.getElementById('ranks').value = '';
   loadcounter = 0;
@@ -496,8 +496,8 @@ function filterByIDs() {
 
     var s = document.getElementsByClassName("results_count")[0]
     s.innerText = metafiltered.length + " RESULT"
-    var s = document.getElementsByClassName("results_count")[1]
-    s.innerText = metafiltered.length + " RESULT"
+    // var s = document.getElementsByClassName("results_count")[1]
+    // s.innerText = metafiltered.length + " RESULT"
 
     loadcounter = 0
     loadcountertotal = metafiltered.length
@@ -508,8 +508,8 @@ function filterByIDs() {
       populateCard(v1, v2, v3);
       loadcounter = loadcounter + 1;
     }
-    var s = document.getElementsByClassName("results_count")[1]
-    s.innerText = loadcounter + " / " + metafiltered.length +" Result";
+    // var s = document.getElementsByClassName("results_count")[1]
+    // s.innerText = loadcounter + " / " + metafiltered.length +" Result";
   }
   document.getElementById('ids').value = '';
   loadcounter = 0;
