@@ -688,4 +688,20 @@ window.onload = function () {
   }
   // var s = document.getElementsByClassName("results_count")[1]
   // s.innerText = loadcounter + " / " + meta.length +" - Scroll Down";
+
+  function cleanupSelects() {
+    let selects = document.getElementsByClassName(
+      "select2 select2-container"
+    );
+    if (selects.length != 0) {
+      selects[6].remove();
+      selects[5].remove();
+      selects[4].remove();
+      selects[3].remove();
+      selects[2].remove();
+      selects[1].remove();
+      selects[0].remove();
+    }
+  }
+  cleanupSelects();
 };
