@@ -362,8 +362,8 @@ function filterChange() {
 
   var s = document.getElementsByClassName("results_count")[0]
   s.innerText = metafiltered.length + " RESULTS"
-  var s = document.getElementsByClassName("results_count")[1]
-  s.innerText = metafiltered.length + " RESULTS"
+  // var s = document.getElementsByClassName("results_count")[1]
+  // s.innerText = metafiltered.length + " RESULTS"
 
   var filteredloadcounter = 0	
   loadcounter = 0
