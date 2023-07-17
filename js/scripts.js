@@ -667,6 +667,6 @@ window.onload = function() {
     populateCard(v1, v2, v3);
     loadcounter = loadcounter + 1;
   }
-    var s = document.getElementsByClassName("results_count")[1]
-    s.innerText = loadcounter + " / " + meta.length +" - Scroll Down";
+    // var s = document.getElementsByClassName("results_count")[1]
+    // s.innerText = loadcounter + " / " + meta.length +" - Scroll Down";
 }
