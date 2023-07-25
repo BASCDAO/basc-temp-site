@@ -78,7 +78,7 @@
     color: #444;
     height: 15px;
     width: 24px;
-    background: url('../img/down.svg') center center no-repeat;
+    background: url('../images/down.svg') center center no-repeat;
     background-size: 50%;
 }
 
@@ -562,7 +562,7 @@ transition: all 0.3s ease-out;}
 .sel#toggle_sales span {background-repeat: no-repeat; background-position: center right; background-image: url(../img/up.svg);}
 
 .sel#toggle_stats.close span, 
-.sel#toggle_sales.close span {background-image: url(../img/down.svg);}
+.sel#toggle_sales.close span {background-image: url(../images/down.svg);}
 
 .nfts {width: calc(100% + 32px); overflow:hidden; margin: 0 -16px;}
 
@@ -597,7 +597,7 @@ hr {border:none; height:1px; width:100%; background:#424242; margin: 0 0 16px 0;
 .nfts_top select, 
 select {width:100%; margin-bottom: 15px; border-radius:6px; height:48px; line-height:48px; background-color: #424242; border:none; padding: 0 15px; color:var(--opacity80); font-size:16px; }
 
-select {-webkit-appearance: none; -moz-appearance:none; appearance: none; background-repeat: no-repeat; background-image: url(../img/down.svg); background-position: calc(100% - 15px);}
+select {-webkit-appearance: none; -moz-appearance:none; appearance: none; background-repeat: no-repeat; background-image: url(../images/down.svg); background-position: calc(100% - 15px);}
 
 .nfts_top.pager-only select {height: 40px; line-height: 40px;}
 
@@ -625,7 +625,7 @@ input[type=submit].submit:hover {background-color: #147eb7; cursor:pointer}
 
 .checkbox_holder .lab:hover {cursor: pointer;}   
 
-.checkbox_holder .lab:after {content:""; position:absolute; top: 50%; right:10px; width: 8px; height: 4px; background-repeat: no-repeat; background-position: center center; background-image: url(../img/down.svg);}
+.checkbox_holder .lab:after {content:""; position:absolute; top: 50%; right:10px; width: 8px; height: 4px; background-repeat: no-repeat; background-position: center center; background-image: url(../images/down.svg);}
 
 .checkbox_holder.open .lab:after {background-image: url(../img/up.svg);}
 
@@ -684,7 +684,7 @@ input[type="checkbox"] + label {
 	width: 8px;
 	height: 4px;
 	margin: -2px 0 0 0;
-	background-image: url(../img/down.svg);
+	background-image: url(../images/down.svg);
 	background-repeat: no-repeat;
 }
 
