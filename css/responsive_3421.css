@@ -191,7 +191,7 @@
 		margin: 0 0;
 	}
 	
-	.nfts_top.pager-only .goto {width: 100%; max-width: 220px; display:block;  margin: 8px auto 16px auto; } /*position:static*/
+	.nfts_top.pager-only .goto {width: 100%; max-width: 220px; display:block; position:static; margin: 8px auto 16px auto; }
 	
 	.nfts_top.pager-only span.results_count {width: 100%; display:block; position:static;}
 }
