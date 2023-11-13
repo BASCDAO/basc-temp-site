@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head><style>
+/* Add styles for filter buttons */
+.filter-bar {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.filter-btn {
+    margin-right: 10px;
+    margin-bottom: 10px; /* Add margin-bottom for spacing */
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 12px; /* Add padding for better button appearance */
+}
+
+.filter-btn.active {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Add styles for DAO gallery */
+.dao-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.dao-item {
+    width: calc(33.33% - 20px);
+    overflow: hidden;
+}
+
+.gallery-img {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* Style for image modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    color: #fff;
+    font-size: 2em;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 767px) {
+    .filter-btn {
+        margin-right: 5px;
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+
+    .dao-item {
+        width: calc(50% - 10px);
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .filter-btn {
+        margin-right: 3px;
+        margin-bottom: 3px;
+        font-size: 12px;
+    }
+
+    .dao-item {
+        width: 100%;
+    }
+}
+
+
+    </style>
+        <meta charset="utf-8">
+        <title>BASC - DAO's</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+        <link rel="icon" href="img/logo.png" type="image/png">
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar Start -->
+        <div class="container-fluid bg-dark">
+            <div class="container">
+                <nav class="navbar navbar-dark navbar-expand-lg py-lg-0">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="text-primary mb-0 display-5">BA<span class="text-white">SC</span></h1>
+                    </a>
+                    <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-dark"></span>
+                    </button>
+                    <div class="collapse navbar-collapse me-n3" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto">
+                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="roadmap.html" class="nav-item nav-link">Roadmap</a>
+                            <a href="team.html" class="nav-item nav-link">Team Members</a>
+                            <a href="tools.html" class="nav-item nav-link">Tools</a>
+                            <a href="project.html" class="nav-item nav-link">Collections</a>
+                            <a href="dao.html" class="nav-item nav-link active">DAOs</a>
+                            <a href="partnership.html" class="nav-item nav-link">Partnerships</a>
+                            <a href="https://bascmerch.shop/"class="nav-item nav-link" target="_blank">Shop</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+        
+        <!-- Page Header Start -->
+        <div class="container-fluid page-header py-5">
+            <div class="container text-center py-5">
+                <h1 class="display-2 text-white mb-4 animated slideInDown">The DAO's</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center mb-0 animated slideInDown">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                        <li class="breadcrumb-item text-white" aria-current="page">DAO's</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+<!-- Add a filter bar -->
+<div class="container filter-bar mt-4 mb-4">
+    <button class="btn btn-primary filter-btn active" data-filter="all">All DAO</button>
+    <button class="btn btn-primary filter-btn" data-filter="noise">Noise DAO</button>
+    <button class="btn btn-primary filter-btn" data-filter="robo">Robo DAO</button>
+    <button class="btn btn-primary filter-btn" data-filter="zombie">Zombie DAO</button>
+    <button class="btn btn-primary filter-btn" data-filter="jungle">Jungle DAO</button>
+    <button class="btn btn-primary filter-btn" data-filter="diamond">Diamond DAZE</button>
+    <button class="btn btn-primary filter-btn" data-filter="chart">Chart Addicts Access</button>
+    <button class="btn btn-primary filter-btn" data-filter="suits">Suits DAO</button>
+    <button class="btn btn-primary filter-btn" data-filter="high">Travelin' High DAO</button>
+    <button class="btn btn-primary filter-btn" data-filter="1of1">1 OF 1 DAO</button>
+</div>
+
+<!-- DAO Gallery Start -->
+<div class="container dao-gallery">
+    <!-- Noise DAO -->
+    <div class="dao-item noise">
+        <img src="img/dao/list-event-noise1.jpg" alt="Noise DAO 1" class="gallery-img">
+    </div>
+    <div class="dao-item noise">
+        <img src="img/dao/list-event-noise2.jpg" alt="Noise DAO 2" class="gallery-img">
+    </div>
+    <div class="dao-item noise">
+        <img src="img/dao/list-event-noise3.jpg" alt="Noise DAO 3" class="gallery-img">
+    </div>
+
+    <!-- Robo DAO -->
+    <div class="dao-item robo">
+        <img src="img/dao/list-event-robo1.jpg" alt="Robo DAO 1" class="gallery-img">
+    </div>
+    <div class="dao-item robo">
+        <img src="img/dao/list-event-robo2.jpg" alt="Robo DAO 2" class="gallery-img">
+    </div>
+    <div class="dao-item robo">
+        <img src="img/dao/list-event-robo3.jpg" alt="Robo DAO 3" class="gallery-img">
+    </div>
+
+    <div class="dao-item zombie">
+        <img src="img/dao/list-event-zombie1.jpg" alt="Zombie DAO 1" class="gallery-img">
+    </div>
+    <div class="dao-item zombie">
+        <img src="img/dao/list-event-zombie3.jpg" alt="Zombie DAO 2" class="gallery-img">
+    </div>
+    <div class="dao-item zombie">
+        <img src="img/dao/list-event-zombie3.jpg" alt="Zombie DAO 3" class="gallery-img">
+    </div>
+
+    <div class="dao-item jungle">
+        <img src="img/dao/list-event-jungle1.jpg" alt="jungle DAO 1" class="gallery-img">
+    </div>
+    <div class="dao-item jungle">
+        <img src="img/dao/list-event-jungle3.jpg" alt="jungle DAO 2" class="gallery-img">
+    </div>
+    <div class="dao-item jungle">
+        <img src="img/dao/list-event-jungle3.jpg" alt="jungle DAO 3" class="gallery-img">
+    </div>
+    <div class="dao-item diamond">
+        <img src="img/dao/list-event-diamond1.jpg" alt="diamond DAO 1" class="gallery-img">
+    </div>
+    <div class="dao-item diamond">
+        <img src="img/dao/list-event-diamond3.jpg" alt="diamond DAO 2" class="gallery-img">
+    </div>
+    <div class="dao-item diamond">
+        <img src="img/dao/list-event-diamond3.jpg" alt="diamond DAO 3" class="gallery-img">
+    </div>
+    <div class="dao-item chart">
+        <img src="img/dao/list-event-gold1.jpg" alt="chart DAO 1" class="gallery-img">
+    </div>
+    <div class="dao-item chart">
+        <img src="img/dao/list-event-gold2.jpg" alt="chart DAO 2" class="gallery-img">
+    </div>
+    <div class="dao-item chart">
+        <img src="img/dao/list-event-gold3.jpg" alt="chart DAO 3" class="gallery-img">
+    </div>
+
+    <div class="dao-item suits">
+        <img src="img/dao/list-event-suit1.jpg" alt="suits DAO 1" class="gallery-img">
+    </div>
+    <div class="dao-item suits">
+        <img src="img/dao/list-event-suit2.jpg" alt="suits DAO 2" class="gallery-img">
+    </div>
+    <div class="dao-item suits">
+        <img src="img/dao/list-event-suit3.jpg" alt="suits DAO 3" class="gallery-img">
+    </div>
+
+    <div class="dao-item high">
+        <img src="img/dao/list-event-high1.jpg" alt="high DAO 1" class="gallery-img">
+    </div>
+    <div class="dao-item high">
+        <img src="img/dao/list-event-high2.jpg" alt="high DAO 2" class="gallery-img">
+    </div>
+    <div class="dao-item high">
+        <img src="img/dao/list-event-high3.jpg" alt="high DAO 3" class="gallery-img">
+    </div>
+
+    <div class="dao-item 1of1">
+        <img src="img/dao/list-event-1of1-1.jpg" alt="1of1 DAO 1" class="gallery-img">
+    </div>
+    <div class="dao-item 1of1">
+        <img src="img/dao/list-event-1of1-2.jpg" alt="1of1 DAO 2" class="gallery-img">
+    </div>
+    <div class="dao-item 1of1">
+        <img src="img/dao/list-event-1of1-3.jpg" alt="1of1 DAO 3" class="gallery-img">
+    </div>
+</div>
+<!-- DAO Gallery End -->
+
+<!-- Image Modal -->
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright bg-dark py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                        <a href="#" class="text-primary mb-0 display-6">BA<span class="text-white">SC</span></a>                    </div>
+                    <div class="col-md-4 copyright-btn text-center text-md-start mb-3 mb-md-0 flex-shrink-0">
+                        <a class="btn btn-primary rounded-circle me-3 copyright-icon" href="https://twitter.com/BoredApeSolClub"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-primary rounded-circle me-3 copyright-icon" href="https://www.facebook.com/BoredApeSolanaClub/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-primary rounded-circle me-3 copyright-icon" href="https://discord.com/invite/bascdao"><i class="fab fa-discord"></i></a>
+                        <a class="btn btn-primary rounded-circle me-3 copyright-icon" href="https://www.instagram.com/boredape_solclub/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="col-md-4 my-auto text-center text-md-end text-white">
+                        Designed By <a class="border-bottom" href="https://twitter.com/solamyy?lang=en">SOLamy</a>                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+        
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary rounded-circle border-3 back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
