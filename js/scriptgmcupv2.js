@@ -23,15 +23,15 @@ const layerImageUrls = [
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Gold.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_NOISE.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Noise.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_CHEETAH.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_CORAL.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Cheetah.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_ROBO.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Robo.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_TRIPPY.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Trippy.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_DMT.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_ILLUMINATI.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/DMT.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_DEATH_BOT.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM%20_DEATH_BOT.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Deathbot.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_ZOMBIE.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Zombie.png',
@@ -283,11 +283,7 @@ function addButton(layerImageUrls) {
   const nftIdInput = document.getElementById('nftIdInput');
   const nftId = nftIdInput.value.trim();
   
-  if (nftId === '589' || nftId === '3004' || nftId === '5437'|| nftId === '5232'|| nftId === '449'|| nftId === '218'|| nftId === '2620'|| nftId === '2666'|| nftId === '4468'
-    || nftId === '907'|| nftId === '5227'|| nftId === '1439'|| nftId === '3333'|| nftId === '902'|| nftId === '1088'|| nftId === '1254'|| nftId === '1907'|| nftId === '3482'|| nftId === '3689'|| nftId === '4119'|| nftId === '1396'|| nftId === '4926'|| nftId === '1526'|| nftId === '1107'|| nftId === '2561'
-    || nftId === '2388'|| nftId === '2167'|| nftId === '3324'|| nftId === '2628'|| nftId === '4347'|| nftId === '3765'|| nftId === '2743'|| nftId === '4737'|| nftId === '5260'|| nftId === '1515'|| nftId === '5735'|| nftId === '2889'
-    || nftId === '3544'|| nftId === '5027'|| nftId === '1601'|| nftId === '17'|| nftId === '1715'|| nftId === '3876'|| nftId === '5625'|| nftId === '5442'|| nftId === '5680'|| nftId === '774'|| nftId === '5014'|| nftId === '1657'|| nftId === '3093'|| nftId === '3999'|| nftId === '1204'
-    || nftId === '5172'|| nftId === '979'|| nftId === '3348'|| nftId === '1119'|| nftId === '5220'|| nftId === '1712'|| nftId === '5312'|| nftId === '2343'|| nftId === '1439'|| nftId === '6001') {
+ if (nftId === '589' || nftId === '2002' || nftId === '4226' || nftId === '949' || nftId === '2100' || nftId === '2254' || nftId === '7216' || nftId === '2747' || nftId === '7938' || nftId === '613' || nftId === '5634' || nftId === '2188' || nftId === '3031' || nftId === '1721' || nftId === '6079' || nftId === '1928' || nftId === '1965' || nftId === '4222' || nftId === '1531' || nftId === '2260' || nftId === '4356' || nftId === '1484' || nftId === '1486' || nftId === '6587' || nftId === '7736' || nftId === '3270' || nftId === '3127' || nftId === '1903' || nftId === '8631' || nftId === '2635' || nftId === '2086' || nftId === '4983' || nftId === '4897' || nftId === '6238' || nftId === '9612' || nftId === '2478' || nftId === '7474' || nftId === '5818' || nftId === '7877' || nftId === '9316' || nftId === '1816' || nftId === '8882' || nftId === '8103' || nftId === '1360' || nftId === '6548' || nftId === '3464' || nftId === '7929' || nftId === '2183' || nftId === '4087' || nftId === '6103' || nftId === '9069' || nftId === '7685' || nftId === '5244' || nftId === '9831' || nftId === '4219' || nftId === '1005' || nftId === '1881' || nftId === '3279' || nftId === '5301' || nftId === '3594' || nftId === '4706' || nftId === '2434' || nftId === '5583' || nftId === '8847' || nftId === '1052' || nftId === '814' || nftId === '552' || nftId === '5537' || nftId === '440' || nftId === '9967' || nftId === '1223' || nftId === '5038' || nftId === '6129' || nftId === '1145' || nftId === '5854' || nftId === '2198' || nftId === '3722' || nftId === '9503' || nftId === '7348' || nftId === '7992' || nftId === '9566' || nftId === '8467' || nftId === '5793' || nftId === '8206' || nftId === '1412' || nftId === '6289' || nftId === '5774' || nftId === '1784' || nftId === '5752' || nftId === '6203' || nftId === '3061' || nftId === '6489' || nftId === '3596' || nftId === '8098' || nftId === '4418' || nftId === '2338' || nftId === '1804' || nftId === '2972' || nftId === '2205' || nftId === '5722' || nftId === '891' || nftId === '6200' || nftId === '8907' || nftId === '2526' || nftId === '6082' || nftId === '5133' || nftId === '1216' || nftId === '5532' || nftId === '7811' || nftId === '9890' || nftId === '3852' || nftId === '3549' || nftId === '3225' || nftId === '4710' || nftId === '9213' || nftId === '9188' || nftId === '7060' || nftId === '187' || nftId === '4980' || nftId === '6557' || nftId === '2693' || nftId === '5456' || nftId === '9991' || nftId === '1355') {
       // Add Gold and Shot layer options
     const goldOption = document.createElement('option');
     goldOption.value = layerImageUrls[0]; // Assuming Gold layer URL is the first in the array
@@ -320,20 +316,7 @@ function addButton(layerImageUrls) {
     layerDropdown.appendChild(ledgerOption);
   }
 
-  if (nftId === '722' || nftId === '3986'|| nftId === '4417'|| nftId === '3171'|| nftId === '3130'|| nftId === '2524'|| nftId === '5611'|| nftId === '5154'|| nftId === '548'|| nftId === '1387'|| nftId === '3977'|| nftId === '4739'|| nftId === '5406'|| nftId === '2334'|| nftId === '4098'|| nftId === '5602'|| nftId === '216'
-  || nftId === '2893'|| nftId === '2236'|| nftId === '1060'|| nftId === '264'|| nftId === '3304'|| nftId === '270'|| nftId === '257'|| nftId === '2262'|| nftId === '4578'|| nftId === '3329'|| nftId === '4466'|| nftId === '3727'|| nftId === '1540'
-  || nftId === '344'|| nftId === '5249'|| nftId === '3985'|| nftId === '4950'|| nftId === '174'|| nftId === '5096'|| nftId === '5519'|| nftId === '5928'|| nftId === '1075'
-  || nftId === '5947'|| nftId === '1493'|| nftId === '4522'|| nftId === '4361'|| nftId === '988'|| nftId === '1048'|| nftId === '535'|| nftId === '4732'|| nftId === '1157'
-  || nftId === '2400'|| nftId === '4586'|| nftId === '2215'|| nftId === '3197'|| nftId === '5109'|| nftId === '4359'|| nftId === '4649'|| nftId === '5144'|| nftId === '2191'
-  || nftId === '3419'|| nftId === '287'|| nftId === '802'|| nftId === '3611'|| nftId === '4548'|| nftId === '2190'|| nftId === '1797'|| nftId === '3160'|| nftId === '997'
-  || nftId === '4844'|| nftId === '3322'|| nftId === '4985'|| nftId === '3928'|| nftId === '5990'|| nftId === '1567'|| nftId === '2247'|| nftId === '1521'|| nftId === '2494'
-  || nftId === '2014'|| nftId === '192'|| nftId === '675'|| nftId === '4060'|| nftId === '1746'|| nftId === '4823'|| nftId === '1131'|| nftId === '1963'
-  || nftId === '5636'|| nftId === '1773'|| nftId === '3710'|| nftId === '2922'|| nftId === '392'|| nftId === '1705'|| nftId === '3031'|| nftId === '4490'
-  || nftId === '3326'|| nftId === '3008'|| nftId === '4471'|| nftId === '2872'|| nftId === '4150'|| nftId === '1375'|| nftId === '2946'|| nftId === '5257'|| nftId === '1928'
-  || nftId === '1221'|| nftId === '3722'|| nftId === '2131'|| nftId === '4934'|| nftId === '3088'|| nftId === '5489'|| nftId === '1038'|| nftId === '2135'
-  || nftId === '5048'|| nftId === '4476'|| nftId === '3660'|| nftId === '1376'|| nftId === '4485'|| nftId === '1707'|| nftId === '1421'|| nftId === '379'|| nftId === '4693'
-  || nftId === '939'|| nftId === '4389'|| nftId === '386'|| nftId === '5734'|| nftId === '4740'|| nftId === '2993'|| nftId === '919'|| nftId === '792'
-  || nftId === '3062'|| nftId === '1917'|| nftId === '4450'|| nftId === '5606'|| nftId === '862'|| nftId === '5795'|| nftId === '3986'|| nftId === '3986') {
+  if (nftId === '1136' || nftId === '9990' || nftId === '3440' || nftId === '4147' || nftId === '8153' || nftId === '7891' || nftId === '7090' || nftId === '2800' || nftId === '8980' || nftId === '5541' || nftId === '6854' || nftId === '7898' ||nftId === '4839' || nftId === '2362' || nftId === '6480' || nftId === '5659' ||nftId === '1882' || nftId === '3146' || nftId === '3880' || nftId === '2934' || nftId === '2893' || nftId === '5390' || nftId === '7253' || nftId === '2671' || nftId === '7913' || nftId === '1159' || nftId === '3231' || nftId === '4029' ||  nftId === '8535' || nftId === '2933' || nftId === '5695' || nftId === '6031' || nftId === '8314' || nftId === '8138' || nftId === '9319' || nftId === '435' || nftId === '3975' || nftId === '4515' || nftId === '4586' || nftId === '9344' || nftId === '1268' || nftId === '4815' || nftId === '2910' || nftId === '3514' || nftId === '1879' || nftId === '1070' || nftId === '4619' || nftId === '7254' || nftId === '6701' || nftId === '2019' || nftId === '6440' || nftId === '2913' || nftId === '7395' || nftId === '5194' || nftId === '664' || nftId === '1418' || nftId === '4925' || nftId === '1438' || nftId === '463' || nftId === '6091' ) {
     // Add Noise layer options
     const noiseGmCupOption = document.createElement('option');
     noiseGmCupOption.value = layerImageUrls[2]; // Assuming Noise GM Cup layer URL is the third in the array
@@ -365,44 +348,22 @@ function addButton(layerImageUrls) {
     ledgerOption.textContent = customLayerNames[78]; // Assuming Shot layer name is the second in the array
     layerDropdown.appendChild(ledgerOption);
   }
-  if (nftId === '111'|| nftId === '3588'|| nftId === '531'|| nftId === '2649'|| nftId === '9'|| nftId === '302'|| nftId === '5775'|| nftId === '5283'
-  || nftId === '1638'|| nftId === '1813'|| nftId === '2735'|| nftId === '2126'|| nftId === '428'|| nftId === '5686'|| nftId === '2170'|| nftId === '5853'
-  || nftId === '5391'|| nftId === '1870'|| nftId === '3750'|| nftId === '3646'|| nftId === '2122'|| nftId === '4852'|| nftId === '276'
-  || nftId === '3851'|| nftId === '2746'|| nftId === '1834'|| nftId === '144'|| nftId === '2390'|| nftId === '3227'|| nftId === '1367'
-  || nftId === '839'|| nftId === '4153'|| nftId === '1033'|| nftId === '2449'|| nftId === '2166'|| nftId === '4176'|| nftId === '3495'
-  || nftId === '3127'|| nftId === '3982'|| nftId === '3579'|| nftId === '274'|| nftId === '112'|| nftId === '931'|| nftId === '5918'
-  || nftId === '231'|| nftId === '5439'|| nftId === '3879'|| nftId === '3530'|| nftId === '2012'|| nftId === '1757'|| nftId === '936'
-  || nftId === '1232'|| nftId === '2659'|| nftId === '3065'|| nftId === '891'|| nftId === '2276'|| nftId === '2681'|| nftId === '786'
-  || nftId === '2192'|| nftId === '1501'|| nftId === '744'|| nftId === '2232'|| nftId === '4839'|| nftId === '3195'|| nftId === '3434'
-  || nftId === '50'|| nftId === '2477'|| nftId === '4697'|| nftId === '168'|| nftId === '4234'|| nftId === '1363'|| nftId === '5155'
-  || nftId === '2653'|| nftId === '5035'|| nftId === '977'|| nftId === '825'|| nftId === '3003'|| nftId === '427'|| nftId === '5389'
-  || nftId === '4245'|| nftId === '1852'|| nftId === '4026'|| nftId === '664'|| nftId === '5959'|| nftId === '1097'|| nftId === '3853'
-  || nftId === '5304'|| nftId === '4965'|| nftId === '2852'|| nftId === '4993'|| nftId === '5311'|| nftId === '2437'|| nftId === '5218'
-  || nftId === '3025'|| nftId === '5566'|| nftId === '1353'|| nftId === '5565'|| nftId === '4837'|| nftId === '2638'|| nftId === '2651'
-  || nftId === '66'|| nftId === '2503'|| nftId === '3719'|| nftId === '1943'|| nftId === '3912'|| nftId === '4392'|| nftId === '5150'
-  || nftId === '2281'|| nftId === '75'|| nftId === '1087'|| nftId === '143'|| nftId === '4796'|| nftId === '5231'|| nftId === '3520'
-  || nftId === '4975'|| nftId === '2306'|| nftId === '3809'|| nftId === '879'|| nftId === '5464'|| nftId === '1753'|| nftId === '1627'
-  || nftId === '5702'|| nftId === '3577'|| nftId === '4804'|| nftId === '1423'|| nftId === '1676'|| nftId === '4483'|| nftId === '145'
-  || nftId === '604'|| nftId === '6000'|| nftId === '1459'|| nftId === '5978'|| nftId === '2393'|| nftId === '1726'|| nftId === '985'|| nftId === '2734'
-  || nftId === '2255'|| nftId === '4173'|| nftId === '32'|| nftId === '779'|| nftId === '2753'|| nftId === '1716'|| nftId === '4949'
-  || nftId === '746'|| nftId === '2897'|| nftId === '1332'|| nftId === '1457'|| nftId === '1971'|| nftId === '2657'|| nftId === '1269'
-  || nftId === '3358'|| nftId === '4094'|| nftId === '5072'|| nftId === '2119'|| nftId === '3145'|| nftId === '1176'|| nftId === '4566'
-  || nftId === '5804'|| nftId === '3641'|| nftId === '748'|| nftId === '3338'|| nftId === '2217'|| nftId === '421'|| nftId === '4734'
-  || nftId === '2044'|| nftId === '607'|| nftId === '354'|| nftId === '5713'|| nftId === '42'|| nftId === '2003'|| nftId === '5480'
-  || nftId === '2722'|| nftId === '5010'|| nftId === '4787'|| nftId === '5333'|| nftId === '5769'|| nftId === '415'|| nftId === '5531'
-  || nftId === '1932'|| nftId === '3238'|| nftId === '2061'|| nftId === '2526'|| nftId === '1911'|| nftId === '962'|| nftId === '609'|| nftId === '2986'
-  || nftId === '5819'|| nftId === '148'|| nftId === '4707'|| nftId === '3499'|| nftId === '612'|| nftId === '3091'|| nftId === '4096'
-  || nftId === '2909'|| nftId === '5076'|| nftId === '4599'|| nftId === '5903'|| nftId === '1465'|| nftId === '1261'|| nftId === '5696'
-  || nftId === '743'|| nftId === '3992'|| nftId === '703'|| nftId === '350'|| nftId === '1045'|| nftId === '5886'|| nftId === '3161'
-  || nftId === '5961'|| nftId === '517'|| nftId === '4738'|| nftId === '5567'|| nftId === '506'|| nftId === '1181'|| nftId === '863'
-  || nftId === '1014'|| nftId === '2353'|| nftId === '484'|| nftId === '3658'|| nftId === '3178'|| nftId === '2791'|| nftId === '2728'
-  || nftId === '2335'|| nftId === '5758'|| nftId === '5679'|| nftId === '1290'|| nftId === '4659'|| nftId === '2289'|| nftId === '1619'
-  || nftId === '716'|| nftId === '367'|| nftId === '4295'|| nftId === '3157'|| nftId === '4077'|| nftId === '2646'|| nftId === '1820'
-  || nftId === '366'|| nftId === '1414'|| nftId === '890'|| nftId === '5798'|| nftId === '5166'|| nftId === '521'|| nftId === '4902'
-  || nftId === '1160'|| nftId === '2994'|| nftId === '492'|| nftId === '5559'|| nftId === '5327'|| nftId === '4306'|| nftId === '1355'
-  || nftId === '4265'|| nftId === '3406'|| nftId === '5915'|| nftId === '5603'|| nftId === '537'|| nftId === '2627'|| nftId === '1416'
-  || nftId === '425'|| nftId === '5790'|| nftId === '4621'|| nftId === '1340'|| nftId === '868'|| nftId === '4432'|| nftId === '3468'
-  || nftId === '2144'|| nftId === '3215'|| nftId === '5745'|| nftId === '5092'|| nftId === '1897'|| nftId === '4146'){
+ 
+if (
+  nftId === '8271' || nftId === '3392' || nftId === '369' || nftId === '8921' ||
+  nftId === '7643' || nftId === '3030' || nftId === '9284' || nftId === '7189' ||
+  nftId === '5318' || nftId === '7024' || nftId === '3196' || nftId === '7098' ||
+  nftId === '1707' || nftId === '1789' || nftId === '6327' || nftId === '4594' ||
+  nftId === '5988' || nftId === '6799' || nftId === '8428' || nftId === '6379' ||
+  nftId === '7178' || nftId === '2657' || nftId === '6796' || nftId === '7911' ||
+  nftId === '9836' || nftId === '2631' || nftId === '5943' || nftId === '973' ||
+  nftId === '3901' || nftId === '9382' || nftId === '2599' || nftId === '2728' ||
+  nftId === '1496' || nftId === '9936' || nftId === '7783' || nftId === '2073' ||
+  nftId === '8346' || nftId === '893' || nftId === '2547' || nftId === '5919' ||
+  nftId === '8026' || nftId === '8922' || nftId === '4021' || nftId === '1794' ||
+  nftId === '4803' || nftId === '546' || nftId === '7140' || nftId === '4739' ||
+  nftId === '9978' || nftId === '9157'
+){
     
     
     const cheetahGmCupOption = document.createElement('option');
@@ -435,33 +396,109 @@ function addButton(layerImageUrls) {
     ledgerOption.textContent = customLayerNames[79]; // Assuming Shot layer name is the second in the array
     layerDropdown.appendChild(ledgerOption);
   }
-  if (nftId === '5351'|| nftId === '1819'|| nftId === '5661'|| nftId === '2879'|| nftId === '1622'|| nftId === '4789'|| nftId === '3393'
-  || nftId === '1338'|| nftId === '3038'|| nftId === '398'|| nftId === '3517'|| nftId === '1822'|| nftId === '86'|| nftId === '5315'
-  || nftId === '2739'|| nftId === '3401'|| nftId === '2757'|| nftId === '3503'|| nftId === '3725'|| nftId === '2514'|| nftId === '2157'|| nftId === '5946'
-  || nftId === '4892'|| nftId === '195'|| nftId === '1728'|| nftId === '2348'|| nftId === '5672'|| nftId === '4731'|| nftId === '5803'
-  || nftId === '2402'|| nftId === '5373'|| nftId === '418'|| nftId === '1154'|| nftId === '177'|| nftId === '1006'|| nftId === '1899'|| nftId === '172'
-  || nftId === '4817'|| nftId === '2622'|| nftId === '942'|| nftId === '2870'|| nftId === '1133'|| nftId === '3902'
-  || nftId === '5778'|| nftId === '3169'|| nftId === '4718'|| nftId === '3280'|| nftId === '4924'|| nftId === '5613'|| nftId === '2011'
-  || nftId === '2578'|| nftId === '3013'|| nftId === '5223'|| nftId === '251'|| nftId === '1313'|| nftId === '2997'
-  || nftId === '407'|| nftId === '2113'|| nftId === '5730'|| nftId === '4984'|| nftId === '2451'|| nftId === '2328'|| nftId === '1898'
-  || nftId === '5992'|| nftId === '2915'|| nftId === '1688'|| nftId === '1347'|| nftId === '1472'|| nftId === '2269'|| nftId === '5133'
-  || nftId === '3653'|| nftId === '3166'|| nftId === '5243'|| nftId === '5921'|| nftId === '5267'|| nftId === '5585'|| nftId === '448'
-  || nftId === '1473'|| nftId === '1735'|| nftId === '1687'|| nftId === '5541'|| nftId === '3865'|| nftId === '3885'|| nftId === '4293'
-  || nftId === '1039'|| nftId === '3793'|| nftId === '2083'|| nftId === '434'|| nftId === '2345'|| nftId === '1429'|| nftId === '2569'
-  || nftId === '1867'|| nftId === '737'|| nftId === '2780'|| nftId === '1256'|| nftId === '4132'|| nftId === '4702'|| nftId === '207'
-  || nftId === '2048'|| nftId === '851'|| nftId === '3963'|| nftId === '4708'|| nftId === '5241'|| nftId === '3395'|| nftId === '2875'
-  || nftId === '1734'|| nftId === '4699'|| nftId === '3472'|| nftId === '5097'|| nftId === '323'|| nftId === '5298'|| nftId === '5968'
-  || nftId === '3341'|| nftId === '5588'|| nftId === '5599'|| nftId === '1950'|| nftId === '2386'|| nftId === '5371'|| nftId === '3268'
-  || nftId === '4825'|| nftId === '5617'|| nftId === '214'|| nftId === '5706'|| nftId === '3474'|| nftId === '5632'|| nftId === '1947'
-  || nftId === '790'|| nftId === '5310'|| nftId === '4478'|| nftId === '2497'|| nftId === '3440'|| nftId === '2895'|| nftId === '29'
-  || nftId === '3111'|| nftId === '4894'|| nftId === '3995'|| nftId === '5043'|| nftId === '1200'|| nftId === '5663'|| nftId === '2531'
-  || nftId === '314'|| nftId === '2047'|| nftId === '1541'|| nftId === '775'|| nftId === '1626'|| nftId === '4364'|| nftId === '3882'
-  || nftId === '4803'|| nftId === '3828'|| nftId === '519'|| nftId === '3756'|| nftId === '3571'|| nftId === '557'|| nftId === '3492'
-  || nftId === '2028'|| nftId === '2424'|| nftId === '715'|| nftId === '4606'|| nftId === '4794'|| nftId === '2495'|| nftId === '447'
-  || nftId === '3022'|| nftId === '4626'|| nftId === '1250'|| nftId === '1136'|| nftId === '2469'|| nftId === '159'|| nftId === '4665'
-  || nftId === '4336'|| nftId === '3648'|| nftId === '5161'|| nftId === '2633'|| nftId === '758'|| nftId === '2094'|| nftId === '1645'
-  || nftId === '5807'|| nftId === '1370'|| nftId === '2380'|| nftId === '5887'|| nftId === '1211'|| nftId === '55'|| nftId === '5457'
-  || nftId === '1763') {// Add Robot layer
+  if (nftId === '8784' || nftId === '6386' || nftId === '3846' || nftId === '6264' ||
+  nftId === '9043' || nftId === '8360' || nftId === '6154' || nftId === '3459' ||
+  nftId === '5479' || nftId === '3244' || nftId === '2149' || nftId === '5465' ||
+  nftId === '1817' || nftId === '6169' || nftId === '8990' || nftId === '7961' ||
+  nftId === '6932' || nftId === '6126' || nftId === '5741' || nftId === '1515' ||
+  nftId === '6918' || nftId === '174' || nftId === '779' || nftId === '6013' ||
+  nftId === '6352' || nftId === '5297' || nftId === '260' || nftId === '5438' ||
+  nftId === '8119' || nftId === '8312' || nftId === '8160' || nftId === '4732' ||
+  nftId === '3977' || nftId === '5809' || nftId === '9034' || nftId === '503' ||
+  nftId === '1468' || nftId === '5160' || nftId === '3887' || nftId === '6403' ||
+  nftId === '9872' || nftId === '1642' || nftId === '2588' || nftId === '6537' ||
+  nftId === '2954' || nftId === '3872' || nftId === '8375' || nftId === '8577' ||
+  nftId === '5570' || nftId === '7458' || nftId === '8305' || nftId === '6291' ||
+  nftId === '1766' || nftId === '6226' || nftId === '2439' || nftId === '4496' ||
+  nftId === '275' || nftId === '2138' || nftId === '414' || nftId === '2994' ||
+  nftId === '6891' || nftId === '8844' || nftId === '8329' || nftId === '5079' ||
+  nftId === '3248' || nftId === '798' || nftId === '5201' || nftId === '9421' ||
+  nftId === '4584' || nftId === '6529' || nftId === '2047' || nftId === '8764' ||
+  nftId === '4604' || nftId === '6124' || nftId === '2074' || nftId === '2719' ||
+  nftId === '5157' || nftId === '7154' || nftId === '5672' || nftId === '8787' ||
+  nftId === '4006' || nftId === '5996' || nftId === '2874' || nftId === '9229' ||
+  nftId === '4390' || nftId === '5365' || nftId === '6955' || nftId === '6671' ||
+  nftId === '3607' || nftId === '277' || nftId === '5984' || nftId === '570' ||
+  nftId === '5187' || nftId === '5071' || nftId === '509' || nftId === '964' ||
+  nftId === '8629' || nftId === '1156' || nftId === '2894' || nftId === '3292' ||
+  nftId === '1370' || nftId === '8151' || nftId === '1576' || nftId === '1410' ||
+  nftId === '8856' || nftId === '6257' || nftId === '4000' || nftId === '6987' ||
+  nftId === '9917' || nftId === '9355' || nftId === '9532' || nftId === '8707' ||
+  nftId === '636' || nftId === '6885' || nftId === '6648' || nftId === '3007' ||
+  nftId === '5346' || nftId === '117' || nftId === '7989' || nftId === '5125' ||
+  nftId === '9784' || nftId === '8350' || nftId === '6881' || nftId === '9367' ||
+  nftId === '1255' || nftId === '3469' || nftId === '5789' || nftId === '1478' ||
+  nftId === '4634' || nftId === '5967' || nftId === '7985' || nftId === '3408' ||
+  nftId === '3224' || nftId === '4615' || nftId === '1537' || nftId === '840' ||
+  nftId === '1844' || nftId === '9909' || nftId === '3632' || nftId === '3684' ||
+  nftId === '9476' || nftId === '6418' || nftId === '9294' || nftId === '178' ||
+  nftId === '3478' || nftId === '6427' || nftId === '1975' || nftId === '7218' ||
+  nftId === '7668' || nftId === '4378' || nftId === '4575' || nftId === '1065' ||
+  nftId === '4889' || nftId === '4284' || nftId === '3568' || nftId === '8320' ||
+  nftId === '4129' || nftId === '9521' || nftId === '5343' || nftId === '3319' ||
+  nftId === '1862' || nftId === '6391' || nftId === '4965' || nftId === '2961' ||
+  nftId === '6956' || nftId === '5696' || nftId === '5234' || nftId === '5597' ||
+  nftId === '9635' || nftId === '7145' || nftId === '2500' || nftId === '7256' ||
+  nftId === '2309' || nftId === '1899' || nftId === '4149' || nftId === '6178' ||
+  nftId === '2979' || nftId === '9989' || nftId === '8165' || nftId === '4297' ||
+  nftId === '3612' || nftId === '1350' || nftId === '634' || nftId === '9423' ||
+  nftId === '4610' || nftId === '978' || nftId === '7847' || nftId === '3791' ||
+  nftId === '7856' || nftId === '606' || nftId === '6476' || nftId === '3865' ||
+  nftId === '7013' || nftId === '8572' || nftId === '8411' || nftId === '3797' ||
+  nftId === '2055' || nftId === '7964' || nftId === '4570' || nftId === '5501' ||
+  nftId === '7353' || nftId === '9313' || nftId === '896' || nftId === '6874' ||
+  nftId === '9662' || nftId === '2300' || nftId === '2221' || nftId === '2151' ||
+  nftId === '7334' || nftId === '3190' || nftId === '2216' || nftId === '4892' ||
+  nftId === '3737' || nftId === '7928' || nftId === '4510' || nftId === '6549' ||
+  nftId === '7766' || nftId === '1469' || nftId === '2320' || nftId === '6967' ||
+  nftId === '9691' || nftId === '2745' || nftId === '661' || nftId === '7470' ||
+  nftId === '8680' || nftId === '6189' || nftId === '50' || nftId === '6637' ||
+  nftId === '6045' || nftId === '9427' || nftId === '7454' || nftId === '8502' ||
+  nftId === '2448' || nftId === '7291' || nftId === '5533' || nftId === '8221' ||
+  nftId === '7941' || nftId === '5348' || nftId === '7529' || nftId === '1106' ||
+  nftId === '9226' || nftId === '2718' || nftId === '1439' || nftId === '8004' ||
+  nftId === '8290' || nftId === '3271' || nftId === '8141' || nftId === '6452' ||
+  nftId === '7314' || nftId === '2647' || nftId === '4738' || nftId === '342' ||
+  nftId === '4754' || nftId === '718' || nftId === '7094' || nftId === '4389' ||
+  nftId === '3389' || nftId === '8188' || nftId === '6368' || nftId === '3159' ||
+  nftId === '7550' || nftId === '9168' || nftId === '5043' || nftId === '7860' ||
+  nftId === '454' || nftId === '373' || nftId === '1248' || nftId === '6850' ||
+  nftId === '5671' || nftId === '7026' || nftId === '5684' || nftId === '3161' ||
+  nftId === '561' || nftId === '833' || nftId === '8182' || nftId === '6664' ||
+  nftId === '7169' || nftId === '9495' || nftId === '4493' || nftId === '6554' ||
+  nftId === '6840' || nftId === '8785' || nftId === '7416' || nftId === '5134' ||
+  nftId === '5395' || nftId === '1638' || nftId === '28' || nftId === '24' ||
+  nftId === '5341' || nftId === '9926' || nftId === '3985' || nftId === '1551' ||
+  nftId === '4973' || nftId === '3882' || nftId === '6596' || nftId === '1384' ||
+  nftId === '4901' || nftId === '5175' || nftId === '9172' || nftId === '1507' ||
+  nftId === '9135' || nftId === '400' || nftId === '5347' || nftId === '3489' ||
+  nftId === '6170' || nftId === '6350' || nftId === '873' || nftId === '2435' ||
+  nftId === '2784' || nftId === '1543' || nftId === '3421' || nftId === '2565' ||
+  nftId === '1448' || nftId === '1164' || nftId === '3237' || nftId === '3786' ||
+  nftId === '2600' || nftId === '8417' || nftId === '9824' || nftId === '3999' ||
+  nftId === '4373' || nftId === '3073' || nftId === '2173' || nftId === '9721' ||
+  nftId === '5565' || nftId === '2468' || nftId === '48' || nftId === '5833' ||
+  nftId === '220' || nftId === '7048' || nftId === '2051' || nftId === '8448' || nftId === '1827' || nftId === '3488' || nftId === '7005' ||
+  nftId === '9630' || nftId === '5459' || nftId === '195' || nftId === '356' ||
+  nftId === '1679' || nftId === '1381' || nftId === '4309' || nftId === '9277' ||
+  nftId === '1796' || nftId === '357' || nftId === '5417' || nftId === '5368' ||
+  nftId === '2344' || nftId === '6769' || nftId === '1141' || nftId === '5344' ||
+  nftId === '4759' || nftId === '129' || nftId === '9628' || nftId === '2365' ||
+  nftId === '7365' || nftId === '631' || nftId === '8570' || nftId === '2383' ||
+  nftId === '8815' || nftId === '2521' || nftId === '1218' || nftId === '3509' ||
+  nftId === '1979' || nftId === '1331' || nftId === '250' || nftId === '5679' ||
+  nftId === '1552' || nftId === '1538' || nftId === '8464' || nftId === '1114' ||
+  nftId === '8255' || nftId === '4800' || nftId === '4514' || nftId === '4480' ||
+  nftId === '2663' || nftId === '7085' || nftId === '1713' || nftId === '3646' ||
+  nftId === '6484' || nftId === '7331' || nftId === '7039' || nftId === '6949' ||
+  nftId === '4426' || nftId === '7002' || nftId === '2353' || nftId === '3288' ||
+  nftId === '844' || nftId === '3425' || nftId === '3351' || nftId === '5705' ||
+  nftId === '5676' || nftId === '2885' || nftId === '2780' || nftId === '1338' ||
+  nftId === '6185' || nftId === '7599' || nftId === '8752' || nftId === '6735' ||
+  nftId === '2428' || nftId === '9965' || nftId === '6235' || nftId === '6217' ||
+  nftId === '7872' || nftId === '1930' || nftId === '2218' || nftId === '5816' ||
+  nftId === '836' || nftId === '9767' || nftId === '1506' || nftId === '1414' ||
+  nftId === '1633') {// Add Robot layer
   // 
   const robotGmCupOption = document.createElement('option');
   robotGmCupOption.value = layerImageUrls[6]; // Assuming Gold layer URL is the first in the array
@@ -536,21 +573,71 @@ if (nftId === '4909'|| nftId === '5011'|| nftId === '250'|| nftId === '836'|| nf
   layerDropdown.appendChild(ledgerOption);
 
 }
-if (nftId === '2471'|| nftId === '1292'|| nftId === '2418'|| nftId === '1127'|| nftId === '4639'|| nftId === '2508'|| nftId === '4936'
-|| nftId === '2460'|| nftId === '5750'|| nftId === '445'|| nftId === '4368'|| nftId === '3077'|| nftId === '4128'|| nftId === '140'
-|| nftId === '5430'|| nftId === '3461'|| nftId === '4908'|| nftId === '5912'|| nftId === '3050'|| nftId === '4108'|| nftId === '1629'
-|| nftId === '4217'|| nftId === '2263'|| nftId === '4769'|| nftId === '1832'|| nftId === '3863'|| nftId === '2180'|| nftId === '835'
-|| nftId === '1859'|| nftId === '1124'|| nftId === '3535'|| nftId === '3041'|| nftId === '2461'|| nftId === '1449'|| nftId === '1300'
-|| nftId === '1013'|| nftId === '5396'|| nftId === '834'|| nftId === '3987'|| nftId === '3538'|| nftId === '2300'|| nftId === '558'
-|| nftId === '1235'|| nftId === '4064'|| nftId === '3211'|| nftId === '1220'|| nftId === '3415'|| nftId === '955'|| nftId === '5452'
-|| nftId === '4572'|| nftId === '5703'|| nftId === '3467'|| nftId === '4801'|| nftId === '184'|| nftId === '3125'|| nftId === '4914'
-|| nftId === '3199'|| nftId === '2009'|| nftId === '375'|| nftId === '1341'|| nftId === '917'|| nftId === '2588'|| nftId === '5403'
-|| nftId === '5723'|| nftId === '3516'|| nftId === '3231'|| nftId === '3007'|| nftId === '5085'|| nftId === '3305'|| nftId === '4773'
-|| nftId === '3301'|| nftId === '2087'|| nftId === '3679'|| nftId === '4851'|| nftId === '1777'|| nftId === '73'|| nftId === '5142'
-|| nftId === '3594'|| nftId === '2373'|| nftId === '2745'|| nftId === '4507'|| nftId === '5635'|| nftId === '5564'|| nftId === '1983'
-|| nftId === '4157'|| nftId === '1320'|| nftId === '4721'|| nftId === '381'|| nftId === '649'|| nftId === '5132'|| nftId === '2029'
-|| nftId === '906'|| nftId === '95'|| nftId === '5533'|| nftId === '237'|| nftId === '5902'|| nftId === '1499'|| nftId === '4834'
-|| nftId === '409'|| nftId === '4444'|| nftId === '5342'|| nftId === '4869'|| nftId === '4643') {  // Add DMT
+if (nftId === '1604' || nftId === '8544' || nftId === '4593' || nftId === '2811' ||
+nftId === '364' || nftId === '7307' || nftId === '8963' || nftId === '5512' ||
+nftId === '2392' || nftId === '9586' || nftId === '2453' || nftId === '2250' ||
+nftId === '9018' || nftId === '4398' || nftId === '218' || nftId === '4506' ||
+nftId === '4414' || nftId === '2121' || nftId === '5858' || nftId === '9255' ||
+nftId === '5100' || nftId === '5039' || nftId === '9535' || nftId === '9544' ||
+nftId === '7996' || nftId === '3932' || nftId === '9913' || nftId === '5847' ||
+nftId === '46' || nftId === '5278' || nftId === '4516' || nftId === '3377' ||
+nftId === '7759' || nftId === '7083' || nftId === '4792' || nftId === '6634' ||
+nftId === '8669' || nftId === '308' || nftId === '3067' || nftId === '9859' ||
+nftId === '8122' || nftId === '7519' || nftId === '9696' || nftId === '1177' ||
+nftId === '776' || nftId === '9282' || nftId === '4034' || nftId === '66' ||
+nftId === '9362' || nftId === '141' || nftId === '8937' || nftId === '621' ||
+nftId === '3699' || nftId === '6749' || nftId === '6635' || nftId === '1175' ||
+nftId === '1455' || nftId === '8790' || nftId === '5629' || nftId === '4712' ||
+nftId === '2139' || nftId === '1434' || nftId === '3951' || nftId === '9484' ||
+nftId === '9941' || nftId === '6282' || nftId === '8781' || nftId === '2758' ||
+nftId === '8878' || nftId === '136' || nftId === '2308' || nftId === '2513' ||
+nftId === '2733' || nftId === '9007' || nftId === '1624' || nftId === '8325' ||
+nftId === '317' || nftId === '6371' || nftId === '8281' || nftId === '3165' ||
+nftId === '7109' || nftId === '9404' || nftId === '5594' || nftId === '4151' ||
+nftId === '4093' || nftId === '2279' || nftId === '2773' || nftId === '3511' ||
+nftId === '4003' || nftId === '9887' || nftId === '7239' || nftId === '3236' ||
+nftId === '7781' || nftId === '8466' || nftId === '9847' || nftId === '6450' ||
+nftId === '3316' || nftId === '1511' || nftId === '4823' || nftId === '9883' ||
+nftId === '8429' || nftId === '8690' || nftId === '5514' || nftId === '7767' ||
+nftId === '7246' || nftId === '7092' || nftId === '6698' || nftId === '4264' ||
+nftId === '1140' || nftId === '597' || nftId === '650' || nftId === '8019' ||
+nftId === '5861' || nftId === '8867' || nftId === '7438' || nftId === '7496' ||
+nftId === '4165' || nftId === '8383' || nftId === '5012' || nftId === '801' ||
+nftId === '8036' || nftId === '6674' || nftId === '7483' || nftId === '736' ||
+nftId === '5916' || nftId === '3681' || nftId === '8864' || nftId === '6116' ||
+nftId === '9959' || nftId === '7641' || nftId === '7379' || nftId === '660' ||
+nftId === '6500' || nftId === '4013' || nftId === '7031' || nftId === '7180' ||
+nftId === '9863' || nftId === '999' || nftId === '8209' || nftId === '1475' ||
+nftId === '6666' || nftId === '5015' || nftId === '5062' || nftId === '7774' ||
+nftId === '5648' || nftId === '2774' || nftId === '915' || nftId === '690' ||
+nftId === '1450' || nftId === '8679' || nftId === '7036' || nftId === '3833' ||
+nftId === '7757' || nftId === '790' || nftId === '5090' || nftId === '4010' ||
+nftId === '6923' || nftId === '7044' || nftId === '4868' || nftId === '3910' ||
+nftId === '2044' || nftId === '3025' || nftId === '5063' || nftId === '5940' ||
+nftId === '3884' || nftId === '2110' || nftId === '7490' || nftId === '6545' ||
+nftId === '2062' || nftId === '4402' || nftId === '8293' || nftId === '6270' ||
+nftId === '4954' || nftId === '4160' || nftId === '6776' || nftId === '1945' ||
+nftId === '6570' || nftId === '5237' || nftId === '8870' || nftId === '7669' ||
+nftId === '307' || nftId === '3035' || nftId === '4081' || nftId === '64' ||
+nftId === '6845' || nftId === '6996' || nftId === '6513' || nftId === '3726' ||
+nftId === '6284' || nftId === '4359' || nftId === '767' || nftId === '6546' ||
+nftId === '6377' || nftId === '6255' || nftId === '9491' || nftId === '3679' ||
+nftId === '1477' || nftId === '5314' || nftId === '2366' || nftId === '1152' ||
+nftId === '1908' || nftId === '3871' || nftId === '1041' || nftId === '3551' ||
+nftId === '2287' || nftId === '2652' || nftId === '2499' || nftId === '16' ||
+nftId === '1867' || nftId === '8556' || nftId === '8308' || nftId === '8100' ||
+nftId === '7530' || nftId === '5289' || nftId === '8009' || nftId === '2942' ||
+nftId === '902' || nftId === '6365' || nftId === '8324' || nftId === '8091' ||
+nftId === '5558' || nftId === '5400' || nftId === '2731' || nftId === '6505' ||
+nftId === '611' || nftId === '8089' || nftId === '5600' || nftId === '132' ||
+nftId === '3760' || nftId === '2830' || nftId === '6704' || nftId === '9480' ||
+nftId === '1278' || nftId === '9666' || nftId === '1561' || nftId === '2286' ||
+nftId === '6717' || nftId === '3963' || nftId === '6076' || nftId === '5339' ||
+nftId === '2123' || nftId === '7805' || nftId === '7357' || nftId === '2690' ||
+nftId === '3155' || nftId === '2644' || nftId === '1666' || nftId === '6947' ||
+nftId === '81' || nftId === '3909' || nftId === '9310' || nftId === '7453' ||
+nftId === '7838' || nftId === '1493' || nftId === '3172' || nftId === '1596'
+) {  // Add DMT
   
     const dmtGmCupOption = document.createElement('option');
     dmtGmCupOption.value = layerImageUrls[10]; // Assuming Gold layer URL is the first in the array
@@ -582,26 +669,66 @@ if (nftId === '2471'|| nftId === '1292'|| nftId === '2418'|| nftId === '1127'|| 
     ledgerOption.textContent = customLayerNames[82]; // Assuming Shot layer name is the second in the array
     layerDropdown.appendChild(ledgerOption);
   }
-  if (nftId === '3590'|| nftId === '2436'|| nftId === '1880'|| nftId === '3168'|| nftId === '2050'|| nftId === '3595'
-  || nftId === '4091'|| nftId === '3767'|| nftId === '3907'|| nftId === '4743'|| nftId === '5889'|| nftId === '3512'
-  || nftId === '4488'|| nftId === '1864'|| nftId === '3374'|| nftId === '1385'|| nftId === '2606'|| nftId === '573'
-  || nftId === '2242'|| nftId === '3947'|| nftId === '3742'|| nftId === '336'|| nftId === '1748'|| nftId === '2720'
-  || nftId === '2456'|| nftId === '3379'|| nftId === '1422'|| nftId === '3456'|| nftId === '3609'|| nftId === '3006'
-  || nftId === '138'|| nftId === '1187'|| nftId === '3749'|| nftId === '4912'|| nftId === '2375'|| nftId === '1257'
-  || nftId === '1237'|| nftId === '5074'|| nftId === '299'|| nftId === '3113'|| nftId === '4802'|| nftId === '4367'
-  || nftId === '751'|| nftId === '3927'|| nftId === '1310'|| nftId === '1462'|| nftId === '4120'|| nftId === '2250'
-  || nftId === '4342'|| nftId === '5451'|| nftId === '926'|| nftId === '581'|| nftId === '1497'|| nftId === '3762'
-  || nftId === '3900'|| nftId === '1036'|| nftId === '2690'|| nftId === '4384'|| nftId === '1853'|| nftId === '4725'
-  || nftId === '3733'|| nftId === '5925'|| nftId === '497'|| nftId === '5018'|| nftId === '5483'|| nftId === '3867'
-  || nftId === '4730'|| nftId === '2488'|| nftId === '4783'|| nftId === '1703'|| nftId === '1791'|| nftId === '5194'
-  || nftId === '1653'|| nftId === '2500'|| nftId === '2642'|| nftId === '5358'|| nftId === '1128'|| nftId === '4694'
-  || nftId === '396'|| nftId === '3232'|| nftId === '572'|| nftId === '2186'|| nftId === '4683'|| nftId === '5623'
-  || nftId === '5786'|| nftId === '4495'|| nftId === '1442'|| nftId === '3429'|| nftId === '2499'|| nftId === '5764'
-  || nftId === '1869'|| nftId === '1750'|| nftId === '4428'|| nftId === '4434'|| nftId === '3277'|| nftId === '3647'
-  || nftId === '3696'|| nftId === '3675'|| nftId === '4556'|| nftId === '1316'|| nftId === '3330'|| nftId === '4558'
-  || nftId === '1800'|| nftId === '2756'|| nftId === '3729'|| nftId === '2594'|| nftId === '5891'|| nftId === '4038'
-  || nftId === '5473'|| nftId === '1071'|| nftId === '4470'|| nftId === '3037'|| nftId === '1096'|| nftId === '1987'
-  || nftId === '2399'|| nftId === '2332'|| nftId === '1180'|| nftId === '153'|| nftId === '5357'|| nftId === '4219') {   // Add Death bot
+if (
+  nftId === '9279' || nftId === '6683' || nftId === '4730' || nftId === '1976' ||
+  nftId === '4097' || nftId === '2924' || nftId === '9501' || nftId === '4470' ||
+  nftId === '6619' || nftId === '2354' || nftId === '3702' || nftId === '2231' ||
+  nftId === '3501' || nftId === '1814' || nftId === '5018' || nftId === '9697' ||
+  nftId === '203' || nftId === '225' || nftId === '406' || nftId === '9181' ||
+  nftId === '3703' || nftId === '7159' || nftId === '1857' || nftId === '5500' ||
+  nftId === '3471' || nftId === '6651' || nftId === '6459' || nftId === '3211' ||
+  nftId === '4849' || nftId === '25' || nftId === '515' || nftId === '3536' ||
+  nftId === '4067' || nftId === '8873' || nftId === '8113' || nftId === '9964' ||
+  nftId === '465' || nftId === '4367' || nftId === '6693' || nftId === '158' ||
+  nftId === '5717' || nftId === '8904' || nftId === '1573' || nftId === '2133' ||
+  nftId === '1541' || nftId === '1300' || nftId === '8345' || nftId === '2394' ||
+  nftId === '9446' || nftId === '3899' || nftId === '6349' || nftId === '6515' ||
+  nftId === '6679' || nftId === '311' || nftId === '2768' || nftId === '3221' ||
+  nftId === '3713' || nftId === '6096' || nftId === '4960' || nftId === '8205' ||
+  nftId === '4085' || nftId === '9906' || nftId === '7843' || nftId === '318' ||
+  nftId === '8337' || nftId === '6341' || nftId === '7747' || nftId === '5746' ||
+  nftId === '8313' || nftId === '4170' || nftId === '5525' || nftId === '5591' ||
+  nftId === '7734' || nftId === '2997' || nftId === '5926' || nftId === '6218' ||
+  nftId === '1228' || nftId === '9642' || nftId === '480' || nftId === '2646' ||
+  nftId === '8006' || nftId === '1941' || nftId === '9242' || nftId === '9339' ||
+  nftId === '4790' || nftId === '6832' || nftId === '8230' || nftId === '7609' ||
+  nftId === '1209' || nftId === '1406' || nftId === '9149' || nftId === '804' ||
+  nftId === '9888' || nftId === '3071' || nftId === '3122' || nftId === '7105' ||
+  nftId === '9211' || nftId === '2975' || nftId === '2078' || nftId === '8207' ||
+  nftId === '9388' || nftId === '450' || nftId === '5670' || nftId === '3954' ||
+  nftId === '1093' || nftId === '1800' || nftId === '7136' || nftId === '3915' ||
+  nftId === '5938' || nftId === '7676' || nftId === '1969' || nftId === '9215' ||
+  nftId === '5936' || nftId === '8366' || nftId === '3387' || nftId === '1017' ||
+  nftId === '6158' || nftId === '6193' || nftId === '1327' || nftId === '4441' ||
+  nftId === '1985' || nftId === '6524' || nftId === '4713' || nftId === '8812' ||
+  nftId === '5604' || nftId === '3874' || nftId === '8197' || nftId === '5611' ||
+  nftId === '4819' || nftId === '4907' || nftId === '9047' || nftId === '1866' ||
+  nftId === '2028' || nftId === '8627' || nftId === '5378' || nftId === '8250' ||
+  nftId === '2289' || nftId === '7814' || nftId === '1113' || nftId === '5205' ||
+  nftId === '7009' || nftId === '1297' || nftId === '7878' || nftId === '247' ||
+  nftId === '3922' || nftId === '5614' || nftId === '7735' || nftId === '9055' ||
+  nftId === '1589' || nftId === '9807' || nftId === '8899' || nftId === '2562' ||
+  nftId === '3195' || nftId === '3946' || nftId === '618' || nftId === '7940' ||
+  nftId === '2514' || nftId === '56' || nftId === '1738' || nftId === '1185' ||
+  nftId === '5710' || nftId === '9488' || nftId === '8353' || nftId === '7844' ||
+  nftId === '5477' || nftId === '6373' || nftId === '6044' || nftId === '6390' ||
+  nftId === '1775' || nftId === '2730' || nftId === '4773' || nftId === '9763' ||
+  nftId === '5120' || nftId === '4358' || nftId === '9730' || nftId === '9051' ||
+  nftId === '7799' || nftId === '1852' || nftId === '9874' || nftId === '1746' ||
+  nftId === '162' || nftId === '5202' || nftId === '8768' || nftId === '7040' ||
+  nftId === '2739' || nftId === '5072' || nftId === '3638' || nftId === '3323' ||
+  nftId === '906' || nftId === '8180' || nftId === '3275' || nftId === '5263' ||
+  nftId === '2215' || nftId === '8238' || nftId === '3654' || nftId === '8198' ||
+  nftId === '502' || nftId === '6738' || nftId === '9415' || nftId === '118' ||
+  nftId === '8903' || nftId === '3580' || nftId === '1790' || nftId === '1315' ||
+  nftId === '1283' || nftId === '8260' || nftId === '350' || nftId === '6022' ||
+  nftId === '2248' || nftId === '6590' || nftId === '7749' || nftId === '3562' ||
+  nftId === '2223' || nftId === '7110' || nftId === '4743' || nftId === '5309' ||
+  nftId === '3128' || nftId === '649' || nftId === '5418' || nftId === '8538' ||
+  nftId === '633' || nftId === '5987' || nftId === '5480' || nftId === '4060' ||
+  nftId === '9197' || nftId === '3570' || nftId === '7586' || nftId === '1098' ||
+  nftId === '3905'
+) {   // Add Death bot
     //\
     const deathGmCupOption = document.createElement('option');
     deathGmCupOption.value = layerImageUrls[12]; // Assuming Gold layer URL is the first in the array
@@ -633,30 +760,98 @@ if (nftId === '2471'|| nftId === '1292'|| nftId === '2418'|| nftId === '1127'|| 
     ledgerOption.textContent = customLayerNames[83]; // Assuming Shot layer name is the second in the array
     layerDropdown.appendChild(ledgerOption);
   }
-  if (nftId === '3716'|| nftId === '1544'|| nftId === '817'|| nftId === '5497'|| nftId === '4312'|| nftId === '4222'|| nftId === '5479'
-  || nftId === '4588'|| nftId === '1306'|| nftId === '4806'|| nftId === '2453'|| nftId === '1352'|| nftId === '4749'|| nftId === '798'
-  || nftId === '5115'|| nftId === '690'|| nftId === '45'|| nftId === '404'|| nftId === '4203'|| nftId === '2849'|| nftId === '3124'
-  || nftId === '1210'|| nftId === '1080'|| nftId === '814'|| nftId === '1043'|| nftId === '542'|| nftId === '686'|| nftId === '4745'
-  || nftId === '4047'|| nftId === '1776'|| nftId === '3715'|| nftId === '966'|| nftId === '4036'|| nftId === '4473'|| nftId === '1383'
-  || nftId === '5757'|| nftId === '853'|| nftId === '3220'|| nftId === '4328'|| nftId === '4423'|| nftId === '5244'|| nftId === '401'
-  || nftId === '5556'|| nftId === '61'|| nftId === '2611'|| nftId === '2433'|| nftId === '1539'|| nftId === '3279'|| nftId === '2133'
-  || nftId === '2648'|| nftId === '3365'|| nftId === '1973'|| nftId === '3454'|| nftId === '4040'|| nftId === '3469'|| nftId === '261'
-  || nftId === '4799'|| nftId === '5303'|| nftId === '4602'|| nftId === '933'|| nftId === '4808'|| nftId === '1926'|| nftId === '4172'
-  || nftId === '1663'|| nftId === '134'|| nftId === '5829'|| nftId === '1189'|| nftId === '3884'|| nftId === '2955'|| nftId === '4239'
-  || nftId === '4915'|| nftId === '3055'|| nftId === '4979'|| nftId === '3954'|| nftId === '697'|| nftId === '1969'|| nftId === '821'
-  || nftId === '2562'|| nftId === '1115'|| nftId === '2381'|| nftId === '3134'|| nftId === '4836'|| nftId === '3654'|| nftId === '3276'
-  || nftId === '2385'|| nftId === '3404'|| nftId === '2130'|| nftId === '5643'|| nftId === '4218'|| nftId === '4604'|| nftId === '2796'
-  || nftId === '2154'|| nftId === '2904'|| nftId === '2093'|| nftId === '1285'|| nftId === '327'|| nftId === '1906'|| nftId === '242'
-  || nftId === '390'|| nftId === '4879'|| nftId === '5407'|| nftId === '482'|| nftId === '5600'|| nftId === '4000'|| nftId === '293'
-  || nftId === '5454'|| nftId === '1593'|| nftId === '965'|| nftId === '4524'|| nftId === '5187'|| nftId === '1386'|| nftId === '1975'
-  || nftId === '5057'|| nftId === '603'|| nftId === '4422'|| nftId === '4941'|| nftId === '3345'|| nftId === '4138'|| nftId === '1492'
-  || nftId === '5555'|| nftId === '3151'|| nftId === '754'|| nftId === '110'|| nftId === '5699'|| nftId === '4247'|| nftId === '3943'
-  || nftId === '1774'|| nftId === '5361'|| nftId === '3155'|| nftId === '5190'|| nftId === '3896'|| nftId === '2684'|| nftId === '952'
-  || nftId === '1337'|| nftId === '516'|| nftId === '4142'|| nftId === '1205'|| nftId === '5143'|| nftId === '5659'|| nftId === '2509'
-  || nftId === '1110'|| nftId === '3342'|| nftId === '443'|| nftId === '1015'|| nftId === '2752'|| nftId === '4818'|| nftId === '2371'
-  || nftId === '4156'|| nftId === '2941'|| nftId === '2384'|| nftId === '5328'|| nftId === '4273'|| nftId === '2485'|| nftId === '877'
-  || nftId === '1379'|| nftId === '3585'|| nftId === '1658'|| nftId === '602'|| nftId === '446'|| nftId === '5285'|| nftId === '5431'
-  || nftId === '1682') { // Add Zombie
+  if (nftId === '3525' || nftId === '1781' || nftId === '2871' || nftId === '5559' ||
+  nftId === '4282' || nftId === '1958' || nftId === '4788' || nftId === '8445' ||
+  nftId === '4697' || nftId === '8251' || nftId === '9295' || nftId === '3174' ||
+  nftId === '4578' || nftId === '858' || nftId === '363' || nftId === '98' ||
+  nftId === '5067' || nftId === '8647' || nftId === '5562' || nftId === '5044' ||
+  nftId === '343' || nftId === '762' || nftId === '2079' || nftId === '4341' ||
+  nftId === '9244' || nftId === '5692' || nftId === '7388' || nftId === '4420' ||
+  nftId === '4848' || nftId === '6855' || nftId === '1810' || nftId === '5825' ||
+  nftId === '738' || nftId === '8506' || nftId === '1895' || nftId === '484' ||
+  nftId === '2119' || nftId === '5644' || nftId === '6626' || nftId === '7670' ||
+  nftId === '920' || nftId === '8402' || nftId === '4895' || nftId === '1422' ||
+  nftId === '7171' || nftId === '1474' || nftId === '3990' || nftId === '4163' ||
+  nftId === '1849' || nftId === '8336' || nftId === '5894' || nftId === '9400' ||
+  nftId === '8447' || nftId === '5810' || nftId === '7276' || nftId === '7064' ||
+  nftId === '2705' || nftId === '1664' || nftId === '5118' || nftId === '3233' ||
+  nftId === '5939' || nftId === '5771' || nftId === '3724' || nftId === '9723' ||
+  nftId === '2622' || nftId === '6011' || nftId === '9221' || nftId === '3686' ||
+  nftId === '2523' || nftId === '581' || nftId === '641' || nftId === '2601' ||
+  nftId === '9971' || nftId === '4658' || nftId === '6823' || nftId === '6348' ||
+  nftId === '7565' || nftId === '8562' || nftId === '2919' || nftId === '7946' ||
+  nftId === '1635' || nftId === '963' || nftId === '2302' || nftId === '6020' ||
+  nftId === '2127' || nftId === '5599' || nftId === '3983' || nftId === '607' ||
+  nftId === '6757' || nftId === '5398' || nftId === '9490' || nftId === '8971' ||
+  nftId === '1365' || nftId === '1733' || nftId === '6432' || nftId === '5581' ||
+  nftId === '2679' || nftId === '7340' || nftId === '3634' || nftId === '6449' ||
+  nftId === '7947' || nftId === '900' || nftId === '1356' || nftId === '1451' ||
+  nftId === '7035' || nftId === '6535' || nftId === '3790' || nftId === '6088' ||
+  nftId === '6181' || nftId === '5251' || nftId === '4812' || nftId === '7537' ||
+  nftId === '6455' || nftId === '6408' || nftId === '2559' || nftId === '1060' ||
+  nftId === '9170' || nftId === '8520' || nftId === '2687' || nftId === '1080' ||
+  nftId === '4290' || nftId === '7366' || nftId === '1888' || nftId === '3822' ||
+  nftId === '2882' || nftId === '7712' || nftId === '90' || nftId === '4997' ||
+  nftId === '970' || nftId === '8896' || nftId === '3404' || nftId === '4885' ||
+  nftId === '330' || nftId === '1897' || nftId === '3184' || nftId === '2993' ||
+  nftId === '5229' || nftId === '6267' || nftId === '9396' || nftId === '4771' ||
+  nftId === '6009' || nftId === '2285' || nftId === '9614' || nftId === '4982' ||
+  nftId === '2240' || nftId === '7862' || nftId === '4551' || nftId === '577' ||
+  nftId === '4388' || nftId === '3055' || nftId === '5867' || nftId === '1568' ||
+  nftId === '7086' || nftId === '1204' || nftId === '9522' || nftId === '2603' ||
+  nftId === '3661' || nftId === '1090' || nftId === '7828' || nftId === '6520' ||
+  nftId === '1126' || nftId === '5668' || nftId === '5881' || nftId === '1466' ||
+  nftId === '4289' || nftId === '2916' || nftId === '131' || nftId === '6387' ||
+  nftId === '8612' || nftId === '598' || nftId === '1042' || nftId === '7322' ||
+  nftId === '5978' || nftId === '1008' || nftId === '4589' || nftId === '9039' ||
+  nftId === '3295' || nftId === '3635' || nftId === '931' || nftId === '5108' ||
+  nftId === '4734' || nftId === '4330' || nftId === '5575' || nftId === '1485' ||
+  nftId === '3460' || nftId === '1631' || nftId === '2861' || nftId === '9057' ||
+  nftId === '1608' || nftId === '4824' || nftId === '5615' || nftId === '9618' ||
+  nftId === '2241' || nftId === '6576' || nftId === '3759' || nftId === '5025' ||
+  nftId === '434' || nftId === '4718' || nftId === '7772' || nftId === '1963' ||
+  nftId === '1807' || nftId === '3755' || nftId === '7446' || nftId === '8386' ||
+  nftId === '8655' || nftId === '4705' || nftId === '40' || nftId === '4475' ||
+  nftId === '8643' || nftId === '8133' || nftId === '6993' || nftId === '8736' ||
+  nftId === '1885' || nftId === '3472' || nftId === '9854' || nftId === '7051' ||
+  nftId === '1489' || nftId === '7614' || nftId === '928' || nftId === '1795' ||
+  nftId === '5805' || nftId === '3026' || nftId === '6486' || nftId === '3081' ||
+  nftId === '9147' || nftId === '76' || nftId === '6443' || nftId === '4227' ||
+  nftId === '752' || nftId === '2891' || nftId === '6677' || nftId === '3521' ||
+  nftId === '1818' || nftId === '1103' || nftId === '5719' || nftId === '9006' ||
+  nftId === '4682' || nftId === '9084' || nftId === '7488' || nftId === '3197' ||
+  nftId === '2147' || nftId === '1082' || nftId === '453' || nftId === '3036' ||
+  nftId === '933' || nftId === '3480' || nftId === '1264' || nftId === '3504' ||
+  nftId === '1681' || nftId === '2880' || nftId === '7228' || nftId === '3033' ||
+  nftId === '8809' || nftId === '5779' || nftId === '34' || nftId === '6032' ||
+  nftId === '5873' || nftId === '3496' || nftId === '9604' || nftId === '2265' ||
+  nftId === '6058' || nftId === '9734' || nftId === '9108' || nftId === '5051' ||
+  nftId === '9720' || nftId === '9534' || nftId === '6775' || nftId === '7859' ||
+  nftId === '2990' || nftId === '3593' || nftId === '3077' || nftId === '823' ||
+  nftId === '124' || nftId === '6263' || nftId === '4945' || nftId === '1724' ||
+  nftId === '4059' || nftId === '2217' || nftId === '9307' || nftId === '8564' ||
+  nftId === '7663' || nftId === '7097' || nftId === '8645' || nftId === '1873' ||
+  nftId === '7509' || nftId === '295' || nftId === '6756' || nftId === '413' ||
+  nftId === '2699' || nftId === '5691' || nftId === '8671' || nftId === '841' ||
+  nftId === '8287' || nftId === '415' || nftId === '2691' || nftId === '6023' ||
+  nftId === '1217' || nftId === '9272' || nftId === '7512' || nftId === '7722' ||
+  nftId === '2632' || nftId === '9076' || nftId === '3264' || nftId === '5807' ||
+  nftId === '9506' || nftId === '2427' || nftId === '4338' || nftId === '609' ||
+  nftId === '7525' || nftId === '8828' || nftId === '765' || nftId === '7406' ||
+  nftId === '9886' || nftId === '8443' || nftId === '6323' || nftId === '6824' ||
+  nftId === '9601' || nftId === '5270' || nftId === '19' || nftId === '6898' ||
+  nftId === '7602' || nftId === '7415' || nftId === '472' || nftId === '1171' ||
+  nftId === '9715' || nftId === '820' || nftId === '5905' || nftId === '8716' ||
+  nftId === '9877' || nftId === '4992' || nftId === '4856' || nftId === '6136'|| nftId === '4601' || nftId === '3671' || nftId === '4944' || nftId === '9592' ||
+  nftId === '5091' || nftId === '3037' || nftId === '1399' || nftId === '5172' ||
+  nftId === '9166' || nftId === '5607' || nftId === '2915' || nftId === '9973' ||
+  nftId === '8421' || nftId === '216' || nftId === '310' || nftId === '7067' ||
+  nftId === '3916' || nftId === '501' || nftId === '6029' || nftId === '5163' ||
+  nftId === '2982' || nftId === '3590' || nftId === '919' || nftId === '9041' ||
+  nftId === '7651' || nftId === '5536' || nftId === '1273' || nftId === '3433' ||
+  nftId === '4626' || nftId === '142' || nftId === '9695' || nftId === '7242' ||
+  nftId === '6382' || nftId === '3603' || nftId === '8387' || nftId === '9331'
+)  { // Add Zombie
   
   const zombieGmCupOption = document.createElement('option');
   zombieGmCupOption.value = layerImageUrls[14]; // Assuming Gold layer URL is the first in the array

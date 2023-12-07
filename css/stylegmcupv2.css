@@ -116,22 +116,22 @@ button {
 .gm-cup-layer {
   position: absolute;
   bottom: 0;
-  left: 40%;
-  transform: translateX(-20%);
-  transform: translateY(-30.5%);
-  width: 40%; /* Adjust the width as per your requirement */
-  height: 40%; /* Adjust the height as per your requirement */
+  left: 5%;
+  transform: translateX(-50%);
+  transform: translateY(-11.6%);
+  width: 80%; /* Adjust the width as per your requirement */
+  height: 80%; /* Adjust the height as per your requirement */
   z-index: 2; /* Ensure the cup is above the NFT image */
 }
 
 .brown-gm-cup-layer {
   position: absolute;
   bottom: 0;
-  left: 40%;
-  transform: translateX(-20%);
-  transform: translateY(-30.5%);
-  width: 40%; /* Adjust the width as per your requirement */
-  height: 40%; /* Adjust the height as per your requirement */
+  left: 5%;
+  transform: translateX(-50%);
+  transform: translateY(-11.6%);
+  width: 80%; /* Adjust the width as per your requirement */
+  height: 80%; /* Adjust the height as per your requirement */
   z-index: 2; /* Ensure the cup is above the NFT image */
 }
 .brown-shot-layer{
