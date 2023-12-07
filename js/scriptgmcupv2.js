@@ -19,43 +19,43 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const selectedLayerImages = [];
 const layerImageUrls = [
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcup/GM_GOLD.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_GOLD.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Gold.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcup/GM_NOISE.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_NOISE.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Noise.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcup/GM_CHEETAH.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_CHEETAH.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Cheetah.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcup/GM_ROBO.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_ROBO.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Robo.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcup/GM_TRIPPY.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_TRIPPY.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Trippy.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcup/GM_DMT.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_DMT.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/DMT.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcup/GM_DEATH_BOT.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_DEATH_BOT.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Deathbot.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcup/GM_ZOMBIE.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_ZOMBIE.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Zombie.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcup/GM_WHITE.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_WHITE.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/White.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcup/GM_BROWN.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_BROWN.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Brown.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcup/GM_RED.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_RED.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Red.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcup/GM_BLACK.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_BLACK.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Black.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcup/GM_PINK.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_PINK.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Pink.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcup/GM_CREAM.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_CREAM.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Cream.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcup/GM_BLUE.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_BLUE.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Blue.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcup/GM_GREY.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_GREY.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Grey.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcup/GM_DARK_BROWN.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_DARK_BROWN.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Darkbrown.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcup/GM_GOLDEN_BROWN.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_GOLDEN_BROWN.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Goldenbrown.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcup/GM_TAN.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_TAN.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Tan.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/bottle/Gold.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/bottle/Noise.png',
@@ -118,7 +118,7 @@ const layerImageUrls = [
 
   // Add more layer image URLs here
 ];
-
+let adjustedNftId;
 function fetchNFT() {
   const nftIdInput = document.getElementById('nftIdInput');
   const nftId = nftIdInput.value.trim();
@@ -128,7 +128,14 @@ function fetchNFT() {
     return;
   }
 
-  const nftImageUrl = `https://raw.githubusercontent.com/akh1lsol/Bascdao.net/main/v2/${nftId}.png`;
+  adjustedNftId = parseInt(nftId, 10);
+
+  // Check if adjustedNftId is within the range of 1 to 10,000 and not already -1
+  if (!isNaN(adjustedNftId) && adjustedNftId >= 1 && adjustedNftId <= 10000 && adjustedNftId !== -1) {
+    adjustedNftId--; // Subtract 1
+  }
+
+  const nftImageUrl = `https://raw.githubusercontent.com/akh1lsol/Bascdao.net/main/v2/${adjustedNftId}.png`;
 
   const img = new Image();
   img.onload = function() {
@@ -140,6 +147,7 @@ function fetchNFT() {
   };
   img.src = nftImageUrl;
 }
+
 
 function displayNotFoundModal() {
   const modal = document.getElementById('modal');
@@ -275,7 +283,7 @@ function addButton(layerImageUrls) {
   const nftIdInput = document.getElementById('nftIdInput');
   const nftId = nftIdInput.value.trim();
   
-  if (nftId === '1' || nftId === '3004' || nftId === '5437'|| nftId === '5232'|| nftId === '449'|| nftId === '218'|| nftId === '2620'|| nftId === '2666'|| nftId === '4468'
+  if (nftId === '589' || nftId === '3004' || nftId === '5437'|| nftId === '5232'|| nftId === '449'|| nftId === '218'|| nftId === '2620'|| nftId === '2666'|| nftId === '4468'
     || nftId === '907'|| nftId === '5227'|| nftId === '1439'|| nftId === '3333'|| nftId === '902'|| nftId === '1088'|| nftId === '1254'|| nftId === '1907'|| nftId === '3482'|| nftId === '3689'|| nftId === '4119'|| nftId === '1396'|| nftId === '4926'|| nftId === '1526'|| nftId === '1107'|| nftId === '2561'
     || nftId === '2388'|| nftId === '2167'|| nftId === '3324'|| nftId === '2628'|| nftId === '4347'|| nftId === '3765'|| nftId === '2743'|| nftId === '4737'|| nftId === '5260'|| nftId === '1515'|| nftId === '5735'|| nftId === '2889'
     || nftId === '3544'|| nftId === '5027'|| nftId === '1601'|| nftId === '17'|| nftId === '1715'|| nftId === '3876'|| nftId === '5625'|| nftId === '5442'|| nftId === '5680'|| nftId === '774'|| nftId === '5014'|| nftId === '1657'|| nftId === '3093'|| nftId === '3999'|| nftId === '1204'
@@ -1003,7 +1011,7 @@ const creamId = [22,27,41,67,81,88,89,93,105,115,119,124,141,169,180,215,223,239
   layerDropdown.appendChild(ledgerOption);
 
 }
-const blueId = [6,13,60,96,100,104,151,166,199,204,206,227,262,280,296,304,438,444,455,486,487,504,559,562,589,590,599,621,641,691,695,698,706,736,768,788,820,823,827,833,865,916,940,995,996,1019,1086,1100,1219,1223,1229,1238,1244,1255,1264,1275,1276,1287,1334,1356,1398,1419,1432,1482,1502,1514,1525,1534,1556,1565,1569,1597,1603,1621,1640,1651,1654,1656,1660,1669,1698,1766,1837,1921,1927,1934,1957,2016,2031,2067,2071,2080,2111,2116,2183,2189,2200,2213,2221,2254,2256,2264,2288,2339,2407,2462,2489,2498,2530,2535,2541,2551,2552,2557,2584,2598,2621,2626,2639,2667,2673,2685,2695,2703,2731,2788,2821,2823,2829,2905,2924,2954,2970,2985,3002,3030,3046,3099,3153,3159,3175,3196,3213,3214,3226,3243,3247,3260,3281,3291,3302,3303,3320,3325,3328,3331,3385,3394,3421,3424,3430,3453,3466,3475,3498,3567,3568,3584,3587,3608,3613,3615,3645,3670,3706,3712,3720,3769,3781,3795,3799,3811,3835,3840,3848,3958,3994,4001,4013,4033,4092,4100,4135,4144,4186,4188,4213,4215,4230,4235,4269,4289,4301,4305,4310,4316,4323,4334,4363,4377,4388,4430,4459,4462,4506,4513,4580,4585,4590,4615,4652,4658,4663,4673,4765,4774,4884,4947,5006,5022,5023,5038,5060,5070,5080,5123,5141,5148,5163,5176,5268,5270,5280,5288,5363,5411,5447,5449,5503,5514,5528,5535,5537,5574,5589,5597,5615,5620,5621,5647,5655,5715,5717,5729,5772,5781,5783,5797,5852,5861,5879,5881,5904,5922,5934,5940,5942,5960,5973,5977,5993,5995]
+const blueId = [6,13,60,96,100,104,151,166,199,204,206,227,262,280,296,304,438,444,455,486,487,504,559,562,590,599,621,641,691,695,698,706,736,768,788,820,823,827,833,865,916,940,995,996,1019,1086,1100,1219,1223,1229,1238,1244,1255,1264,1275,1276,1287,1334,1356,1398,1419,1432,1482,1502,1514,1525,1534,1556,1565,1569,1597,1603,1621,1640,1651,1654,1656,1660,1669,1698,1766,1837,1921,1927,1934,1957,2016,2031,2067,2071,2080,2111,2116,2183,2189,2200,2213,2221,2254,2256,2264,2288,2339,2407,2462,2489,2498,2530,2535,2541,2551,2552,2557,2584,2598,2621,2626,2639,2667,2673,2685,2695,2703,2731,2788,2821,2823,2829,2905,2924,2954,2970,2985,3002,3030,3046,3099,3153,3159,3175,3196,3213,3214,3226,3243,3247,3260,3281,3291,3302,3303,3320,3325,3328,3331,3385,3394,3421,3424,3430,3453,3466,3475,3498,3567,3568,3584,3587,3608,3613,3615,3645,3670,3706,3712,3720,3769,3781,3795,3799,3811,3835,3840,3848,3958,3994,4001,4013,4033,4092,4100,4135,4144,4186,4188,4213,4215,4230,4235,4269,4289,4301,4305,4310,4316,4323,4334,4363,4377,4388,4430,4459,4462,4506,4513,4580,4585,4590,4615,4652,4658,4663,4673,4765,4774,4884,4947,5006,5022,5023,5038,5060,5070,5080,5123,5141,5148,5163,5176,5268,5270,5280,5288,5363,5411,5447,5449,5503,5514,5528,5535,5537,5574,5589,5597,5615,5620,5621,5647,5655,5715,5717,5729,5772,5781,5783,5797,5852,5861,5879,5881,5904,5922,5934,5940,5942,5960,5973,5977,5993,5995]
   if (blueId.includes(parseInt(nftId))) {
   const blueOption = document.createElement('option');
   blueOption.value = layerImageUrls[28];
@@ -1396,553 +1404,554 @@ function selectLayer(imageUrl) {
   selectedLayerImages.push(imageUrl);
 }
 
-function mergeAndDownload() {
-  const selectedLayerCount = selectedLayerImages.length;
+  function mergeAndDownload() {
+    const selectedLayerCount = selectedLayerImages.length;
 
-  if (selectedLayerCount === 0) {
-    alert('Please select a layer image');
-    return;
-  }
-
-  const nftContainer = document.getElementById('nftContainer');
-
-  // Create a canvas element
-  const canvas = document.createElement('canvas');
-  const ctx = canvas.getContext('2d');
-
-  // Load the NFT image
-  const nftImage = new Image();
-  nftImage.crossOrigin = 'anonymous';
-  const nftIdInput = document.getElementById('nftIdInput');
-  const nftId = nftIdInput.value.trim();
-
-  if (nftId === '') {
-    alert('Please enter an NFT ID');
-    return;
-  }
-
-  const nftImageUrl = `https://raw.githubusercontent.com/akh1lsol/Bascdao.net/main/New%20Collection/${nftId}.png`;
-  nftImage.onload = function() {
-    // Set the canvas size based on the larger dimension of the images
-    const canvasSize = Math.max(nftImage.width, nftImage.height);
-    canvas.width = canvasSize;
-    canvas.height = canvasSize;
-
-    // Draw the NFT image onto the canvas, centered horizontally and at the bottom
-    const nftX = (canvas.width - nftImage.width) / 2;
-    const nftY = canvas.height - nftImage.height;
-    ctx.drawImage(nftImage, nftX, nftY);
-
-    if (selectedLayerCount > 0) {
-      // Load and draw the selected layer image onto the canvas
-      const layerImageUrl = selectedLayerImages[selectedLayerCount - 1];
-      const layerImage = new Image();
-      layerImage.crossOrigin = 'anonymous';
-      layerImage.onload = function() {
-        if (layerImageUrl === layerImageUrls[0]) {
-          // GM Cup layer
-          const gmCupX = (canvas.width - layerImage.width) / 2;
-          const gmCupY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, gmCupX, gmCupY);
-        } else if (layerImageUrl === layerImageUrls[1]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        } else if (layerImageUrl === layerImageUrls[38]) {
-          // Bottle Layer
-          const bottleX = canvas.width - layerImage.width - 150;
-          const bottleY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, bottleX, bottleY);
-        } else if (layerImageUrl === layerImageUrls[2]) {
-          // GM Cup layer
-          const gmCupX = (canvas.width - layerImage.width) / 2;
-          const gmCupY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, gmCupX, gmCupY);
-        } else if (layerImageUrl === layerImageUrls[3]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        } else if (layerImageUrl === layerImageUrls[39]) {
-          // Bottle Layer
-          const bottleX = canvas.width - layerImage.width - 150;
-          const bottleY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, bottleX, bottleY);
-        } else if (layerImageUrl === layerImageUrls[4]) {
-          // GM Cup layer
-          const gmCupX = (canvas.width - layerImage.width) / 2;
-          const gmCupY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, gmCupX, gmCupY);
-        } else if (layerImageUrl === layerImageUrls[5]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        } else if (layerImageUrl === layerImageUrls[40]) {
-          // Bottle Layer
-          const bottleX = canvas.width - layerImage.width - 150;
-          const bottleY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, bottleX, bottleY);
-        } else if (layerImageUrl === layerImageUrls[6]) {
-          // GM Cup layer
-          const gmCupX = (canvas.width - layerImage.width) / 2;
-          const gmCupY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, gmCupX, gmCupY);
-        } else if (layerImageUrl === layerImageUrls[7]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        } else if (layerImageUrl === layerImageUrls[41]) {
-          // Bottle Layer
-          const bottleX = canvas.width - layerImage.width - 150;
-          const bottleY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, bottleX, bottleY);
-        } else if (layerImageUrl === layerImageUrls[8]) {
-          // GM Cup layer
-          const gmCupX = (canvas.width - layerImage.width) / 2;
-          const gmCupY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, gmCupX, gmCupY);
-        } else if (layerImageUrl === layerImageUrls[9]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        } else if (layerImageUrl === layerImageUrls[42]) {
-          // Bottle Layer
-          const bottleX = canvas.width - layerImage.width - 150;
-          const bottleY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, bottleX, bottleY);
-        } else if (layerImageUrl === layerImageUrls[10]) {
-          // GM Cup layer
-          const gmCupX = (canvas.width - layerImage.width) / 2;
-          const gmCupY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, gmCupX, gmCupY);
-        } else if (layerImageUrl === layerImageUrls[11]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        } else if (layerImageUrl === layerImageUrls[43]) {
-          // Bottle Layer
-          const bottleX = canvas.width - layerImage.width - 150;
-          const bottleY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, bottleX, bottleY);
-        } else if (layerImageUrl === layerImageUrls[12]) {
-          // GM Cup layer
-          const gmCupX = (canvas.width - layerImage.width) / 2;
-          const gmCupY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, gmCupX, gmCupY);
-        } else if (layerImageUrl === layerImageUrls[13]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        } else if (layerImageUrl === layerImageUrls[44]) {
-          // Bottle Layer
-          const bottleX = canvas.width - layerImage.width - 150;
-          const bottleY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, bottleX, bottleY);
-        } else if (layerImageUrl === layerImageUrls[14]) {
-          // GM Cup layer
-          const gmCupX = (canvas.width - layerImage.width) / 2;
-          const gmCupY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, gmCupX, gmCupY);
-        } else if (layerImageUrl === layerImageUrls[15]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        } else if (layerImageUrl === layerImageUrls[45]) {
-          // Bottle Layer
-          const bottleX = canvas.width - layerImage.width - 150;
-          const bottleY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, bottleX, bottleY);
-        } else if (layerImageUrl === layerImageUrls[16]) {
-          // GM Cup layer
-          const gmCupX = (canvas.width - layerImage.width) / 2;
-          const gmCupY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, gmCupX, gmCupY);
-        } else if (layerImageUrl === layerImageUrls[17]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        } else if (layerImageUrl === layerImageUrls[46]) {
-          // Bottle Layer
-          const bottleX = canvas.width - layerImage.width - 150;
-          const bottleY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, bottleX, bottleY);
-        }else if (layerImageUrl === layerImageUrls[18]) {
-          // GM Cup layer
-          const gmCupX = (canvas.width - layerImage.width) / 2;
-          const gmCupY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, gmCupX, gmCupY);
-        } else if (layerImageUrl === layerImageUrls[19]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        } else if (layerImageUrl === layerImageUrls[47]) {
-          // Bottle Layer
-          const bottleX = canvas.width - layerImage.width - 150;
-          const bottleY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, bottleX, bottleY);
-        }else if (layerImageUrl === layerImageUrls[20]) {
-          // GM Cup layer
-          const gmCupX = (canvas.width - layerImage.width) / 2;
-          const gmCupY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, gmCupX, gmCupY);
-        } else if (layerImageUrl === layerImageUrls[21]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        } else if (layerImageUrl === layerImageUrls[48]) {
-          // Bottle Layer
-          const bottleX = canvas.width - layerImage.width - 150;
-          const bottleY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, bottleX, bottleY);
-        }else if (layerImageUrl === layerImageUrls[22]) {
-          // GM Cup layer
-          const gmCupX = (canvas.width - layerImage.width) / 2;
-          const gmCupY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, gmCupX, gmCupY);
-        } else if (layerImageUrl === layerImageUrls[23]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        } else if (layerImageUrl === layerImageUrls[49]) {
-          // Bottle Layer
-          const bottleX = canvas.width - layerImage.width - 150;
-          const bottleY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, bottleX, bottleY);
-        }else if (layerImageUrl === layerImageUrls[24]) {
-          // GM Cup layer
-          const gmCupX = (canvas.width - layerImage.width) / 2;
-          const gmCupY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, gmCupX, gmCupY);
-        } else if (layerImageUrl === layerImageUrls[25]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        } else if (layerImageUrl === layerImageUrls[50]) {
-          // Bottle Layer
-          const bottleX = canvas.width - layerImage.width - 150;
-          const bottleY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, bottleX, bottleY);
-        }else if (layerImageUrl === layerImageUrls[26]) {
-          // GM Cup layer
-          const gmCupX = (canvas.width - layerImage.width) / 2;
-          const gmCupY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, gmCupX, gmCupY);
-        } else if (layerImageUrl === layerImageUrls[27]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        } else if (layerImageUrl === layerImageUrls[51]) {
-          // Bottle Layer
-          const bottleX = canvas.width - layerImage.width - 150;
-          const bottleY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, bottleX, bottleY);
-        }else if (layerImageUrl === layerImageUrls[28]) {
-          // GM Cup layer
-          const gmCupX = (canvas.width - layerImage.width) / 2;
-          const gmCupY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, gmCupX, gmCupY);
-        } else if (layerImageUrl === layerImageUrls[29]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        } else if (layerImageUrl === layerImageUrls[52]) {
-          // Bottle Layer
-          const bottleX = canvas.width - layerImage.width - 150;
-          const bottleY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, bottleX, bottleY);
-        }else if (layerImageUrl === layerImageUrls[30]) {
-          // GM Cup layer
-          const gmCupX = (canvas.width - layerImage.width) / 2;
-          const gmCupY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, gmCupX, gmCupY);
-        } else if (layerImageUrl === layerImageUrls[31]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        } else if (layerImageUrl === layerImageUrls[53]) {
-          // Bottle Layer
-          const bottleX = canvas.width - layerImage.width - 150;
-          const bottleY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, bottleX, bottleY);
-        }else if (layerImageUrl === layerImageUrls[32]) {
-          // GM Cup layer
-          const gmCupX = (canvas.width - layerImage.width) / 2;
-          const gmCupY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, gmCupX, gmCupY);
-        } else if (layerImageUrl === layerImageUrls[33]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        } else if (layerImageUrl === layerImageUrls[54]) {
-          // Bottle Layer
-          const bottleX = canvas.width - layerImage.width - 150;
-          const bottleY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, bottleX, bottleY);
-        }else if (layerImageUrl === layerImageUrls[34]) {
-          // GM Cup layer
-          const gmCupX = (canvas.width - layerImage.width) / 2;
-          const gmCupY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, gmCupX, gmCupY);
-        } else if (layerImageUrl === layerImageUrls[35]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        } else if (layerImageUrl === layerImageUrls[55]) {
-          // Bottle Layer
-          const bottleX = canvas.width - layerImage.width - 150;
-          const bottleY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, bottleX, bottleY);
-        }else if (layerImageUrl === layerImageUrls[36]) {
-          // GM Cup layer
-          const gmCupX = (canvas.width - layerImage.width) / 2;
-          const gmCupY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, gmCupX, gmCupY);
-        } else if (layerImageUrl === layerImageUrls[37]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        } else if (layerImageUrl === layerImageUrls[56]) {
-          // Bottle Layer
-          const bottleX = canvas.width - layerImage.width - 150;
-          const bottleY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, bottleX, bottleY);
-        }else if (layerImageUrl === layerImageUrls[57]) {
-          // Beer Layer
-          const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-          const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-          ctx.drawImage(layerImage, beerX, beerY);
-        }else if (layerImageUrl === layerImageUrls[58]) {
-          // Beer Layer
-          const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-          const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-          ctx.drawImage(layerImage, beerX, beerY);
-        }else if (layerImageUrl === layerImageUrls[59]) {
-          // Beer Layer
-          const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-          const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-          ctx.drawImage(layerImage, beerX, beerY);
-        }else if (layerImageUrl === layerImageUrls[60]) {
-          // Beer Layer
-          const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-          const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-          ctx.drawImage(layerImage, beerX, beerY);
-        }else if (layerImageUrl === layerImageUrls[61]) {
-          // Beer Layer
-          const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-          const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-          ctx.drawImage(layerImage, beerX, beerY);
-        }else if (layerImageUrl === layerImageUrls[62]) {
-          // Beer Layer
-          const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-          const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-          ctx.drawImage(layerImage, beerX, beerY);
-        }else if (layerImageUrl === layerImageUrls[63]) {
-          // Beer Layer
-          const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-          const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-          ctx.drawImage(layerImage, beerX, beerY);
-        }else if (layerImageUrl === layerImageUrls[64]) {
-          // Beer Layer
-          const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-          const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-          ctx.drawImage(layerImage, beerX, beerY);
-        }else if (layerImageUrl === layerImageUrls[65]) {
-          // Beer Layer
-          const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-          const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-          ctx.drawImage(layerImage, beerX, beerY);
-        }else if (layerImageUrl === layerImageUrls[66]) {
-          // Beer Layer
-          const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-          const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-          ctx.drawImage(layerImage, beerX, beerY);
-        }else if (layerImageUrl === layerImageUrls[67]) {
-          // Beer Layer
-          const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-          const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-          ctx.drawImage(layerImage, beerX, beerY);
-        }else if (layerImageUrl === layerImageUrls[68]) {
-          // Beer Layer
-          const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-          const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-          ctx.drawImage(layerImage, beerX, beerY);
-        }else if (layerImageUrl === layerImageUrls[69]) {
-          // Beer Layer
-          const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-          const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-          ctx.drawImage(layerImage, beerX, beerY);
-        }else if (layerImageUrl === layerImageUrls[70]) {
-          // Beer Layer
-          const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-          const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-          ctx.drawImage(layerImage, beerX, beerY);
-        }else if (layerImageUrl === layerImageUrls[71]) {
-          // Beer Layer
-          const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-          const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-          ctx.drawImage(layerImage, beerX, beerY);
-        }else if (layerImageUrl === layerImageUrls[72]) {
-          // Beer Layer
-          const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-          const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-          ctx.drawImage(layerImage, beerX, beerY);
-        }else if (layerImageUrl === layerImageUrls[73]) {
-          // Beer Layer
-          const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-          const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-          ctx.drawImage(layerImage, beerX, beerY);
-        }else if (layerImageUrl === layerImageUrls[74]) {
-          // Beer Layer
-          const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-          const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-          ctx.drawImage(layerImage, beerX, beerY);
-        }else if (layerImageUrl === layerImageUrls[75]) {
-          // Beer Layer
-          const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-          const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-          ctx.drawImage(layerImage, beerX, beerY);
-        }else if (layerImageUrl === layerImageUrls[76]) {
-          // Pizza
-          const pizzaX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-          const pizzaY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-          ctx.drawImage(layerImage, pizzaX, pizzaY);
-        }else if (layerImageUrl === layerImageUrls[77]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        }else if (layerImageUrl === layerImageUrls[78]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        }else if (layerImageUrl === layerImageUrls[79]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        }else if (layerImageUrl === layerImageUrls[80]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        }else if (layerImageUrl === layerImageUrls[81]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        }else if (layerImageUrl === layerImageUrls[82]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        }else if (layerImageUrl === layerImageUrls[83]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        }else if (layerImageUrl === layerImageUrls[84]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        }else if (layerImageUrl === layerImageUrls[85]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        }else if (layerImageUrl === layerImageUrls[86]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        }else if (layerImageUrl === layerImageUrls[87]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        }else if (layerImageUrl === layerImageUrls[88]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        }else if (layerImageUrl === layerImageUrls[89]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        }else if (layerImageUrl === layerImageUrls[90]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        }else if (layerImageUrl === layerImageUrls[91]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        }else if (layerImageUrl === layerImageUrls[92]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        }else if (layerImageUrl === layerImageUrls[93]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        }else if (layerImageUrl === layerImageUrls[94]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        }else if (layerImageUrl === layerImageUrls[95]) {
-          // Shot layer
-          const shotX = canvas.width - layerImage.width - 150;
-          const shotY = canvas.height - layerImage.height;
-          ctx.drawImage(layerImage, shotX, shotY);
-        }
-        
-        // Other layers can be added here
-        
-        
-        // Create a link element for downloading the merged image
-        const link = document.createElement('a');
-        link.href = canvas.toDataURL(); // Convert the canvas to a data URL
-        link.download = 'merged_image.png'; // Set the filename for the downloaded image
-        link.click(); // Trigger the download
-
-        // Clean up
-        URL.revokeObjectURL(link.href);
-      };
-      layerImage.onerror = function() {
-        // Image failed to load, display error message
-        alert('Failed to load layer image.');
-      };
-      layerImage.src = layerImageUrl;
+    if (selectedLayerCount === 0) {
+      alert('Please select a layer image');
+      return;
     }
-  };
-  nftImage.onerror = function() {
-    // Image failed to load, display error message
-    alert('Failed to load NFT image.');
-  };
-  nftImage.src = nftImageUrl;
-}
+
+    const nftContainer = document.getElementById('nftContainer');
+
+    // Create a canvas element
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+
+    // Load the NFT image
+    const nftImage = new Image();
+    nftImage.crossOrigin = 'anonymous';
+    const nftIdInput = document.getElementById('nftIdInput');
+    const nftId = nftIdInput.value.trim();
+
+    if (nftId === '') {
+      alert('Please enter an NFT ID');
+      return;
+    }
+
+    const nftImageUrl = `https://raw.githubusercontent.com/akh1lsol/Bascdao.net/main/v2/${adjustedNftId}.png`;
+
+    nftImage.onload = function() {
+      // Set the canvas size based on the larger dimension of the images
+      const canvasSize = Math.max(nftImage.width, nftImage.height);
+      canvas.width = canvasSize;
+      canvas.height = canvasSize;
+
+      // Draw the NFT image onto the canvas, centered horizontally and at the bottom
+      const nftX = (canvas.width - nftImage.width) / 2;
+      const nftY = canvas.height - nftImage.height;
+      ctx.drawImage(nftImage, nftX, nftY);
+
+      if (selectedLayerCount > 0) {
+        // Load and draw the selected layer image onto the canvas
+        const layerImageUrl = selectedLayerImages[selectedLayerCount - 1];
+        const layerImage = new Image();
+        layerImage.crossOrigin = 'anonymous';
+        layerImage.onload = function() {
+          if (layerImageUrl === layerImageUrls[0]) {
+            // GM Cup layer
+            const gmCupX = (canvas.width - layerImage.width) / 2;
+            const gmCupY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, gmCupX, gmCupY);
+          } else if (layerImageUrl === layerImageUrls[1]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          } else if (layerImageUrl === layerImageUrls[38]) {
+            // Bottle Layer
+            const bottleX = canvas.width - layerImage.width - 150;
+            const bottleY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, bottleX, bottleY);
+          } else if (layerImageUrl === layerImageUrls[2]) {
+            // GM Cup layer
+            const gmCupX = (canvas.width - layerImage.width) / 2;
+            const gmCupY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, gmCupX, gmCupY);
+          } else if (layerImageUrl === layerImageUrls[3]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          } else if (layerImageUrl === layerImageUrls[39]) {
+            // Bottle Layer
+            const bottleX = canvas.width - layerImage.width - 150;
+            const bottleY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, bottleX, bottleY);
+          } else if (layerImageUrl === layerImageUrls[4]) {
+            // GM Cup layer
+            const gmCupX = (canvas.width - layerImage.width) / 2;
+            const gmCupY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, gmCupX, gmCupY);
+          } else if (layerImageUrl === layerImageUrls[5]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          } else if (layerImageUrl === layerImageUrls[40]) {
+            // Bottle Layer
+            const bottleX = canvas.width - layerImage.width - 150;
+            const bottleY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, bottleX, bottleY);
+          } else if (layerImageUrl === layerImageUrls[6]) {
+            // GM Cup layer
+            const gmCupX = (canvas.width - layerImage.width) / 2;
+            const gmCupY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, gmCupX, gmCupY);
+          } else if (layerImageUrl === layerImageUrls[7]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          } else if (layerImageUrl === layerImageUrls[41]) {
+            // Bottle Layer
+            const bottleX = canvas.width - layerImage.width - 150;
+            const bottleY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, bottleX, bottleY);
+          } else if (layerImageUrl === layerImageUrls[8]) {
+            // GM Cup layer
+            const gmCupX = (canvas.width - layerImage.width) / 2;
+            const gmCupY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, gmCupX, gmCupY);
+          } else if (layerImageUrl === layerImageUrls[9]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          } else if (layerImageUrl === layerImageUrls[42]) {
+            // Bottle Layer
+            const bottleX = canvas.width - layerImage.width - 150;
+            const bottleY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, bottleX, bottleY);
+          } else if (layerImageUrl === layerImageUrls[10]) {
+            // GM Cup layer
+            const gmCupX = (canvas.width - layerImage.width) / 2;
+            const gmCupY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, gmCupX, gmCupY);
+          } else if (layerImageUrl === layerImageUrls[11]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          } else if (layerImageUrl === layerImageUrls[43]) {
+            // Bottle Layer
+            const bottleX = canvas.width - layerImage.width - 150;
+            const bottleY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, bottleX, bottleY);
+          } else if (layerImageUrl === layerImageUrls[12]) {
+            // GM Cup layer
+            const gmCupX = (canvas.width - layerImage.width) / 2;
+            const gmCupY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, gmCupX, gmCupY);
+          } else if (layerImageUrl === layerImageUrls[13]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          } else if (layerImageUrl === layerImageUrls[44]) {
+            // Bottle Layer
+            const bottleX = canvas.width - layerImage.width - 150;
+            const bottleY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, bottleX, bottleY);
+          } else if (layerImageUrl === layerImageUrls[14]) {
+            // GM Cup layer
+            const gmCupX = (canvas.width - layerImage.width) / 2;
+            const gmCupY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, gmCupX, gmCupY);
+          } else if (layerImageUrl === layerImageUrls[15]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          } else if (layerImageUrl === layerImageUrls[45]) {
+            // Bottle Layer
+            const bottleX = canvas.width - layerImage.width - 150;
+            const bottleY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, bottleX, bottleY);
+          } else if (layerImageUrl === layerImageUrls[16]) {
+            // GM Cup layer
+            const gmCupX = (canvas.width - layerImage.width) / 2;
+            const gmCupY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, gmCupX, gmCupY);
+          } else if (layerImageUrl === layerImageUrls[17]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          } else if (layerImageUrl === layerImageUrls[46]) {
+            // Bottle Layer
+            const bottleX = canvas.width - layerImage.width - 150;
+            const bottleY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, bottleX, bottleY);
+          }else if (layerImageUrl === layerImageUrls[18]) {
+            // GM Cup layer
+            const gmCupX = (canvas.width - layerImage.width) / 2;
+            const gmCupY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, gmCupX, gmCupY);
+          } else if (layerImageUrl === layerImageUrls[19]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          } else if (layerImageUrl === layerImageUrls[47]) {
+            // Bottle Layer
+            const bottleX = canvas.width - layerImage.width - 150;
+            const bottleY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, bottleX, bottleY);
+          }else if (layerImageUrl === layerImageUrls[20]) {
+            // GM Cup layer
+            const gmCupX = (canvas.width - layerImage.width) / 2;
+            const gmCupY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, gmCupX, gmCupY);
+          } else if (layerImageUrl === layerImageUrls[21]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          } else if (layerImageUrl === layerImageUrls[48]) {
+            // Bottle Layer
+            const bottleX = canvas.width - layerImage.width - 150;
+            const bottleY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, bottleX, bottleY);
+          }else if (layerImageUrl === layerImageUrls[22]) {
+            // GM Cup layer
+            const gmCupX = (canvas.width - layerImage.width) / 2;
+            const gmCupY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, gmCupX, gmCupY);
+          } else if (layerImageUrl === layerImageUrls[23]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          } else if (layerImageUrl === layerImageUrls[49]) {
+            // Bottle Layer
+            const bottleX = canvas.width - layerImage.width - 150;
+            const bottleY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, bottleX, bottleY);
+          }else if (layerImageUrl === layerImageUrls[24]) {
+            // GM Cup layer
+            const gmCupX = (canvas.width - layerImage.width) / 2;
+            const gmCupY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, gmCupX, gmCupY);
+          } else if (layerImageUrl === layerImageUrls[25]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          } else if (layerImageUrl === layerImageUrls[50]) {
+            // Bottle Layer
+            const bottleX = canvas.width - layerImage.width - 150;
+            const bottleY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, bottleX, bottleY);
+          }else if (layerImageUrl === layerImageUrls[26]) {
+            // GM Cup layer
+            const gmCupX = (canvas.width - layerImage.width) / 2;
+            const gmCupY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, gmCupX, gmCupY);
+          } else if (layerImageUrl === layerImageUrls[27]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          } else if (layerImageUrl === layerImageUrls[51]) {
+            // Bottle Layer
+            const bottleX = canvas.width - layerImage.width - 150;
+            const bottleY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, bottleX, bottleY);
+          }else if (layerImageUrl === layerImageUrls[28]) {
+            // GM Cup layer
+            const gmCupX = (canvas.width - layerImage.width) / 2;
+            const gmCupY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, gmCupX, gmCupY);
+          } else if (layerImageUrl === layerImageUrls[29]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          } else if (layerImageUrl === layerImageUrls[52]) {
+            // Bottle Layer
+            const bottleX = canvas.width - layerImage.width - 150;
+            const bottleY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, bottleX, bottleY);
+          }else if (layerImageUrl === layerImageUrls[30]) {
+            // GM Cup layer
+            const gmCupX = (canvas.width - layerImage.width) / 2;
+            const gmCupY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, gmCupX, gmCupY);
+          } else if (layerImageUrl === layerImageUrls[31]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          } else if (layerImageUrl === layerImageUrls[53]) {
+            // Bottle Layer
+            const bottleX = canvas.width - layerImage.width - 150;
+            const bottleY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, bottleX, bottleY);
+          }else if (layerImageUrl === layerImageUrls[32]) {
+            // GM Cup layer
+            const gmCupX = (canvas.width - layerImage.width) / 2;
+            const gmCupY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, gmCupX, gmCupY);
+          } else if (layerImageUrl === layerImageUrls[33]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          } else if (layerImageUrl === layerImageUrls[54]) {
+            // Bottle Layer
+            const bottleX = canvas.width - layerImage.width - 150;
+            const bottleY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, bottleX, bottleY);
+          }else if (layerImageUrl === layerImageUrls[34]) {
+            // GM Cup layer
+            const gmCupX = (canvas.width - layerImage.width) / 2;
+            const gmCupY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, gmCupX, gmCupY);
+          } else if (layerImageUrl === layerImageUrls[35]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          } else if (layerImageUrl === layerImageUrls[55]) {
+            // Bottle Layer
+            const bottleX = canvas.width - layerImage.width - 150;
+            const bottleY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, bottleX, bottleY);
+          }else if (layerImageUrl === layerImageUrls[36]) {
+            // GM Cup layer
+            const gmCupX = (canvas.width - layerImage.width) / 2;
+            const gmCupY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, gmCupX, gmCupY);
+          } else if (layerImageUrl === layerImageUrls[37]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          } else if (layerImageUrl === layerImageUrls[56]) {
+            // Bottle Layer
+            const bottleX = canvas.width - layerImage.width - 150;
+            const bottleY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, bottleX, bottleY);
+          }else if (layerImageUrl === layerImageUrls[57]) {
+            // Beer Layer
+            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+            ctx.drawImage(layerImage, beerX, beerY);
+          }else if (layerImageUrl === layerImageUrls[58]) {
+            // Beer Layer
+            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+            ctx.drawImage(layerImage, beerX, beerY);
+          }else if (layerImageUrl === layerImageUrls[59]) {
+            // Beer Layer
+            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+            ctx.drawImage(layerImage, beerX, beerY);
+          }else if (layerImageUrl === layerImageUrls[60]) {
+            // Beer Layer
+            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+            ctx.drawImage(layerImage, beerX, beerY);
+          }else if (layerImageUrl === layerImageUrls[61]) {
+            // Beer Layer
+            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+            ctx.drawImage(layerImage, beerX, beerY);
+          }else if (layerImageUrl === layerImageUrls[62]) {
+            // Beer Layer
+            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+            ctx.drawImage(layerImage, beerX, beerY);
+          }else if (layerImageUrl === layerImageUrls[63]) {
+            // Beer Layer
+            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+            ctx.drawImage(layerImage, beerX, beerY);
+          }else if (layerImageUrl === layerImageUrls[64]) {
+            // Beer Layer
+            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+            ctx.drawImage(layerImage, beerX, beerY);
+          }else if (layerImageUrl === layerImageUrls[65]) {
+            // Beer Layer
+            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+            ctx.drawImage(layerImage, beerX, beerY);
+          }else if (layerImageUrl === layerImageUrls[66]) {
+            // Beer Layer
+            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+            ctx.drawImage(layerImage, beerX, beerY);
+          }else if (layerImageUrl === layerImageUrls[67]) {
+            // Beer Layer
+            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+            ctx.drawImage(layerImage, beerX, beerY);
+          }else if (layerImageUrl === layerImageUrls[68]) {
+            // Beer Layer
+            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+            ctx.drawImage(layerImage, beerX, beerY);
+          }else if (layerImageUrl === layerImageUrls[69]) {
+            // Beer Layer
+            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+            ctx.drawImage(layerImage, beerX, beerY);
+          }else if (layerImageUrl === layerImageUrls[70]) {
+            // Beer Layer
+            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+            ctx.drawImage(layerImage, beerX, beerY);
+          }else if (layerImageUrl === layerImageUrls[71]) {
+            // Beer Layer
+            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+            ctx.drawImage(layerImage, beerX, beerY);
+          }else if (layerImageUrl === layerImageUrls[72]) {
+            // Beer Layer
+            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+            ctx.drawImage(layerImage, beerX, beerY);
+          }else if (layerImageUrl === layerImageUrls[73]) {
+            // Beer Layer
+            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+            ctx.drawImage(layerImage, beerX, beerY);
+          }else if (layerImageUrl === layerImageUrls[74]) {
+            // Beer Layer
+            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+            ctx.drawImage(layerImage, beerX, beerY);
+          }else if (layerImageUrl === layerImageUrls[75]) {
+            // Beer Layer
+            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+            ctx.drawImage(layerImage, beerX, beerY);
+          }else if (layerImageUrl === layerImageUrls[76]) {
+            // Pizza
+            const pizzaX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+            const pizzaY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+            ctx.drawImage(layerImage, pizzaX, pizzaY);
+          }else if (layerImageUrl === layerImageUrls[77]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          }else if (layerImageUrl === layerImageUrls[78]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          }else if (layerImageUrl === layerImageUrls[79]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          }else if (layerImageUrl === layerImageUrls[80]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          }else if (layerImageUrl === layerImageUrls[81]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          }else if (layerImageUrl === layerImageUrls[82]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          }else if (layerImageUrl === layerImageUrls[83]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          }else if (layerImageUrl === layerImageUrls[84]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          }else if (layerImageUrl === layerImageUrls[85]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          }else if (layerImageUrl === layerImageUrls[86]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          }else if (layerImageUrl === layerImageUrls[87]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          }else if (layerImageUrl === layerImageUrls[88]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          }else if (layerImageUrl === layerImageUrls[89]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          }else if (layerImageUrl === layerImageUrls[90]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          }else if (layerImageUrl === layerImageUrls[91]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          }else if (layerImageUrl === layerImageUrls[92]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          }else if (layerImageUrl === layerImageUrls[93]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          }else if (layerImageUrl === layerImageUrls[94]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          }else if (layerImageUrl === layerImageUrls[95]) {
+            // Shot layer
+            const shotX = canvas.width - layerImage.width - 150;
+            const shotY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, shotX, shotY);
+          }
+          
+          // Other layers can be added here
+          
+          
+          // Create a link element for downloading the merged image
+          const link = document.createElement('a');
+          link.href = canvas.toDataURL(); // Convert the canvas to a data URL
+          link.download = 'merged_image.png'; // Set the filename for the downloaded image
+          link.click(); // Trigger the download
+
+          // Clean up
+          URL.revokeObjectURL(link.href);
+        };
+        layerImage.onerror = function() {
+          // Image failed to load, display error message
+          alert('Failed to load layer image.');
+        };
+        layerImage.src = layerImageUrl;
+      }
+    };
+    nftImage.onerror = function() {
+      // Image failed to load, display error message
+      alert('Failed to load NFT image.');
+    };
+    nftImage.src = nftImageUrl;
+  }
