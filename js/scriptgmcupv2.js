@@ -20,43 +20,43 @@ document.addEventListener('DOMContentLoaded', function() {
 const selectedLayerImages = [];
 const layerImageUrls = [
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_GOLD.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Gold.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shotsv2/Gold.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_NOISE.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Noise.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shotsv2/Noise.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_CORAL.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Cheetah.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shotsv2/Cheetah.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_ROBO.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Robo.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shotsv2/Robo.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_TRIPPY.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Trippy.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shotsv2/Trippy.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_ILLUMINATI.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/DMT.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shotsv2/DMT.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM%20_DEATH_BOT.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Deathbot.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shotsv2/Deathbot.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_ZOMBIE.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Zombie.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shotsv2/Zombie.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_WHITE.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/White.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shotsv2/White.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_BROWN.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Brown.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shotsv2/Brown.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_RED.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Red.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shotsv2/Red.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_BLACK.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Black.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shotsv2/Black.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_PINK.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Pink.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shotsv2/Pink.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_CREAM.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Cream.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shotsv2/Cream.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_BLUE.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Blue.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shotsv2/Blue.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_GREY.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Grey.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shotsv2/Grey.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_DARK_BROWN.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Darkbrown.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shotsv2/Darkbrown.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_GOLDEN_BROWN.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Goldenbrown.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shotsv2/Goldenbrown.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_TAN.png',
-  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shots/Tan.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/shotsv2/Tan.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/bottle/Gold.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/bottle/Noise.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/bottle/Cheetah.png',
@@ -115,6 +115,12 @@ const layerImageUrls = [
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/ledger/Darkbrown.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/ledger/Goldenbrown.png',
   'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/ledger/Tan.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_DIAMOND.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_SMIRF.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_SKELETON.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_YETY.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_RADIOACTIVE.png',
+  'https://raw.githubusercontent.com/SOLamyy/BoredApeGallery/main/gmcupv2/GM_LAVA.png',
 
   // Add more layer image URLs here
 ];
@@ -263,7 +269,13 @@ const customLayerNames = [
   'Ledger',
   'Ledger',
   'Ledger',
-  'Ledger'
+  'Ledger',
+  'GM Cup',
+  'GM Cup',
+  'GM Cup',
+  'GM Cup',
+  'GM Cup',
+  'GM Cup',
   // Add more custom layer names here
 ];
 
@@ -883,41 +895,10 @@ if (
   ledgerOption.textContent = customLayerNames[84]; // Assuming Shot layer name is the second in the array
   layerDropdown.appendChild(ledgerOption);
 }
-if (nftId === '1111'|| nftId === '5112'|| nftId === '1354'|| nftId === '2109'|| nftId === '1248'|| nftId === '2892'|| nftId === '348'
-|| nftId === '1891'|| nftId === '3283'|| nftId === '4095'|| nftId === '442'|| nftId === '3250'|| nftId === '5843'|| nftId === '1249'
-|| nftId === '2253'|| nftId === '569'|| nftId === '1322'|| nftId === '3473'|| nftId === '1323'|| nftId === '1605'|| nftId === '3308'
-|| nftId === '1920'|| nftId === '391'|| nftId === '534'|| nftId === '763'|| nftId === '1793'|| nftId === '4180'|| nftId === '669'
-|| nftId === '560'|| nftId === '4675'|| nftId === '3064'|| nftId === '5365'|| nftId === '2054'|| nftId === '436'|| nftId === '4664'
-|| nftId === '4735'|| nftId === '2554'|| nftId === '1812'|| nftId === '1775'|| nftId === '2882'|| nftId === '1140'|| nftId === '2008'
-|| nftId === '4759'|| nftId === '1066'|| nftId === '3103'|| nftId === '1701'|| nftId === '1471'|| nftId === '2949'|| nftId === '3904'
-|| nftId === '2987'|| nftId === '954'|| nftId === '4016'|| nftId === '3920'|| nftId === '4873'|| nftId === '5512'|| nftId === '1114'
-|| nftId === '3870'|| nftId === '4925'|| nftId === '5475'|| nftId === '301'|| nftId === '1719'|| nftId === '387'|| nftId === '2309'
-|| nftId === '5086'|| nftId === '3360'|| nftId === '1298'|| nftId === '1171'|| nftId === '543'|| nftId === '4415'|| nftId === '1474'
-|| nftId === '812'|| nftId === '753'|| nftId === '4093'|| nftId === '696'|| nftId === '4598'|| nftId === '5435'|| nftId === '5849'
-|| nftId === '5633'|| nftId === '5376'|| nftId === '1361'|| nftId === '617'|| nftId === '1762'|| nftId === '4229'|| nftId === '5759'
-|| nftId === '4895'|| nftId === '48'|| nftId === '4152'|| nftId === '5151'|| nftId === '2672'|| nftId === '5817'|| nftId === '2208'
-|| nftId === '5678'|| nftId === '1828'|| nftId === '120'|| nftId === '2266'|| nftId === '5774'|| nftId === '5246'|| nftId === '5335'
-|| nftId === '4821'|| nftId === '4617'|| nftId === '1089'|| nftId === '3118'|| nftId === '1064'|| nftId === '701'|| nftId === '326'
-|| nftId === '3212'|| nftId === '453'|| nftId === '1700'|| nftId === '1401'|| nftId === '1671'|| nftId === '1530'|| nftId === '5551'
-|| nftId === '1551'|| nftId === '308'|| nftId === '5174'|| nftId === '2961'|| nftId === '1041'|| nftId === '3731'|| nftId === '1607'
-|| nftId === '528'|| nftId === '1265'|| nftId === '2977'|| nftId === '2763'|| nftId === '1175'|| nftId === '4554'|| nftId === '1030'
-|| nftId === '306'|| nftId === '1260'|| nftId === '2520'|| nftId === '2270'|| nftId === '5214'|| nftId === '3983'|| nftId === '1504'
-|| nftId === '2534'|| nftId === '1252'|| nftId === '5920'|| nftId === '3172'|| nftId === '889'|| nftId === '1415'|| nftId === '893'
-|| nftId === '1303'|| nftId === '3408'|| nftId === '5300'|| nftId === '4756'|| nftId === '3174'|| nftId === '5926'|| nftId === '4294'
-|| nftId === '756'|| nftId === '1630'|| nftId === '209'|| nftId === '2382'|| nftId === '5440'|| nftId === '1247'|| nftId === '4079'
-|| nftId === '1357'|| nftId === '3410'|| nftId === '3191'|| nftId === '1028'|| nftId === '5513'|| nftId === '5872'|| nftId === '1535'
-|| nftId === '3632'|| nftId === '3483'|| nftId === '4018'|| nftId === '4592'|| nftId === '4845'|| nftId === '1139'|| nftId === '1810'
-|| nftId === '1811'|| nftId === '5682'|| nftId === '244'|| nftId === '2446'|| nftId === '186'|| nftId === '1993'|| nftId === '4504'
-|| nftId === '4888'|| nftId === '1563'|| nftId === '674'|| nftId === '3439'|| nftId === '4881'|| nftId === '3601'|| nftId === '5215'
-|| nftId === '2617'|| nftId === '3240'|| nftId === '515'|| nftId === '1922'|| nftId === '459'|| nftId === '1307'|| nftId === '700'
-|| nftId === '3597'|| nftId === '2832'|| nftId === '1084'|| nftId === '240'|| nftId === '656'|| nftId === '5548'|| nftId === '2458'
-|| nftId === '118'|| nftId === '5754'|| nftId === '3651'|| nftId === '3194'|| nftId === '4704'|| nftId === '416'|| nftId === '4288'
-|| nftId === '2206'|| nftId === '4505'|| nftId === '5908'|| nftId === '3844'|| nftId === '5605'|| nftId === '3969'|| nftId === '2199'
-|| nftId === '5245'|| nftId === '2365'|| nftId === '3776'|| nftId === '2917'|| nftId === '3129'|| nftId === '3497'|| nftId === '4073'
-|| nftId === '182'|| nftId === '4529'|| nftId === '1240'|| nftId === '987'|| nftId === '3779'|| nftId === '2965'|| nftId === '1930'
-|| nftId === '1733'|| nftId === '101') { // Add White 
 
-  const whiteGmCupOption = document.createElement('option');
+const whiteId = [8137, 6558, 3486, 7849, 3544, 9455, 8111, 7607, 3216, 9670, 3700, 7728, 2803, 590, 935, 674, 1580, 2026, 8931, 4882, 9375, 2009, 4763, 525, 9247, 3465, 2388, 5298, 4729, 5243, 2585, 3618, 5713, 9326, 9738, 9315, 6473, 9499, 5653, 3657, 8749, 8648, 3485, 6925, 6343, 422, 5901, 2834, 4624, 5555, 5329, 9975, 6230, 719, 7020, 2868, 8416, 5045, 1249, 3484, 4322, 3474, 2011, 8673, 7577, 9940, 2170, 4845, 377, 8159, 5249, 2724, 1549, 5359, 2879, 7466, 3095, 6983, 1593, 5494, 3263, 4772, 3689, 4100, 6219, 3800, 6290, 2642, 83, 2581, 9692, 6447, 2605, 4574, 8666, 4861, 2324, 5174, 4286, 9132, 6048, 793, 2692, 5975, 380, 1643, 4545, 1901, 866, 2805, 5027, 7955, 7386, 2343, 1752, 473, 5576, 4481, 1823, 217, 8810, 2407, 3757, 3410, 6353, 9473, 744, 3792, 9338, 6310, 8928, 7046, 2030, 2849, 1936, 2399, 4502, 7137, 5624, 4211, 1134, 9648, 3322, 5823, 3403, 2297, 5557, 126, 9686, 7659, 3801, 6794, 728, 9110, 7724, 2429, 2524, 3373, 2166, 2275, 3728, 9003, 9641, 1920, 3535, 4421, 2584, 4252, 3979, 370, 8135, 7825, 9134, 8874, 2817, 258, 3206, 7818, 1509, 2766, 6325, 3312, 7704, 1855, 3829, 7069, 489, 3458, 2347, 653, 1254, 4014, 830, 5355, 239, 9254, 3085, 9060, 4910, 3937, 4024, 7075, 9900, 947, 4179, 2181, 632, 4192, 6690, 9533, 1772, 5452, 2638, 3653, 7534, 9399, 4177, 773, 2179, 806, 3938, 1440, 3642, 1057, 3487, 4303, 6106, 6075, 190, 8811, 4462, 4737, 161, 9312, 554, 8621, 3879, 6210, 960, 8174, 8636, 9832, 1734, 8393, 4352, 4526, 7572, 3401, 4633, 7551, 246, 8262, 5374, 3518, 6716, 92, 1856, 4004, 3602, 7988, 6007, 1178, 813, 4602, 2542, 9044, 9079, 5401, 6866, 1424, 3390, 2415, 6957, 69, 6523, 224, 7883, 8365, 9101, 6588, 1906, 9729, 3843, 9371, 272, 5106, 3424, 2651, 3959, 6101, 9287, 8757, 8608, 912, 8576, 1830, 8558, 2624, 9880, 615, 5845, 9840, 9875, 3643, 6416, 8840, 4541, 1599, 9439, 8819, 7303, 7564, 628, 2224, 9980, 1611, 432, 9946, 749, 4595, 5444, 1197, 7038, 936, 9556, 7894, 9757, 5416, 522, 9330, 4836, 2045, 9548, 5836, 5875, 9793, 3032, 735, 7717, 2564, 5238, 9153, 1915, 9292, 9458, 1444, 4310, 7995, 3391, 9571, 5498, 62, 3475, 2150, 5389, 9568, 5924, 7558, 374, 9590, 1699, 1845, 2272, 4957, 7904, 7221, 4534, 1877, 691, 7116, 8589, 5029, 4703, 3995, 9194, 9638, 9019, 9927, 8126, 3569, 3968, 4814, 5050, 7631, 8949, 3050, 7230, 9492, 1590, 4203, 8640, 6374, 3378, 5323, 7880, 7817, 6591, 863, 1233, 1446, 7209, 5233, 2390, 778, 7900, 9443, 8040, 1072, 7536, 9096, 4046, 9956, 3705, 2750, 6533, 1558, 4148, 5923, 6446, 4511, 5425, 3376, 3987, 2808, 2881, 2076, 6778, 5190, 8157, 8367, 7439, 5469, 9713, 9580, 6977, 8241, 7696, 7023, 6394, 4101, 9561, 8626, 787, 7244, 1270, 6672, 3863, 9510, 3422, 7827, 6464, 5250, 9508, 2397, 1893, 6051, 2628, 2555, 7796, 7773, 1727, 4587, 9089, 6995, 2541, 2325, 7563, 9567, 4105, 6132, 4117, 8740, 3258, 8705, 4394, 7693, 6771, 383, 7921, 2549, 4113, 5011, 2206, 3748, 1546, 3029, 575, 2578, 7275, 3659, 346, 6835, 6021, 4468, 2482, 5102, 946, 6670, 6064, 1129, 4841, 170, 8710, 8909, 9894, 3876, 5887, 8606, 2930, 832]  // Add White 
+if (whiteId.includes(parseInt(nftId))) {
+const whiteGmCupOption = document.createElement('option');
 whiteGmCupOption.value = layerImageUrls[16]; // Assuming Gold layer URL is the first in the array
 whiteGmCupOption.textContent = customLayerNames[16]; // Assuming Gold layer name is the first in the array
 layerDropdown.appendChild(whiteGmCupOption);
@@ -1108,7 +1089,8 @@ if ( nftId === '3966'|| nftId === '2172'|| nftId === '4959'|| nftId === '2248'||
     ledgerOption.textContent = customLayerNames[87]; // Assuming Shot layer name is the second in the array
     layerDropdown.appendChild(ledgerOption);
   }
-  const blackId = [3, 8, 12, 15, 36, 37, 51, 52, 53, 57, 59, 62, 63, 71, 72, 80, 91, 106, 123, 125, 127, 130, 147, 152, 158, 170, 189, 198, 211, 212, 224, 229, 235, 252, 265, 266, 267, 284, 303, 309, 335, 349, 351, 356, 359, 368, 371, 373, 383, 393, 408, 410, 452, 454, 463, 464, 473, 489, 490, 491, 495, 496, 508, 518, 544, 550, 563, 586, 593, 594, 608, 614, 616, 618, 624, 638, 672, 677, 681, 682, 685, 689, 702, 708, 709, 718, 726, 735, 761, 772, 793, 804, 810, 813, 816, 861, 882, 883, 884, 888, 892, 895, 900, 901, 908, 910, 914, 915, 934, 947, 949, 984, 993, 998, 1008, 1010, 1029, 1032, 1049, 1053, 1056, 1061, 1083, 1085, 1092, 1104, 1130, 1147, 1162, 1178, 1206, 1214, 1216, 1217, 1227, 1230, 1233, 1253, 1270, 1288, 1293, 1325, 1346, 1349, 1359, 1377, 1384, 1395, 1397, 1406, 1418, 1420, 1433, 1437, 1467, 1479, 1484, 1495, 1509, 1513, 1527, 1532, 1549, 1554, 1555, 1560, 1568, 1579, 1583, 1584, 1594, 1604, 1631, 1644, 1647, 1650, 1662, 1706, 1710, 1725, 1727, 1741, 1754, 1761, 1772, 1778, 1781, 1783, 1785, 1827, 1830, 1838, 1844, 1848, 1856, 1857, 1878, 1890, 1901, 1902, 1909, 1924, 1940, 1942, 1953, 1962, 1967, 1998, 2007, 2015, 2023, 2027, 2035, 2042, 2051, 2052, 2063, 2068, 2074, 2079, 2081, 2085, 2091, 2092, 2103, 2106, 2110, 2124, 2128, 2137, 2147, 2156, 2160, 2162, 2182, 2195, 2225, 2229, 2265, 2278, 2293, 2320, 2327, 2331, 2340, 2341, 2349, 2364, 2377, 2383, 2395, 2412, 2413, 2416, 2422, 2431, 2435, 2439, 2459, 2465, 2468, 2473, 2481, 2484, 2539, 2540, 2543, 2550, 2559, 2576, 2593, 2600, 2613, 2615, 2619, 2629, 2637, 2647, 2655, 2663, 2674, 2683, 2686, 2700, 2708, 2712, 2719, 2741, 2744, 2747, 2750, 2751, 2760, 2764, 2765, 2776, 2777, 2778, 2794, 2814, 2818, 2820, 2851, 2857, 2858, 2874, 2885, 2890, 2901, 2908, 2910, 2913, 2918, 2921, 2923, 2925, 2928, 2937, 2938, 2945, 2950, 2958, 2959, 2966, 2973, 2979, 2983, 2984, 3001, 3018, 3024, 3039, 3072, 3100, 3106, 3109, 3112, 3123, 3136, 3139, 3158, 3206, 3209, 3224, 3239, 3265, 3267, 3269, 3272, 3275, 3292, 3295, 3300, 3311, 3317, 3318, 3323, 3350, 3370, 3392, 3398, 3420, 3427, 3428, 3438, 3443, 3449, 3477, 3478, 3488, 3490, 3519, 3528, 3540, 3554, 3558, 3561, 3562, 3565, 3573, 3580, 3593, 3598, 3599, 3602, 3607, 3610, 3618, 3619, 3626, 3636, 3637, 3642, 3656, 3683, 3687, 3707, 3714, 3723, 3728, 3734, 3739, 3744, 3761, 3766, 3768, 3784, 3787, 3807, 3812, 3816, 3839, 3859, 3866, 3877, 3895, 3899, 3903, 3917, 3929, 3933, 3934, 3946, 3953, 3965, 3973, 3974, 3991, 4007, 4011, 4012, 4019, 4028, 4031, 4034, 4043, 4044, 4050, 4053, 4071, 4072, 4089, 4099, 4102, 4106, 4117, 4129, 4130, 4133, 4136, 4174, 4178, 4181, 4183, 4192, 4196, 4208, 4233, 4244, 4246, 4255, 4257, 4258, 4261, 4267, 4268, 4271, 4309, 4320, 4324, 4326, 4337, 4339, 4340, 4343, 4344, 4348, 4355, 4356, 4385, 4387, 4391, 4403, 4416, 4418, 4419, 4424, 4435, 4436, 4460, 4464, 4467, 4472, 4475, 4498, 4512, 4516, 4519, 4525, 4535, 4537, 4567, 4575, 4587, 4589, 4591, 4625, 4627, 4631, 4633, 4644, 4645, 4655, 4657, 4670, 4676, 4677, 4688, 4700, 4752, 4757, 4771, 4772, 4775, 4790, 4798, 4807, 4812, 4849, 4850, 4856, 4857, 4870, 4872, 4885, 4906, 4942, 4952, 4956, 4978, 4982, 4989, 4996, 5000, 5004, 5009, 5028, 5033, 5054, 5055, 5077, 5078, 5091, 5094, 5100, 5106, 5130, 5135, 5146, 5157, 5158, 5168, 5180, 5182, 5195, 5201, 5203, 5207, 5224, 5250, 5251, 5255, 5266, 5267, 5269, 5271, 5287, 5290, 5308, 5313, 5316, 5319, 5322, 5338, 5343, 5353, 5362, 5397, 5400, 5409, 5417, 5420, 5425, 5466, 5470, 5471, 5482, 5498, 5500, 5505, 5508, 5538, 5561, 5568, 5570, 5575, 5581, 5614, 5642, 5644, 5657, 5662, 5681, 5687, 5701, 5704, 5711, 5731, 5749, 5756, 5770, 5773, 5813, 5816, 5823, 5836, 5840, 5845, 5847, 5883, 5885, 5894, 5916, 5930, 5951, 5957, 5980, 5996];
+  const blackId = [6762, 7259, 8691, 49, 6644, 8090, 8022, 8315, 123, 874, 3010, 3228, 9790, 4936, 3560, 3329, 6658, 9431, 6720, 8108, 7935, 9369, 5224, 4257, 8661, 3749, 1241, 6166, 3599, 4576, 8593, 1760, 5200, 5420, 7324, 6636, 1012, 206, 9714, 6375, 138, 1520, 1610, 2189, 3553, 9746, 2400, 588, 3663, 7620, 7867, 4524, 8264, 1116, 3043, 1285, 9002, 3241, 4380, 5037, 3348, 4448, 282, 7782, 7646, 9717, 6120, 9409, 6298, 1973, 6471, 4695, 497, 6260, 201, 6839, 9451, 9432, 2579, 9962, 4520, 3133, 3230, 8602, 976, 5862, 5396, 7527, 253, 1084, 9218, 5547, 8120, 5253, 4015, 3658, 8020, 6860, 3782, 1989, 3223, 5031, 3605, 7268, 7573, 6491, 3088, 3309, 3100, 2385, 6454, 2409, 2488, 5162, 9930, 3080, 3573, 9826, 3019, 2999, 9133, 3441, 4629, 401, 376, 1497, 3529, 6266, 672, 6876, 992, 9274, 6960, 2558, 3881, 5293, 140, 7447, 1102, 4231, 1097, 1836, 2569, 1226, 8170, 8948, 7764, 5213, 9800, 4411, 4752, 1335, 7286, 3831, 5685, 63, 4939, 9324, 2822, 4640, 7361, 3807, 2093, 6356, 397, 8659, 7461, 9809, 7546, 1672, 5179, 4781, 8202, 9056, 344, 3181, 3491, 5101, 1622, 9498, 1459, 7313, 7613, 529, 38, 2706, 3714, 3164, 23, 9493, 9236, 6798, 9716, 1322, 6613, 2945, 4442, 1312, 6632, 4458, 4190, 186, 6712, 3556, 3571, 2639, 6247, 8176, 6765, 8035, 9915, 5340, 9988, 1842, 9802, 3349, 6483, 1367, 7777, 67, 7226, 2199, 4616, 5563, 9398, 6573, 9834, 8508, 9107, 9497, 1458, 2063, 4721, 7421, 3187, 4300, 1206, 6001, 8936, 5787, 4202, 5535, 8620, 9269, 6409, 5399, 2669, 3385, 1131, 392, 3398, 5588, 5605, 3499, 7924, 2393, 9828, 2108, 4964, 3495, 9678, 6797, 8959, 6187, 3998, 399, 6921, 9530, 1351, 1104, 2040, 7455, 5089, 6759, 1678, 7698, 6466, 6976, 4905, 457, 712, 8039, 6355, 5526, 5703, 8947, 8746, 1748, 5421, 8379, 9486, 7187, 3284, 175, 8166, 5682, 5613, 4947, 8431, 8231, 8569, 4828, 2282, 47, 2872, 8799, 6755, 4051, 9144, 9179, 4350, 9026, 8450, 7919, 6844, 425, 9992, 5508, 4608, 8861, 165, 6244, 1931, 1286, 353, 4666, 9222, 2247, 3741, 687, 6309, 196, 6608, 8488, 2720, 1995, 297, 7229, 2941, 9574, 4464, 6393, 8614, 4649, 6311, 7511, 6094, 348, 4094, 2616, 2288, 3648, 8786, 3928, 293, 1754, 4353, 3001, 6534, 9669, 6425, 5472, 6609, 6812, 746, 3028, 2148, 9054, 1710, 7598, 8385, 2946, 6676, 8522, 6294, 189, 8832, 6603, 7082, 4756, 147, 828, 5164, 89, 4806, 4878, 535, 7232, 4922, 2335, 563, 42, 4407, 2212, 1364, 6039, 6849, 1179, 831, 4656, 512, 7166, 6592, 6115, 9579, 7976, 3238, 2312, 213, 6562, 6618, 6584, 3943, 7219, 2781, 3065, 2887, 4361, 6612, 5636, 6597, 4787, 4875, 6714, 3129, 7629, 1786, 1472, 610, 1428, 2284, 7503, 8772, 7397, 176, 6351, 320, 8579, 241, 7125, 9202, 7725, 8592, 4187, 1886, 2104, 5019, 9588, 5349, 8191, 2163, 3470, 9217, 1091, 901, 6420, 4635, 7775, 7015, 5457, 9727, 7839, 2164, 678, 283, 9024, 1246, 7723, 2261, 3405, 9109, 5434, 198, 5307, 5054, 5135, 3098, 9783, 2571, 7309, 8723, 2714, 1149, 7798, 1514, 8189, 2991, 9357, 3047, 7079, 8625, 2341, 5284, 121, 7096, 8050, 2978, 7350, 6793, 732, 7062, 6057, 7404, 8442, 6555, 5699, 7510, 7788, 4775, 1163, 9394, 2929, 2458, 5114
+];
 
 if (blackId.includes(parseInt(nftId))) {
   const blackOption = document.createElement('option');
@@ -1366,6 +1348,199 @@ const tanId = [10,30,33,39,85,94,109,116,129,155,196,225,230,234,290,294,298,320
   ledgerOption.textContent = customLayerNames[95]; // Assuming Shot layer name is the second in the array
   layerDropdown.appendChild(ledgerOption);
 }
+const diamondId = [9896, 4745, 5929, 7587, 8304, 264, 4685, 4153, 5463, 2971, 4555, 6262, 2469, 5503, 8986, 2876, 6006, 78, 8469, 2947, 4728, 5123, 2842, 9081, 9072, 5122, 9785, 9916, 8351, 1571, 3005, 2419, 9664, 5914, 9428, 671, 511, 3138, 2502, 7789, 5266, 7802, 8540, 8880, 9466, 842, 1791, 8487, 9791, 5808, 2969, 5783, 5448, 3526, 6487, 9598, 2760, 7021, 2043, 3315, 5517, 8783, 5322, 8692, 1591, 1994, 444, 4369, 4077, 7661, 4181, 7715, 9910, 389, 4392, 5707, 8482, 30, 9987, 6978, 6653, 5094, 9351, 3340, 710, 7977, 9822, 3375, 3193, 3780, 2237, 1358, 6620, 429, 4218, 6127, 9513, 6358, 3868, 2196, 4036, 5076, 7108, 4, 3382, 1153, 7893, 5105, 5104, 388, 5728, 665, 2903, 6163, 538, 4479, 6633, 6332, 1452, 6399, 93, 6647, 1763, 2379, 3261, 4025, 7972, 697, 2033, 2244, 4328, 7262, 835, 8686, 8047, 951, 7164, 6896, 5972, 9416, 7435, 2380, 4158, 4140]
+  if (diamondId.includes(parseInt(nftId))) {
+  const diamondOption = document.createElement('option');
+  diamondOption.value = layerImageUrls[96];
+  diamondOption.textContent = customLayerNames[96];
+  layerDropdown.appendChild(diamondOption);
+
+  const diamondShotOption = document.createElement('option');
+  diamondShotOption.value = layerImageUrls[37];
+  diamondShotOption.textContent = customLayerNames[37];
+  layerDropdown.appendChild(diamondShotOption);
+
+  const diamondBottleOption = document.createElement('option');
+  diamondBottleOption.value = layerImageUrls[56];
+  diamondBottleOption.textContent = customLayerNames[56];
+  layerDropdown.appendChild(diamondBottleOption);
+
+  const diamondBeerOption = document.createElement('option');
+  diamondBeerOption.value = layerImageUrls[75];
+  diamondBeerOption.textContent = customLayerNames[75];
+  layerDropdown.appendChild(diamondBeerOption);
+
+  const pizzaOption = document.createElement('option');
+  pizzaOption.value = layerImageUrls[76]; // Assuming Shot layer URL is the second in the array
+  pizzaOption.textContent = customLayerNames[76]; // Assuming Shot layer name is the second in the array
+  layerDropdown.appendChild(pizzaOption);
+
+  const ledgerOption = document.createElement('option');
+  ledgerOption.value = layerImageUrls[95]; // Assuming Shot layer URL is the second in the array
+  ledgerOption.textContent = customLayerNames[95]; // Assuming Shot layer name is the second in the array
+  layerDropdown.appendChild(ledgerOption);
+}
+const smirfId = [7720, 1342, 8123, 3619, 9065, 2873, 8940, 3285, 1127, 4215, 4137, 4133, 3027, 9514, 8391, 6828, 9252, 6699, 300, 4508, 7081, 1499, 2744, 4002, 1432, 5893, 2925, 8793, 8591, 1959, 2477, 3497, 9184, 2956, 3429, 4605, 1634, 6131, 7538, 6790, 8929, 2102, 9040, 3018, 9843, 4976, 1996, 4273, 8719, 6445, 2527, 9318, 8162, 6167, 6827, 1676, 5364, 1644, 4881, 7671, 1978, 4439, 5211, 5761, 4068, 271, 5235, 8725, 6314, 5495, 807, 9573, 1822, 8356, 5131, 9061, 9116, 7359, 8414, 2821, 3306, 6954, 5568, 3534, 2377, 5992, 8545, 8601, 3123, 6713, 8458, 3304, 4552, 2008, 1010, 5534, 5152, 6583, 2550, 9129, 7363, 5112, 903, 2722, 173, 411, 8599, 7376, 3177, 5608, 8394, 1232, 5304, 185, 7396, 9584, 5720, 381, 6703, 3336, 8748, 5424, 1429, 7738, 7373, 9562, 1603, 6147, 889, 8434, 1214, 5264, 4554, 979, 2053, 8227, 5481, 811, 5026, 7236, 9240, 7726, 8309, 1344, 993, 9873, 4614, 6221, 2544, 5385, 5906, 7126, 1567, 2479, 9737, 9502, 2328, 7249, 4985, 8208, 133, 6742, 1395, 6931, 2210, 3697, 8767, 4053, 8075, 638, 3344, 846, 1148, 7956, 6531, 8140, 9511, 9555, 2423, 1641, 1832, 9200, 5312, 2182, 1263, 8761, 682, 7873, 8700, 9528, 6816, 3448, 4449, 5869, 2597, 6781, 4485, 6113, 7405, 6623, 2590, 9401, 1544, 1700, 8483, 8117, 4937, 1133, 1086, 9087, 1933, 2361, 9837, 4128, 4501, 8630, 5897, 7616, 1442, 9735, 4235, 9536, 1387, 5628, 7168, 9127, 2334, 8770, 7979, 4557, 9354, 6988, 7464, 6237, 4443, 9665, 5792, 1970, 3656, 4052, 2069, 6100, 5107, 6901, 6004, 6607, 9138, 3652, 870, 852, 1398, 8879, 3840, 6, 7578, 7763, 402, 7191, 1378, 7074, 6568, 2346, 5794, 3533, 1702, 7077, 585, 7278, 2856, 5556, 9314, 5042, 2965, 8400, 4130, 8979, 2668, 7639, 4768, 1119, 4714, 6517, 7657, 6104, 9853, 7592, 5173, 3498, 2239, 3020, 107, 5730, 7875, 3418, 2662, 2169, 5871, 2129, 1288, 1201, 2160, 7568, 9865, 2306, 7409, 887, 8359, 1184, 6641, 9154, 3637, 1887, 2091, 2837, 6681, 573, 8681, 6914, 6673, 1951, 9364, 5024, 8910, 191, 2799, 4011, 9232, 2896, 7905, 7323, 1476, 5275, 8766, 8731, 9739, 2042, 9083, 542, 1674, 2012, 6912, 9851, 3682, 3411, 3205, 3776, 3892, 8580, 6895, 6615, 7006, 7312, 5426, 4659, 3929, 7864, 4879, 4070, 4561, 328, 4141, 4911, 1609, 2685, 2962, 8657, 6768, 4540, 6879, 8476, 3528, 2131, 4122, 3415, 8876, 4198, 3482, 4276, 4673, 5240, 3701, 704, 4364, 287, 2187, 9174, 6536, 104, 5969, 1099, 3308, 2130, 1910, 8195, 6763, 2322, 571, 3805, 7851, 3662, 715, 7198, 5258, 6233, 1245, 8688, 5839, 3168, 6228, 6680, 1002, 9164, 4813, 9675, 2859, 8883, 9469, 939, 753, 1602, 6737, 7491, 9016, 9849, 8505, 4926, 1308, 448, 1648, 8804, 8316, 2977, 8849, 4212, 3477, 4112, 9264, 4832, 8821, 4397, 9150, 716, 3751, 9977, 953, 3623, 9050, 4344, 5697, 9870, 6940, 6087, 2291, 6935, 1621, 9391, 3152, 6512, 9234, 8525, 3250, 6721, 1714, 4679, 7204, 252, 9706, 4858, 8295, 2743, 3434, 1871, 1503, 6148, 537, 5850, 200, 2950, 4281, 4942, 5245, 2472]
+  if (smirfId.includes(parseInt(nftId))) {
+  const smirfOption = document.createElement('option');
+  smirfOption.value = layerImageUrls[97];
+  smirfOption.textContent = customLayerNames[97];
+  layerDropdown.appendChild(smirfOption);
+
+  const smirfShotOption = document.createElement('option');
+  smirfShotOption.value = layerImageUrls[37];
+  smirfShotOption.textContent = customLayerNames[37];
+  layerDropdown.appendChild(smirfShotOption);
+
+  const smirtBottleOption = document.createElement('option');
+  smirtBottleOption.value = layerImageUrls[56];
+  smirtBottleOption.textContent = customLayerNames[56];
+  layerDropdown.appendChild(smirtBottleOption);
+
+  const smirfBeerOption = document.createElement('option');
+  smirfBeerOption.value = layerImageUrls[75];
+  smirfBeerOption.textContent = customLayerNames[75];
+  layerDropdown.appendChild(smirfBeerOption);
+
+  const pizzaOption = document.createElement('option');
+  pizzaOption.value = layerImageUrls[76]; // Assuming Shot layer URL is the second in the array
+  pizzaOption.textContent = customLayerNames[76]; // Assuming Shot layer name is the second in the array
+  layerDropdown.appendChild(pizzaOption);
+
+  const ledgerOption = document.createElement('option');
+  ledgerOption.value = layerImageUrls[95]; // Assuming Shot layer URL is the second in the array
+  ledgerOption.textContent = customLayerNames[95]; // Assuming Shot layer name is the second in the array
+  layerDropdown.appendChild(ledgerOption);
+}
+const skeletonId = [4563, 251, 2013, 458, 2142, 6751, 7812, 2097, 4598, 679, 17, 3550, 4627, 3267, 8061, 6090, 4335, 7195, 6405, 2675, 85, 4450, 2755, 5183, 1619, 4795, 8150, 4618, 2153, 9999, 4362, 3151, 507, 7414, 4020, 493, 9835, 8894, 3761, 6457, 6900, 5409, 3328, 5414, 4851, 1682, 1139, 8327, 583, 809, 8754, 7371, 9456, 3578, 8514, 7993, 5056, 4569, 7920, 1247, 3388, 3641, 2985, 5356, 6139, 7489, 4597, 7675, 3289, 5656, 4178, 9426, 629, 6705, 9071, 6730, 3857, 3942, 5362, 9429, 3220, 3530, 6319, 9751, 6030, 8758, 9161, 909, 9758, 2833, 4826, 5257, 1560, 7206, 1348, 5700, 8712, 1056, 8789, 1001, 8074, 7279, 7939, 1087, 5815, 3889, 5832, 31, 2396, 6499, 2081, 6043, 4415, 286, 4677, 551, 7362, 8396, 4913, 1372, 3118, 6055, 3576, 199, 7780, 6196, 7970, 1146, 1722, 324, 5928, 1310, 8801, 8546, 4764, 7016, 4154, 2193, 7680, 8046, 6083, 5366, 9646, 4076, 8112, 6385, 8995, 5092, 3747, 6214, 9827, 3894, 5427, 2626, 5690, 3212, 1902, 8254, 4033, 4928, 7642, 3574, 6856, 4223, 1397, 799, 4628, 938, 6740, 7258, 4115, 391, 4096, 467, 4315, 8513, 4683, 3595, 5785, 4089, 8991, 3363, 1494, 5219, 5784, 3439, 3183, 9855, 7857, 3723, 3543, 1661, 61, 1847, 6785, 9393, 6227, 4959, 6122, 495, 3148, 242, 1834, 6215, 8908, 4357, 7121, 5681, 8341, 8693, 8142, 3379, 2010, 9256, 9683, 8263, 7603, 7444, 6625, 1064, 4370, 1709, 6567, 8728, 6873, 205, 1389, 7937, 6406, 9119, 9064, 4675, 1467, 4539, 8373, 3320, 7619, 5828, 5686, 3301, 5505, 8641, 4671, 1776, 5113, 9212, 5203, 6770, 7011, 4497, 3766, 5475, 5170, 8587, 5144, 5965, 8226, 1031, 8994, 1601, 2749, 2430, 4686, 4969, 8742, 6061, 5895, 5900, 8114, 519, 4863, 6293, 8765, 625, 5622, 9564, 7304, 3012, 7674, 5971, 1687, 4135, 4744, 1780, 630, 8817, 294, 2963, 6540, 1380, 6275, 8961, 1848, 9059, 8222, 4794, 8194, 8701, 8288, 3359, 6593, 6253, 3140, 4395, 2438, 3356, 2900, 5734, 9111, 4842, 1083, 918, 1394, 4998, 4453, 1563, 1203, 1983, 8364, 5073, 9569, 6317, 3253, 1160, 6814, 5664, 9679, 395, 1960, 5198, 4978, 944, 1170, 2038, 7485, 6273, 7918, 7673, 9676, 9023, 5799, 6711, 8925, 3041, 8204, 3825, 1000, 304, 6248, 3191, 6795, 8573, 4952, 249, 5292, 5338
+]
+  if (skeletonId.includes(parseInt(nftId))) {
+  const skeletonOption = document.createElement('option');
+  skeletonOption.value = layerImageUrls[98];
+  skeletonOption.textContent = customLayerNames[98];
+  layerDropdown.appendChild(skeletonOption);
+
+  const skeletonShotOption = document.createElement('option');
+  skeletonShotOption.value = layerImageUrls[37];
+  skeletonShotOption.textContent = customLayerNames[37];
+  layerDropdown.appendChild(skeletonShotOption);
+
+  const skeletonBottleOption = document.createElement('option');
+  skeletonBottleOption.value = layerImageUrls[56];
+  skeletonBottleOption.textContent = customLayerNames[56];
+  layerDropdown.appendChild(skeletonBottleOption);
+
+  const skeletonBeerOption = document.createElement('option');
+  skeletonBeerOption.value = layerImageUrls[75];
+  skeletonBeerOption.textContent = customLayerNames[75];
+  layerDropdown.appendChild(skeletonBeerOption);
+
+  const pizzaOption = document.createElement('option');
+  pizzaOption.value = layerImageUrls[76]; // Assuming Shot layer URL is the second in the array
+  pizzaOption.textContent = customLayerNames[76]; // Assuming Shot layer name is the second in the array
+  layerDropdown.appendChild(pizzaOption);
+
+  const ledgerOption = document.createElement('option');
+  ledgerOption.value = layerImageUrls[95]; // Assuming Shot layer URL is the second in the array
+  ledgerOption.textContent = customLayerNames[95]; // Assuming Shot layer name is the second in the array
+  layerDropdown.appendChild(ledgerOption);
+}
+const yetiId = [9441, 1453, 2595, 9042, 5949, 2331, 1500, 6085, 6173, 7452, 5582, 2959, 6042, 1504, 4333, 6883, 4864, 7160, 9699, 8557, 2259, 5729, 8390, 3808, 2235, 1767, 2857, 7318, 5016, 3291, 8836, 1607, 6991, 5824, 7144, 6628, 7983, 6852, 9126, 7141, 9186, 4040, 8662, 7630, 6201, 8427, 469, 7316, 7344, 9444, 9712, 5957, 3443, 6345, 3920, 2548, 3324, 8146, 3371, 6682, 9080, 1768, 9095, 4801, 2914, 2850, 7185, 5156, 4776, 7770, 2442, 8256, 3318, 2904, 3207, 2531, 6938, 1980, 3725, 6877, 849, 1660, 6153, 3933, 821, 3976, 1317, 2777, 6040, 4224, 3299, 6600, 2126, 3420, 1047, 5149, 7601, 8547, 4829, 9741, 8769, 1680, 1850, 9302, 7192, 7561, 8583, 9376, 5352, 5968, 6411, 8642, 2845, 3919, 3086, 9736, 8711, 4769, 33, 2161, 1725, 2828, 8245, 1630, 1441, 9171, 4891, 2219, 8842, 2751, 5801, 2776, 8274, 2587, 6121, 4044, 4859, 2461, 1193, 3992, 9773, 2966, 3923, 7426, 9640, 1853, 2186, 3515, 1553, 8792, 3944, 256, 2814, 1916, 861, 899, 759, 4027, 7761, 3830, 1925, 4193, 4365, 4045, 7183, 3229, 745, 1172, 9667, 9795, 4022, 4217, 9258, 5590, 7575, 4383, 1720, 1923, 8029, 1461, 4466, 6836, 4899, 5538, 7398, 7908, 7462, 322, 5021, 2708, 9861, 3300, 2167, 1075, 1809, 2298, 8128, 6865, 4189, 4327, 1284, 722, 7737, 3006, 8676, 8259, 3793, 676, 9208, 3084, 2060, 378, 8014, 3971, 4339, 9353, 8890, 9407, 143, 8753, 4175, 7199, 36, 8078, 885, 2245, 2835, 7342, 278, 5572, 9289, 5920, 1815, 2264, 3692, 6099, 5593, 7622, 4110, 4196, 4943, 1654, 2563, 558, 1663, 8687, 9813, 3740, 5214, 9830, 1688, 6177, 4809, 4692, 666, 3721, 2680, 3143, 9347, 5035, 4872, 8491, 2844, 1947, 7200, 1291, 9685, 3246, 6943, 789, 5837, 1188, 9321, 7329, 2641, 96, 8273, 2618, 1073, 8571, 5433, 3848, 6451, 2625, 6212, 8495, 5367, 5918, 510, 9656, 5826, 4384, 1018, 3980, 6155, 6192, 6525, 6913, 3432, 2358, 11, 9951, 6521, 8518, 7778, 4267, 6933, 1222, 2884, 1501, 3710, 7652, 7686, 5255, 7445, 7950, 576, 8017, 5273, 3455, 1740, 5745, 1605, 1417, 8664, 3393, 9422, 3412, 3798, 2525, 8714, 9658, 6761, 9086, 7028, 2688, 7845, 1205, 7881, 4623, 9230, 6516, 7927, 7621, 7049, 3939, 2367, 6117, 7419, 3063, 8419, 1143, 1250, 3838, 6503, 9241, 2613, 4417, 8646, 6859, 7842, 466, 8065, 5726, 6982, 8214, 958, 4517, 592, 8530, 9263, 868, 4279, 9193, 4923, 9753, 5052, 8854, 221, 3633, 5033, 5439, 7392, 9206, 9105, 7762, 667]
+  if (yetiId.includes(parseInt(nftId))) {
+  const yetiOption = document.createElement('option');
+  yetiOption.value = layerImageUrls[99];
+  yetiOption.textContent = customLayerNames[99];
+  layerDropdown.appendChild(yetiOption);
+
+  const yetiShotOption = document.createElement('option');
+  yetiShotOption.value = layerImageUrls[37];
+  yetiShotOption.textContent = customLayerNames[37];
+  layerDropdown.appendChild(yetiShotOption);
+
+  const yetiBottleOption = document.createElement('option');
+  yetiBottleOption.value = layerImageUrls[56];
+  yetiBottleOption.textContent = customLayerNames[56];
+  layerDropdown.appendChild(yetiBottleOption);
+
+  const yetiBeerOption = document.createElement('option');
+  yetiBeerOption.value = layerImageUrls[75];
+  yetiBeerOption.textContent = customLayerNames[75];
+  layerDropdown.appendChild(yetiBeerOption);
+
+  const pizzaOption = document.createElement('option');
+  pizzaOption.value = layerImageUrls[76]; // Assuming Shot layer URL is the second in the array
+  pizzaOption.textContent = customLayerNames[76]; // Assuming Shot layer name is the second in the array
+  layerDropdown.appendChild(pizzaOption);
+
+  const ledgerOption = document.createElement('option');
+  ledgerOption.value = layerImageUrls[95]; // Assuming Shot layer URL is the second in the array
+  ledgerOption.textContent = customLayerNames[95]; // Assuming Shot layer name is the second in the array
+  layerDropdown.appendChild(ledgerOption);
+}
+const radioId = [5661, 9155, 8760, 75, 3690, 9627, 7375, 1751, 7926, 2085, 644, 5819, 6125, 819, 8436, 7374, 4171, 2058, 3107, 4393, 3136, 9356, 345, 5321, 8548, 9182, 8684, 2741, 8297, 329, 1805, 2827, 8355, 8333, 8729, 6245, 9259, 6361, 9982, 646, 855, 6424, 9146, 6161, 977, 9325, 9275, 7987, 560, 774, 455, 8247, 44, 5129, 5921, 9516, 2540, 7678, 6168, 54, 6922, 4399, 8278, 3986, 8865, 21, 7648, 4416, 7549, 6435, 9448, 8708, 9291, 6211, 9033, 9624, 7594, 7638, 1828, 7003, 7022, 4487, 5232, 3935, 8131, 9958, 2276, 2156, 9298, 6506, 7321, 2054, 1716, 2271, 4786, 5337, 5814, 8005, 6080, 4748, 3186, 9693, 7910, 2826, 9028, 471, 8969, 2113, 3170, 7130, 6640, 7733, 3860, 5790, 6959, 810, 8652, 9617, 2329, 1330, 3004, 614, 8528, 6137, 8512, 7057, 7427, 2801, 8216, 7553, 6552, 8519, 7123, 2923, 6467, 7771, 6301, 2465, 7535, 1488, 396, 3358, 962, 6363, 6460, 3586, 3126, 9224, 4735, 9420, 3650, 4548, 539, 4121, 3507, 7196, 5552, 8395, 8192, 2582, 8850, 612, 670, 9361, 9296, 5813, 355, 7223, 1977, 757, 2734, 4472, 7665, 8950, 5680, 2897, 9131, 9770, 2653, 3555, 4543, 5769, 8097, 1187, 500, 9898, 995, 262, 9919, 1239, 335, 7608, 3856, 5151, 595, 1375, 1659, 8001, 1117, 8739, 6234, 5169, 3519, 1640, 6928, 3192, 488, 3802, 4355, 6421, 4833, 37, 7091, 6279, 6077, 3621, 8099, 4241, 7966, 8578, 5528, 8833, 1647, 6335, 7702, 8820, 6383, 1276, 8559, 4981, 5196, 5933, 4951, 2721, 3849, 668, 1462, 1150, 227, 8575, 8175, 4306, 916, 6569, 3974, 3914, 146, 6149, 8076, 2659, 9290, 2629, 4247, 541, 1357, 4592]
+  if (radioId.includes(parseInt(nftId))) {
+  const radioOption = document.createElement('option');
+  radioOption.value = layerImageUrls[100];
+  radioOption.textContent = customLayerNames[100];
+  layerDropdown.appendChild(radioOption);
+
+  const radioShotOption = document.createElement('option');
+  radioShotOption.value = layerImageUrls[37];
+  radioShotOption.textContent = customLayerNames[37];
+  layerDropdown.appendChild(radioShotOption);
+
+  const radioBottleOption = document.createElement('option');
+  radioBottleOption.value = layerImageUrls[56];
+  radioBottleOption.textContent = customLayerNames[56];
+  layerDropdown.appendChild(radioBottleOption);
+
+  const radioBeerOption = document.createElement('option');
+  radioBeerOption.value = layerImageUrls[75];
+  radioBeerOption.textContent = customLayerNames[75];
+  layerDropdown.appendChild(radioBeerOption);
+
+  const pizzaOption = document.createElement('option');
+  pizzaOption.value = layerImageUrls[76]; // Assuming Shot layer URL is the second in the array
+  pizzaOption.textContent = customLayerNames[76]; // Assuming Shot layer name is the second in the array
+  layerDropdown.appendChild(pizzaOption);
+
+  const ledgerOption = document.createElement('option');
+  ledgerOption.value = layerImageUrls[95]; // Assuming Shot layer URL is the second in the array
+  ledgerOption.textContent = customLayerNames[95]; // Assuming Shot layer name is the second in the array
+  layerDropdown.appendChild(ledgerOption);
+}
+const lavaId = [5616, 9820, 3215, 9329, 245, 599, 1753, 4245, 8585, 1374, 5462, 6130, 9983, 5371, 9032, 1774, 2831, 7076, 8862, 7486, 5084, 301, 4166, 6894, 1498, 2000, 9812, 2783, 22, 9094, 7743, 8438, 2973, 3313, 4529, 8392, 8116, 7541, 51, 9000, 954, 922, 2899, 8085, 6870, 5966, 4890, 622, 3240, 1419, 6157, 2958, 5506, 1230, 9159, 9402, 6919, 5082, 9435, 3628, 6805, 5345, 7225, 4391, 1235, 860, 4288, 7389, 2682, 8331, 3110, 2333, 5759, 4503, 4474, 6347, 235, 2137, 2813, 3893, 1054, 5907, 1252, 6062, 7100, 2159, 8032, 1749, 9871, 5545, 8163, 9196, 341, 569, 8532, 6990, 4377, 9268, 3087, 3585, 1293, 8064, 7793, 5330, 8284, 7482, 3958, 3900, 219, 9891, 2759, 4216, 3746, 3114, 7317, 6380, 3111, 2371, 5166, 5504, 1927, 4648, 2957, 7744, 2694, 3402, 2450, 1705, 5979, 9724, 9605, 5239, 2996, 8083, 5443, 7830, 7612, 968, 1717, 2095, 4664, 9348, 4676, 1578, 1174, 26, 238, 1592, 5852, 3973, 2022, 4571, 2490, 2779, 1202, 2615, 2864, 7579, 5507, 4345, 8660, 2270, 9482, 3552, 2517, 7207, 7514, 8404, 6992, 5055, 6225, 2596, 4903, 4762, 9920, 5698, 1035, 6268, 3034, 9176, 8057, 9377, 4724, 8805, 8703, 2619, 9660, 3629, 9769, 5657, 6821, 2655, 4798, 3333, 7833, 574, 4313, 8440, 9742, 2200, 3361, 8999, 4699, 4698, 5595, 6767, 2938, 3435, 9293, 267, 2796, 1024, 3847, 9687, 2746, 9897, 4590, 1339, 2176, 9299, 8277, 9644, 4778, 6183, 8967, 1550, 9512, 1352, 4055, 8663, 9128, 5952, 3366, 725, 4657, 9636, 9819, 648, 772, 6434, 5489, 5034, 5633, 8403, 3023, 5553, 5002, 9710, 8217, 2401, 5523, 13, 1318, 4591, 5320, 4368, 6968, 7952, 6579, 9078, 8494, 8650, 4825, 2907, 4073, 2197, 4919, 701, 4834, 5994, 8493, 9803, 8871, 3913, 2824, 8913, 6803, 7701, 5560, 9386, 1712, 756]
+  if (lavaId.includes(parseInt(nftId))) {
+  const lavaOption = document.createElement('option');
+  lavaOption.value = layerImageUrls[101];
+  lavaOption.textContent = customLayerNames[101];
+  layerDropdown.appendChild(lavaOption);
+
+  const lavaShotOption = document.createElement('option');
+  lavaShotOption.value = layerImageUrls[37];
+  lavaShotOption.textContent = customLayerNames[37];
+  layerDropdown.appendChild(lavaShotOption);
+
+  const lavaBottleOption = document.createElement('option');
+  lavaBottleOption.value = layerImageUrls[56];
+  lavaBottleOption.textContent = customLayerNames[56];
+  layerDropdown.appendChild(lavaBottleOption);
+
+  const lavaBeerOption = document.createElement('option');
+  lavaBeerOption.value = layerImageUrls[75];
+  lavaBeerOption.textContent = customLayerNames[75];
+  layerDropdown.appendChild(lavaBeerOption);
+
+  const pizzaOption = document.createElement('option');
+  pizzaOption.value = layerImageUrls[76]; // Assuming Shot layer URL is the second in the array
+  pizzaOption.textContent = customLayerNames[76]; // Assuming Shot layer name is the second in the array
+  layerDropdown.appendChild(pizzaOption);
+
+  const ledgerOption = document.createElement('option');
+  ledgerOption.value = layerImageUrls[95]; // Assuming Shot layer URL is the second in the array
+  ledgerOption.textContent = customLayerNames[95]; // Assuming Shot layer name is the second in the array
+  layerDropdown.appendChild(ledgerOption);
+}
   layerDropdown.addEventListener('change', function() {
     const selectedLayerImageUrl = layerDropdown.value;
     selectLayer(selectedLayerImageUrl);
@@ -1589,6 +1764,18 @@ function selectLayer(imageUrl) {
   layerOverlay.classList.add('ledger');
 }else if (imageUrl === layerImageUrls[95]) {
   layerOverlay.classList.add('ledger');
+}else if (imageUrl === layerImageUrls[96]) {
+  layerOverlay.classList.add('brown-gm-cup-layer');
+}else if (imageUrl === layerImageUrls[97]) {
+  layerOverlay.classList.add('brown-gm-cup-layer');
+}else if (imageUrl === layerImageUrls[98]) {
+  layerOverlay.classList.add('brown-gm-cup-layer');
+}else if (imageUrl === layerImageUrls[99]) {
+  layerOverlay.classList.add('brown-gm-cup-layer');
+}else if (imageUrl === layerImageUrls[100]) {
+  layerOverlay.classList.add('brown-gm-cup-layer');
+}else if (imageUrl === layerImageUrls[101]) {
+  layerOverlay.classList.add('brown-gm-cup-layer');
 }
 
 
@@ -1693,6 +1880,7 @@ function selectLayer(imageUrl) {
             const gmCupX = (canvas.width - layerImage.width) / 2;
             const gmCupY = canvas.height - layerImage.height;
             ctx.drawImage(layerImage, gmCupX, gmCupY);
+            
           } else if (layerImageUrl === layerImageUrls[7]) {
             // Shot layer
             const shotX = canvas.width - layerImage.width - 150;
@@ -1884,6 +2072,36 @@ function selectLayer(imageUrl) {
             const bottleY = canvas.height - layerImage.height;
             ctx.drawImage(layerImage, bottleX, bottleY);
           }else if (layerImageUrl === layerImageUrls[32]) {
+            // GM Cup layer
+            const gmCupX = (canvas.width - layerImage.width) / 2;
+            const gmCupY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, gmCupX, gmCupY);
+          }else if (layerImageUrl === layerImageUrls[96]) {
+            // GM Cup layer
+            const gmCupX = (canvas.width - layerImage.width) / 2;
+            const gmCupY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, gmCupX, gmCupY);
+          }else if (layerImageUrl === layerImageUrls[97]) {
+            // GM Cup layer
+            const gmCupX = (canvas.width - layerImage.width) / 2;
+            const gmCupY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, gmCupX, gmCupY);
+          }else if (layerImageUrl === layerImageUrls[98]) {
+            // GM Cup layer
+            const gmCupX = (canvas.width - layerImage.width) / 2;
+            const gmCupY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, gmCupX, gmCupY);
+          }else if (layerImageUrl === layerImageUrls[99]) {
+            // GM Cup layer
+            const gmCupX = (canvas.width - layerImage.width) / 2;
+            const gmCupY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, gmCupX, gmCupY);
+          }else if (layerImageUrl === layerImageUrls[100]) {
+            // GM Cup layer
+            const gmCupX = (canvas.width - layerImage.width) / 2;
+            const gmCupY = canvas.height - layerImage.height;
+            ctx.drawImage(layerImage, gmCupX, gmCupY);
+          }else if (layerImageUrl === layerImageUrls[101]) {
             // GM Cup layer
             const gmCupX = (canvas.width - layerImage.width) / 2;
             const gmCupY = canvas.height - layerImage.height;
