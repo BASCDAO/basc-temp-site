@@ -139,9 +139,9 @@ button {
   bottom: 0;
   right: 20%;
   transform: translateX(100%);
-  transform: translateY(-27%);
-  width: 25%; /* Adjust the width as per your requirement */
-  height: 25%; /* Adjust the height as per your requirement */
+  transform: translateY(-14.5%);
+  width: 65%; /* Adjust the width as per your requirement */
+  height: 65%; /* Adjust the height as per your requirement */
   z-index: 2; /* Ensure the shot is above the NFT image */
 }
 
@@ -150,9 +150,9 @@ button {
   bottom: 0;
   left: 15%;
   transform: translateX(-50%);
-  transform: translateY(-28.5%);
-  width: 25%; 
-  height: 25%
+  transform: translateY(-15.5%);
+  width: 60%; 
+  height: 60%
   z-index: 2;
 } 
 
@@ -161,7 +161,7 @@ button {
   bottom: 0;
   left: 15%;
   transform: translateX(-50%);
-  transform: translateY(-31.5%);
+  transform: translateY(-30.5%);
   width: 30%; /* Adjust the width as per your requirement */
   height: 30%; /* Adjust the height as per your requirement */
   z-index: 2; /* Ensure the cup is above the NFT image */
@@ -171,8 +171,8 @@ button {
   bottom: 0;
   right: 20%;
   transform: translateX(100%);
-  transform: translateY(-38%);
-  width: 25%; /* Adjust the width as per your requirement */
-  height: 25%; /* Adjust the height as per your requirement */
+  transform: translateY(-15.5%);
+  width: 60%; /* Adjust the width as per your requirement */
+  height: 60%; /* Adjust the height as per your requirement */
   z-index: 2; /* Ensure the shot is above the NFT image */
 }
