@@ -1878,665 +1878,1062 @@ function selectLayer(imageUrl) {
         layerImage.onload = function() {
           if (layerImageUrl === layerImageUrls[0]) {
             // GM Cup layer
-            const gmCupX = (canvas.width - layerImage.width) / 2;
-            const gmCupY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, gmCupX, gmCupY);
+            const gmCupX = (canvas.width - layerImage.width * 1.7) / 2; // Adjusting x position
+            const gmCupY = canvas.height - layerImage.height * 1.7; // Adjusting y position
+            const gmCupWidth = layerImage.width * 1.7; // Adjusting width
+            const gmCupHeight = layerImage.height * 1.7; // Adjusting height
+        
+            ctx.drawImage(layerImage, gmCupX, gmCupY, gmCupWidth, gmCupHeight);
+        
+        
           } else if (layerImageUrl === layerImageUrls[1]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+            const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
+            
           } else if (layerImageUrl === layerImageUrls[38]) {
             // Bottle Layer
-            const bottleX = canvas.width - layerImage.width - 150;
-            const bottleY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, bottleX, bottleY);
+            const bottleX = canvas.width - layerImage.width * 1.5 - 150;
+            const bottleY = canvas.height - layerImage.height * 1.5;
+            const bottleWidth = layerImage.width * 1.5; // Adjusting width
+            const bottleHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, bottleX, bottleY, bottleWidth, bottleHeight);
           } else if (layerImageUrl === layerImageUrls[110]) {
             // Bottle Layer
-            const bottleX = canvas.width - layerImage.width - 150;
-            const bottleY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, bottleX, bottleY);
+            const bottleX = canvas.width - layerImage.width * 1.5 - 150;
+            const bottleY = canvas.height - layerImage.height * 1.5;
+            const bottleWidth = layerImage.width * 1.5; // Adjusting width
+            const bottleHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, bottleX, bottleY, bottleWidth, bottleHeight);
           } else if (layerImageUrl === layerImageUrls[111]) {
             // Bottle Layer
-            const bottleX = canvas.width - layerImage.width - 150;
-            const bottleY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, bottleX, bottleY);
+            const bottleX = canvas.width - layerImage.width * 1.5 - 150;
+            const bottleY = canvas.height - layerImage.height * 1.5;
+            const bottleWidth = layerImage.width * 1.5; // Adjusting width
+            const bottleHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, bottleX, bottleY, bottleWidth, bottleHeight);
           } else if (layerImageUrl === layerImageUrls[112]) {
             // Bottle Layer
-            const bottleX = canvas.width - layerImage.width - 150;
-            const bottleY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, bottleX, bottleY);
+            const bottleX = canvas.width - layerImage.width * 1.5 - 150;
+            const bottleY = canvas.height - layerImage.height * 1.5;
+            const bottleWidth = layerImage.width * 1.5; // Adjusting width
+            const bottleHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, bottleX, bottleY, bottleWidth, bottleHeight);
           } else if (layerImageUrl === layerImageUrls[113]) {
             // Bottle Layer
-            const bottleX = canvas.width - layerImage.width - 150;
-            const bottleY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, bottleX, bottleY);
+            const bottleX = canvas.width - layerImage.width * 1.5 - 150;
+            const bottleY = canvas.height - layerImage.height * 1.5;
+            const bottleWidth = layerImage.width * 1.5; // Adjusting width
+            const bottleHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, bottleX, bottleY, bottleWidth, bottleHeight);
           } else if (layerImageUrl === layerImageUrls[114]) {
             // Bottle Layer
-            const bottleX = canvas.width - layerImage.width - 150;
-            const bottleY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, bottleX, bottleY);
+            const bottleX = canvas.width - layerImage.width * 1.5 - 150;
+            const bottleY = canvas.height - layerImage.height * 1.5;
+            const bottleWidth = layerImage.width * 1.5; // Adjusting width
+            const bottleHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, bottleX, bottleY, bottleWidth, bottleHeight);
           } else if (layerImageUrl === layerImageUrls[115]) {
             // Bottle Layer
-            const bottleX = canvas.width - layerImage.width - 150;
-            const bottleY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, bottleX, bottleY);
+            const bottleX = canvas.width - layerImage.width * 1.5 - 150;
+            const bottleY = canvas.height - layerImage.height * 1.5;
+            const bottleWidth = layerImage.width * 1.5; // Adjusting width
+            const bottleHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, bottleX, bottleY, bottleWidth, bottleHeight);
           } else if (layerImageUrl === layerImageUrls[116]) {
             // Bottle Layer
-            const bottleX = canvas.width - layerImage.width - 150;
-            const bottleY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, bottleX, bottleY);
+            const bottleX = canvas.width - layerImage.width * 1.5 - 150;
+            const bottleY = canvas.height - layerImage.height * 1.5;
+            const bottleWidth = layerImage.width * 1.5; // Adjusting width
+            const bottleHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, bottleX, bottleY, bottleWidth, bottleHeight);
           } else if (layerImageUrl === layerImageUrls[2]) {
             // GM Cup layer
-            const gmCupX = (canvas.width - layerImage.width) / 2;
-            const gmCupY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, gmCupX, gmCupY);
+             const gmCupX = (canvas.width - layerImage.width * 1.7) / 2; // Adjusting x position
+            const gmCupY = canvas.height - layerImage.height * 1.7; // Adjusting y position
+            const gmCupWidth = layerImage.width * 1.7; // Adjusting width
+            const gmCupHeight = layerImage.height * 1.7; // Adjusting height
+        
+            ctx.drawImage(layerImage, gmCupX, gmCupY, gmCupWidth, gmCupHeight);
           } else if (layerImageUrl === layerImageUrls[3]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           } else if (layerImageUrl === layerImageUrls[39]) {
             // Bottle Layer
-            const bottleX = canvas.width - layerImage.width - 150;
-            const bottleY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, bottleX, bottleY);
+            const bottleX = canvas.width - layerImage.width * 1.5 - 150;
+            const bottleY = canvas.height - layerImage.height * 1.5;
+            const bottleWidth = layerImage.width * 1.5; // Adjusting width
+            const bottleHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, bottleX, bottleY, bottleWidth, bottleHeight);
           } else if (layerImageUrl === layerImageUrls[4]) {
             // GM Cup layer
-            const gmCupX = (canvas.width - layerImage.width) / 2;
-            const gmCupY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, gmCupX, gmCupY);
+             const gmCupX = (canvas.width - layerImage.width * 1.7) / 2; // Adjusting x position
+            const gmCupY = canvas.height - layerImage.height * 1.7; // Adjusting y position
+            const gmCupWidth = layerImage.width * 1.7; // Adjusting width
+            const gmCupHeight = layerImage.height * 1.7; // Adjusting height
+        
+            ctx.drawImage(layerImage, gmCupX, gmCupY, gmCupWidth, gmCupHeight);
           } else if (layerImageUrl === layerImageUrls[5]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           } else if (layerImageUrl === layerImageUrls[40]) {
             // Bottle Layer
-            const bottleX = canvas.width - layerImage.width - 150;
-            const bottleY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, bottleX, bottleY);
+            const bottleX = canvas.width - layerImage.width * 1.5 - 150;
+            const bottleY = canvas.height - layerImage.height * 1.5;
+            const bottleWidth = layerImage.width * 1.5; // Adjusting width
+            const bottleHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, bottleX, bottleY, bottleWidth, bottleHeight);
           } else if (layerImageUrl === layerImageUrls[6]) {
             // GM Cup layer
-            const gmCupX = (canvas.width - layerImage.width) / 2;
-            const gmCupY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, gmCupX, gmCupY);
+             const gmCupX = (canvas.width - layerImage.width * 1.7) / 2; // Adjusting x position
+            const gmCupY = canvas.height - layerImage.height * 1.7; // Adjusting y position
+            const gmCupWidth = layerImage.width * 1.7; // Adjusting width
+            const gmCupHeight = layerImage.height * 1.7; // Adjusting height
+        
+            ctx.drawImage(layerImage, gmCupX, gmCupY, gmCupWidth, gmCupHeight);
             
           } else if (layerImageUrl === layerImageUrls[7]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           } else if (layerImageUrl === layerImageUrls[41]) {
             // Bottle Layer
-            const bottleX = canvas.width - layerImage.width - 150;
-            const bottleY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, bottleX, bottleY);
+            const bottleX = canvas.width - layerImage.width * 1.5 - 150;
+            const bottleY = canvas.height - layerImage.height * 1.5;
+            const bottleWidth = layerImage.width * 1.5; // Adjusting width
+            const bottleHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, bottleX, bottleY, bottleWidth, bottleHeight);
           } else if (layerImageUrl === layerImageUrls[8]) {
             // GM Cup layer
-            const gmCupX = (canvas.width - layerImage.width) / 2;
-            const gmCupY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, gmCupX, gmCupY);
+             const gmCupX = (canvas.width - layerImage.width * 1.7) / 2; // Adjusting x position
+            const gmCupY = canvas.height - layerImage.height * 1.7; // Adjusting y position
+            const gmCupWidth = layerImage.width * 1.7; // Adjusting width
+            const gmCupHeight = layerImage.height * 1.7; // Adjusting height
+        
+            ctx.drawImage(layerImage, gmCupX, gmCupY, gmCupWidth, gmCupHeight);
           } else if (layerImageUrl === layerImageUrls[9]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           }
           else if (layerImageUrl === layerImageUrls[103]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           } else if (layerImageUrl === layerImageUrls[104]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           } else if (layerImageUrl === layerImageUrls[105]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           }
           else if (layerImageUrl === layerImageUrls[106]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           } 
           else if (layerImageUrl === layerImageUrls[107]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           } 
           else if (layerImageUrl === layerImageUrls[108]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           } 
           else if (layerImageUrl === layerImageUrls[109]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           }  else if (layerImageUrl === layerImageUrls[42]) {
             // Bottle Layer
-            const bottleX = canvas.width - layerImage.width - 150;
-            const bottleY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, bottleX, bottleY);
+            const bottleX = canvas.width - layerImage.width * 1.5 - 150;
+            const bottleY = canvas.height - layerImage.height * 1.5;
+            const bottleWidth = layerImage.width * 1.5; // Adjusting width
+            const bottleHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, bottleX, bottleY, bottleWidth, bottleHeight);
           } else if (layerImageUrl === layerImageUrls[10]) {
             // GM Cup layer
-            const gmCupX = (canvas.width - layerImage.width) / 2;
-            const gmCupY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, gmCupX, gmCupY);
+             const gmCupX = (canvas.width - layerImage.width * 1.7) / 2; // Adjusting x position
+            const gmCupY = canvas.height - layerImage.height * 1.7; // Adjusting y position
+            const gmCupWidth = layerImage.width * 1.7; // Adjusting width
+            const gmCupHeight = layerImage.height * 1.7; // Adjusting height
+        
+            ctx.drawImage(layerImage, gmCupX, gmCupY, gmCupWidth, gmCupHeight);
           } else if (layerImageUrl === layerImageUrls[11]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           } else if (layerImageUrl === layerImageUrls[43]) {
             // Bottle Layer
-            const bottleX = canvas.width - layerImage.width - 150;
-            const bottleY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, bottleX, bottleY);
+            const bottleX = canvas.width - layerImage.width * 1.5 - 150;
+            const bottleY = canvas.height - layerImage.height * 1.5;
+            const bottleWidth = layerImage.width * 1.5; // Adjusting width
+            const bottleHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, bottleX, bottleY, bottleWidth, bottleHeight);
           } else if (layerImageUrl === layerImageUrls[12]) {
             // GM Cup layer
-            const gmCupX = (canvas.width - layerImage.width) / 2;
-            const gmCupY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, gmCupX, gmCupY);
+             const gmCupX = (canvas.width - layerImage.width * 1.7) / 2; // Adjusting x position
+            const gmCupY = canvas.height - layerImage.height * 1.7; // Adjusting y position
+            const gmCupWidth = layerImage.width * 1.7; // Adjusting width
+            const gmCupHeight = layerImage.height * 1.7; // Adjusting height
+        
+            ctx.drawImage(layerImage, gmCupX, gmCupY, gmCupWidth, gmCupHeight);
           } else if (layerImageUrl === layerImageUrls[13]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           } else if (layerImageUrl === layerImageUrls[44]) {
             // Bottle Layer
-            const bottleX = canvas.width - layerImage.width - 150;
-            const bottleY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, bottleX, bottleY);
+            const bottleX = canvas.width - layerImage.width * 1.5 - 150;
+            const bottleY = canvas.height - layerImage.height * 1.5;
+            const bottleWidth = layerImage.width * 1.5; // Adjusting width
+            const bottleHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, bottleX, bottleY, bottleWidth, bottleHeight);
           } else if (layerImageUrl === layerImageUrls[14]) {
             // GM Cup layer
-            const gmCupX = (canvas.width - layerImage.width) / 2;
-            const gmCupY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, gmCupX, gmCupY);
+             const gmCupX = (canvas.width - layerImage.width * 1.7) / 2; // Adjusting x position
+            const gmCupY = canvas.height - layerImage.height * 1.7; // Adjusting y position
+            const gmCupWidth = layerImage.width * 1.7; // Adjusting width
+            const gmCupHeight = layerImage.height * 1.7; // Adjusting height
+        
+            ctx.drawImage(layerImage, gmCupX, gmCupY, gmCupWidth, gmCupHeight);
           } else if (layerImageUrl === layerImageUrls[15]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           } else if (layerImageUrl === layerImageUrls[45]) {
             // Bottle Layer
-            const bottleX = canvas.width - layerImage.width - 150;
-            const bottleY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, bottleX, bottleY);
+            const bottleX = canvas.width - layerImage.width * 1.5 - 150;
+            const bottleY = canvas.height - layerImage.height * 1.5;
+            const bottleWidth = layerImage.width * 1.5; // Adjusting width
+            const bottleHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, bottleX, bottleY, bottleWidth, bottleHeight);
           } else if (layerImageUrl === layerImageUrls[16]) {
             // GM Cup layer
-            const gmCupX = (canvas.width - layerImage.width) / 2;
-            const gmCupY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, gmCupX, gmCupY);
+             const gmCupX = (canvas.width - layerImage.width * 1.7) / 2; // Adjusting x position
+            const gmCupY = canvas.height - layerImage.height * 1.7; // Adjusting y position
+            const gmCupWidth = layerImage.width * 1.7; // Adjusting width
+            const gmCupHeight = layerImage.height * 1.7; // Adjusting height
+        
+            ctx.drawImage(layerImage, gmCupX, gmCupY, gmCupWidth, gmCupHeight);
           } else if (layerImageUrl === layerImageUrls[17]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           } else if (layerImageUrl === layerImageUrls[46]) {
             // Bottle Layer
-            const bottleX = canvas.width - layerImage.width - 150;
-            const bottleY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, bottleX, bottleY);
+            const bottleX = canvas.width - layerImage.width * 1.5 - 150;
+            const bottleY = canvas.height - layerImage.height * 1.5;
+            const bottleWidth = layerImage.width * 1.5; // Adjusting width
+            const bottleHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, bottleX, bottleY, bottleWidth, bottleHeight);
           }else if (layerImageUrl === layerImageUrls[18]) {
             // GM Cup layer
-            const gmCupX = (canvas.width - layerImage.width) / 2;
-            const gmCupY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, gmCupX, gmCupY);
+             const gmCupX = (canvas.width - layerImage.width * 1.7) / 2; // Adjusting x position
+            const gmCupY = canvas.height - layerImage.height * 1.7; // Adjusting y position
+            const gmCupWidth = layerImage.width * 1.7; // Adjusting width
+            const gmCupHeight = layerImage.height * 1.7; // Adjusting height
+        
+            ctx.drawImage(layerImage, gmCupX, gmCupY, gmCupWidth, gmCupHeight);
           } else if (layerImageUrl === layerImageUrls[19]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           } else if (layerImageUrl === layerImageUrls[47]) {
             // Bottle Layer
-            const bottleX = canvas.width - layerImage.width - 150;
-            const bottleY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, bottleX, bottleY);
+            const bottleX = canvas.width - layerImage.width * 1.5 - 150;
+            const bottleY = canvas.height - layerImage.height * 1.5;
+            const bottleWidth = layerImage.width * 1.5; // Adjusting width
+            const bottleHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, bottleX, bottleY, bottleWidth, bottleHeight);
           }else if (layerImageUrl === layerImageUrls[20]) {
             // GM Cup layer
-            const gmCupX = (canvas.width - layerImage.width) / 2;
-            const gmCupY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, gmCupX, gmCupY);
+             const gmCupX = (canvas.width - layerImage.width * 1.7) / 2; // Adjusting x position
+            const gmCupY = canvas.height - layerImage.height * 1.7; // Adjusting y position
+            const gmCupWidth = layerImage.width * 1.7; // Adjusting width
+            const gmCupHeight = layerImage.height * 1.7; // Adjusting height
+        
+            ctx.drawImage(layerImage, gmCupX, gmCupY, gmCupWidth, gmCupHeight);
           } else if (layerImageUrl === layerImageUrls[21]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           } else if (layerImageUrl === layerImageUrls[48]) {
             // Bottle Layer
-            const bottleX = canvas.width - layerImage.width - 150;
-            const bottleY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, bottleX, bottleY);
+            const bottleX = canvas.width - layerImage.width * 1.5 - 150;
+            const bottleY = canvas.height - layerImage.height * 1.5;
+            const bottleWidth = layerImage.width * 1.5; // Adjusting width
+            const bottleHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, bottleX, bottleY, bottleWidth, bottleHeight);
           }else if (layerImageUrl === layerImageUrls[22]) {
             // GM Cup layer
-            const gmCupX = (canvas.width - layerImage.width) / 2;
-            const gmCupY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, gmCupX, gmCupY);
+            const gmCupX = (canvas.width - layerImage.width * 1.7) / 2; // Adjusting x position
+            const gmCupY = canvas.height - layerImage.height * 1.7; // Adjusting y position
+            const gmCupWidth = layerImage.width * 1.7; // Adjusting width
+            const gmCupHeight = layerImage.height * 1.7; // Adjusting height
+        
+            ctx.drawImage(layerImage, gmCupX, gmCupY, gmCupWidth, gmCupHeight);
           } else if (layerImageUrl === layerImageUrls[23]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           } else if (layerImageUrl === layerImageUrls[49]) {
             // Bottle Layer
-            const bottleX = canvas.width - layerImage.width - 150;
-            const bottleY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, bottleX, bottleY);
+            const bottleX = canvas.width - layerImage.width * 1.5 - 150;
+            const bottleY = canvas.height - layerImage.height * 1.5;
+            const bottleWidth = layerImage.width * 1.5; // Adjusting width
+            const bottleHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, bottleX, bottleY, bottleWidth, bottleHeight);
           }else if (layerImageUrl === layerImageUrls[24]) {
             // GM Cup layer
-            const gmCupX = (canvas.width - layerImage.width) / 2;
-            const gmCupY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, gmCupX, gmCupY);
+            const gmCupX = (canvas.width - layerImage.width * 1.7) / 2; // Adjusting x position
+            const gmCupY = canvas.height - layerImage.height * 1.7; // Adjusting y position
+            const gmCupWidth = layerImage.width * 1.7; // Adjusting width
+            const gmCupHeight = layerImage.height * 1.7; // Adjusting height
+        
+            ctx.drawImage(layerImage, gmCupX, gmCupY, gmCupWidth, gmCupHeight);
           } else if (layerImageUrl === layerImageUrls[25]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           } else if (layerImageUrl === layerImageUrls[50]) {
             // Bottle Layer
-            const bottleX = canvas.width - layerImage.width - 150;
-            const bottleY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, bottleX, bottleY);
+            const bottleX = canvas.width - layerImage.width * 1.5 - 150;
+            const bottleY = canvas.height - layerImage.height * 1.5;
+            const bottleWidth = layerImage.width * 1.5; // Adjusting width
+            const bottleHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, bottleX, bottleY, bottleWidth, bottleHeight);
           }else if (layerImageUrl === layerImageUrls[26]) {
             // GM Cup layer
-            const gmCupX = (canvas.width - layerImage.width) / 2;
-            const gmCupY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, gmCupX, gmCupY);
+            const gmCupX = (canvas.width - layerImage.width * 1.7) / 2; // Adjusting x position
+            const gmCupY = canvas.height - layerImage.height * 1.7; // Adjusting y position
+            const gmCupWidth = layerImage.width * 1.7; // Adjusting width
+            const gmCupHeight = layerImage.height * 1.7; // Adjusting height
+        
+            ctx.drawImage(layerImage, gmCupX, gmCupY, gmCupWidth, gmCupHeight);
           } else if (layerImageUrl === layerImageUrls[27]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           } else if (layerImageUrl === layerImageUrls[51]) {
             // Bottle Layer
-            const bottleX = canvas.width - layerImage.width - 150;
-            const bottleY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, bottleX, bottleY);
+            const bottleX = canvas.width - layerImage.width * 1.5 - 150;
+            const bottleY = canvas.height - layerImage.height * 1.5;
+            const bottleWidth = layerImage.width * 1.5; // Adjusting width
+            const bottleHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, bottleX, bottleY, bottleWidth, bottleHeight);
           }else if (layerImageUrl === layerImageUrls[28]) {
             // GM Cup layer
-            const gmCupX = (canvas.width - layerImage.width) / 2;
-            const gmCupY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, gmCupX, gmCupY);
+            const gmCupX = (canvas.width - layerImage.width * 1.7) / 2; // Adjusting x position
+            const gmCupY = canvas.height - layerImage.height * 1.7; // Adjusting y position
+            const gmCupWidth = layerImage.width * 1.7; // Adjusting width
+            const gmCupHeight = layerImage.height * 1.7; // Adjusting height
+        
+            ctx.drawImage(layerImage, gmCupX, gmCupY, gmCupWidth, gmCupHeight);
           } else if (layerImageUrl === layerImageUrls[29]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           } else if (layerImageUrl === layerImageUrls[52]) {
             // Bottle Layer
-            const bottleX = canvas.width - layerImage.width - 150;
-            const bottleY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, bottleX, bottleY);
+            const bottleX = canvas.width - layerImage.width * 1.5 - 150;
+            const bottleY = canvas.height - layerImage.height * 1.5;
+            const bottleWidth = layerImage.width * 1.5; // Adjusting width
+            const bottleHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, bottleX, bottleY, bottleWidth, bottleHeight);
           }else if (layerImageUrl === layerImageUrls[30]) {
             // GM Cup layer
-            const gmCupX = (canvas.width - layerImage.width) / 2;
-            const gmCupY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, gmCupX, gmCupY);
+            const gmCupX = (canvas.width - layerImage.width * 1.7) / 2; // Adjusting x position
+            const gmCupY = canvas.height - layerImage.height * 1.7; // Adjusting y position
+            const gmCupWidth = layerImage.width * 1.7; // Adjusting width
+            const gmCupHeight = layerImage.height * 1.7; // Adjusting height
+        
+            ctx.drawImage(layerImage, gmCupX, gmCupY, gmCupWidth, gmCupHeight);
           } else if (layerImageUrl === layerImageUrls[31]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           } else if (layerImageUrl === layerImageUrls[53]) {
             // Bottle Layer
-            const bottleX = canvas.width - layerImage.width - 150;
-            const bottleY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, bottleX, bottleY);
+            const bottleX = canvas.width - layerImage.width * 1.5 - 150;
+            const bottleY = canvas.height - layerImage.height * 1.5;
+            const bottleWidth = layerImage.width * 1.5; // Adjusting width
+            const bottleHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, bottleX, bottleY, bottleWidth, bottleHeight);
           }else if (layerImageUrl === layerImageUrls[32]) {
             // GM Cup layer
-            const gmCupX = (canvas.width - layerImage.width) / 2;
-            const gmCupY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, gmCupX, gmCupY);
+            const gmCupX = (canvas.width - layerImage.width * 1.7) / 2; // Adjusting x position
+            const gmCupY = canvas.height - layerImage.height * 1.7; // Adjusting y position
+            const gmCupWidth = layerImage.width * 1.7; // Adjusting width
+            const gmCupHeight = layerImage.height * 1.7; // Adjusting height
+        
+            ctx.drawImage(layerImage, gmCupX, gmCupY, gmCupWidth, gmCupHeight);
           }else if (layerImageUrl === layerImageUrls[96]) {
             // GM Cup layer
-            const gmCupX = (canvas.width - layerImage.width) / 2;
-            const gmCupY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, gmCupX, gmCupY);
+            const gmCupX = (canvas.width - layerImage.width * 1.7) / 2; // Adjusting x position
+            const gmCupY = canvas.height - layerImage.height * 1.7; // Adjusting y position
+            const gmCupWidth = layerImage.width * 1.7; // Adjusting width
+            const gmCupHeight = layerImage.height * 1.7; // Adjusting height
+        
+            ctx.drawImage(layerImage, gmCupX, gmCupY, gmCupWidth, gmCupHeight);
           }else if (layerImageUrl === layerImageUrls[97]) {
             // GM Cup layer
-            const gmCupX = (canvas.width - layerImage.width) / 2;
-            const gmCupY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, gmCupX, gmCupY);
+            const gmCupX = (canvas.width - layerImage.width * 1.7) / 2; // Adjusting x position
+            const gmCupY = canvas.height - layerImage.height * 1.7; // Adjusting y position
+            const gmCupWidth = layerImage.width * 1.7; // Adjusting width
+            const gmCupHeight = layerImage.height * 1.7; // Adjusting height
+        
+            ctx.drawImage(layerImage, gmCupX, gmCupY, gmCupWidth, gmCupHeight);
           }else if (layerImageUrl === layerImageUrls[98]) {
             // GM Cup layer
-            const gmCupX = (canvas.width - layerImage.width) / 2;
-            const gmCupY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, gmCupX, gmCupY);
+            const gmCupX = (canvas.width - layerImage.width * 1.7) / 2; // Adjusting x position
+            const gmCupY = canvas.height - layerImage.height * 1.7; // Adjusting y position
+            const gmCupWidth = layerImage.width * 1.7; // Adjusting width
+            const gmCupHeight = layerImage.height * 1.7; // Adjusting height
+        
+            ctx.drawImage(layerImage, gmCupX, gmCupY, gmCupWidth, gmCupHeight);
           }else if (layerImageUrl === layerImageUrls[99]) {
             // GM Cup layer
-            const gmCupX = (canvas.width - layerImage.width) / 2;
-            const gmCupY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, gmCupX, gmCupY);
+            const gmCupX = (canvas.width - layerImage.width * 1.7) / 2; // Adjusting x position
+            const gmCupY = canvas.height - layerImage.height * 1.7; // Adjusting y position
+            const gmCupWidth = layerImage.width * 1.7; // Adjusting width
+            const gmCupHeight = layerImage.height * 1.7; // Adjusting height
+        
+            ctx.drawImage(layerImage, gmCupX, gmCupY, gmCupWidth, gmCupHeight);
           }else if (layerImageUrl === layerImageUrls[100]) {
             // GM Cup layer
-            const gmCupX = (canvas.width - layerImage.width) / 2;
-            const gmCupY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, gmCupX, gmCupY);
+            const gmCupX = (canvas.width - layerImage.width * 1.7) / 2; // Adjusting x position
+            const gmCupY = canvas.height - layerImage.height * 1.7; // Adjusting y position
+            const gmCupWidth = layerImage.width * 1.7; // Adjusting width
+            const gmCupHeight = layerImage.height * 1.7; // Adjusting height
+        
+            ctx.drawImage(layerImage, gmCupX, gmCupY, gmCupWidth, gmCupHeight);
           }else if (layerImageUrl === layerImageUrls[101]) {
             // GM Cup layer
-            const gmCupX = (canvas.width - layerImage.width) / 2;
-            const gmCupY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, gmCupX, gmCupY);
+            const gmCupX = (canvas.width - layerImage.width * 1.7) / 2; // Adjusting x position
+            const gmCupY = canvas.height - layerImage.height * 1.7; // Adjusting y position
+            const gmCupWidth = layerImage.width * 1.7; // Adjusting width
+            const gmCupHeight = layerImage.height * 1.7; // Adjusting height
+        
+            ctx.drawImage(layerImage, gmCupX, gmCupY, gmCupWidth, gmCupHeight);
           }else if (layerImageUrl === layerImageUrls[102]) {
             // GM Cup layer
-            const gmCupX = (canvas.width - layerImage.width) / 2;
-            const gmCupY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, gmCupX, gmCupY);
+            const gmCupX = (canvas.width - layerImage.width * 1.7) / 2; // Adjusting x position
+            const gmCupY = canvas.height - layerImage.height * 1.7; // Adjusting y position
+            const gmCupWidth = layerImage.width * 1.7; // Adjusting width
+            const gmCupHeight = layerImage.height * 1.7; // Adjusting height
+        
+            ctx.drawImage(layerImage, gmCupX, gmCupY, gmCupWidth, gmCupHeight);
           } else if (layerImageUrl === layerImageUrls[33]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           } else if (layerImageUrl === layerImageUrls[54]) {
             // Bottle Layer
-            const bottleX = canvas.width - layerImage.width - 150;
-            const bottleY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, bottleX, bottleY);
+            const bottleX = canvas.width - layerImage.width * 1.5 - 150;
+            const bottleY = canvas.height - layerImage.height * 1.5;
+            const bottleWidth = layerImage.width * 1.5; // Adjusting width
+            const bottleHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, bottleX, bottleY, bottleWidth, bottleHeight);
           }else if (layerImageUrl === layerImageUrls[34]) {
             // GM Cup layer
-            const gmCupX = (canvas.width - layerImage.width) / 2;
-            const gmCupY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, gmCupX, gmCupY);
+            const gmCupX = (canvas.width - layerImage.width * 1.7) / 2; // Adjusting x position
+            const gmCupY = canvas.height - layerImage.height * 1.7; // Adjusting y position
+            const gmCupWidth = layerImage.width * 1.7; // Adjusting width
+            const gmCupHeight = layerImage.height * 1.7; // Adjusting height
+        
+            ctx.drawImage(layerImage, gmCupX, gmCupY, gmCupWidth, gmCupHeight);
           } else if (layerImageUrl === layerImageUrls[35]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           } else if (layerImageUrl === layerImageUrls[55]) {
             // Bottle Layer
-            const bottleX = canvas.width - layerImage.width - 150;
-            const bottleY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, bottleX, bottleY);
+            const bottleX = canvas.width - layerImage.width * 1.5 - 150;
+            const bottleY = canvas.height - layerImage.height * 1.5;
+            const bottleWidth = layerImage.width * 1.5; // Adjusting width
+            const bottleHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, bottleX, bottleY, bottleWidth, bottleHeight);
           }else if (layerImageUrl === layerImageUrls[36]) {
             // GM Cup layer
-            const gmCupX = (canvas.width - layerImage.width) / 2;
-            const gmCupY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, gmCupX, gmCupY);
+            const gmCupX = (canvas.width - layerImage.width * 1.7) / 2; // Adjusting x position
+            const gmCupY = canvas.height - layerImage.height * 1.7; // Adjusting y position
+            const gmCupWidth = layerImage.width * 1.7; // Adjusting width
+            const gmCupHeight = layerImage.height * 1.7; // Adjusting height
+        
+            ctx.drawImage(layerImage, gmCupX, gmCupY, gmCupWidth, gmCupHeight);
           } else if (layerImageUrl === layerImageUrls[37]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           } else if (layerImageUrl === layerImageUrls[56]) {
             // Bottle Layer
-            const bottleX = canvas.width - layerImage.width - 150;
-            const bottleY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, bottleX, bottleY);
+            const bottleX = canvas.width - layerImage.width * 1.5 - 150;
+            const bottleY = canvas.height - layerImage.height * 1.5;
+            const bottleWidth = layerImage.width * 1.5; // Adjusting width
+            const bottleHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, bottleX, bottleY, bottleWidth, bottleHeight);
           }else if (layerImageUrl === layerImageUrls[57]) {
             // Beer Layer
-            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-            ctx.drawImage(layerImage, beerX, beerY);
+           const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+const beerY = canvas.height - layerImage.height * 1.5; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+const beerWidth = layerImage.width * 1.5; // Adjusting width
+const beerHeight = layerImage.height * 1.5; // Adjusting height
+
+ctx.drawImage(layerImage, beerX, beerY, beerWidth, beerHeight);
           }else if (layerImageUrl === layerImageUrls[117]) {
             // Beer Layer
-            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-            ctx.drawImage(layerImage, beerX, beerY);
+           const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+const beerY = canvas.height - layerImage.height * 1.5; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+const beerWidth = layerImage.width * 1.5; // Adjusting width
+const beerHeight = layerImage.height * 1.5; // Adjusting height
+
+ctx.drawImage(layerImage, beerX, beerY, beerWidth, beerHeight);
           }else if (layerImageUrl === layerImageUrls[118]) {
             // Beer Layer
-            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-            ctx.drawImage(layerImage, beerX, beerY);
+           const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+const beerY = canvas.height - layerImage.height * 1.5; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+const beerWidth = layerImage.width * 1.5; // Adjusting width
+const beerHeight = layerImage.height * 1.5; // Adjusting height
+
+ctx.drawImage(layerImage, beerX, beerY, beerWidth, beerHeight);
           }else if (layerImageUrl === layerImageUrls[119]) {
             // Beer Layer
-            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-            ctx.drawImage(layerImage, beerX, beerY);
+           const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+const beerY = canvas.height - layerImage.height * 1.5; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+const beerWidth = layerImage.width * 1.5; // Adjusting width
+const beerHeight = layerImage.height * 1.5; // Adjusting height
+
+ctx.drawImage(layerImage, beerX, beerY, beerWidth, beerHeight);
           }else if (layerImageUrl === layerImageUrls[120]) {
             // Beer Layer
-            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-            ctx.drawImage(layerImage, beerX, beerY);
+           const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+const beerY = canvas.height - layerImage.height * 1.5; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+const beerWidth = layerImage.width * 1.5; // Adjusting width
+const beerHeight = layerImage.height * 1.5; // Adjusting height
+
+ctx.drawImage(layerImage, beerX, beerY, beerWidth, beerHeight);
           }else if (layerImageUrl === layerImageUrls[121]) {
             // Beer Layer
-            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-            ctx.drawImage(layerImage, beerX, beerY);
+           const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+const beerY = canvas.height - layerImage.height * 1.5; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+const beerWidth = layerImage.width * 1.5; // Adjusting width
+const beerHeight = layerImage.height * 1.5; // Adjusting height
+
+ctx.drawImage(layerImage, beerX, beerY, beerWidth, beerHeight);
           }else if (layerImageUrl === layerImageUrls[122]) {
             // Beer Layer
-            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-            ctx.drawImage(layerImage, beerX, beerY);
+           const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+const beerY = canvas.height - layerImage.height * 1.5; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+const beerWidth = layerImage.width * 1.5; // Adjusting width
+const beerHeight = layerImage.height * 1.5; // Adjusting height
+
+ctx.drawImage(layerImage, beerX, beerY, beerWidth, beerHeight);
           }else if (layerImageUrl === layerImageUrls[123]) {
             // Beer Layer
-            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-            ctx.drawImage(layerImage, beerX, beerY);
+           const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+const beerY = canvas.height - layerImage.height * 1.5; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+const beerWidth = layerImage.width * 1.5; // Adjusting width
+const beerHeight = layerImage.height * 1.5; // Adjusting height
+
+ctx.drawImage(layerImage, beerX, beerY, beerWidth, beerHeight);
           }else if (layerImageUrl === layerImageUrls[58]) {
             // Beer Layer
-            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-            ctx.drawImage(layerImage, beerX, beerY);
+           const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+const beerY = canvas.height - layerImage.height * 1.5; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+const beerWidth = layerImage.width * 1.5; // Adjusting width
+const beerHeight = layerImage.height * 1.5; // Adjusting height
+
+ctx.drawImage(layerImage, beerX, beerY, beerWidth, beerHeight);
           }else if (layerImageUrl === layerImageUrls[59]) {
             // Beer Layer
-            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-            ctx.drawImage(layerImage, beerX, beerY);
+           const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+const beerY = canvas.height - layerImage.height * 1.5; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+const beerWidth = layerImage.width * 1.5; // Adjusting width
+const beerHeight = layerImage.height * 1.5; // Adjusting height
+
+ctx.drawImage(layerImage, beerX, beerY, beerWidth, beerHeight);
           }else if (layerImageUrl === layerImageUrls[60]) {
             // Beer Layer
-            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-            ctx.drawImage(layerImage, beerX, beerY);
+           const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+const beerY = canvas.height - layerImage.height * 1.5; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+const beerWidth = layerImage.width * 1.5; // Adjusting width
+const beerHeight = layerImage.height * 1.5; // Adjusting height
+
+ctx.drawImage(layerImage, beerX, beerY, beerWidth, beerHeight);
           }else if (layerImageUrl === layerImageUrls[61]) {
             // Beer Layer
-            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-            ctx.drawImage(layerImage, beerX, beerY);
+           const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+const beerY = canvas.height - layerImage.height * 1.5; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+const beerWidth = layerImage.width * 1.5; // Adjusting width
+const beerHeight = layerImage.height * 1.5; // Adjusting height
+
+ctx.drawImage(layerImage, beerX, beerY, beerWidth, beerHeight);
           }else if (layerImageUrl === layerImageUrls[62]) {
             // Beer Layer
-            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-            ctx.drawImage(layerImage, beerX, beerY);
+           const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+const beerY = canvas.height - layerImage.height * 1.5; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+const beerWidth = layerImage.width * 1.5; // Adjusting width
+const beerHeight = layerImage.height * 1.5; // Adjusting height
+
+ctx.drawImage(layerImage, beerX, beerY, beerWidth, beerHeight);
           }else if (layerImageUrl === layerImageUrls[63]) {
             // Beer Layer
-            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-            ctx.drawImage(layerImage, beerX, beerY);
+           const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+const beerY = canvas.height - layerImage.height * 1.5; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+const beerWidth = layerImage.width * 1.5; // Adjusting width
+const beerHeight = layerImage.height * 1.5; // Adjusting height
+
+ctx.drawImage(layerImage, beerX, beerY, beerWidth, beerHeight);
           }else if (layerImageUrl === layerImageUrls[64]) {
             // Beer Layer
-            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-            ctx.drawImage(layerImage, beerX, beerY);
+           const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+const beerY = canvas.height - layerImage.height * 1.5; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+const beerWidth = layerImage.width * 1.5; // Adjusting width
+const beerHeight = layerImage.height * 1.5; // Adjusting height
+
+ctx.drawImage(layerImage, beerX, beerY, beerWidth, beerHeight);
           }else if (layerImageUrl === layerImageUrls[65]) {
             // Beer Layer
-            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-            ctx.drawImage(layerImage, beerX, beerY);
+           const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+const beerY = canvas.height - layerImage.height * 1.5; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+const beerWidth = layerImage.width * 1.5; // Adjusting width
+const beerHeight = layerImage.height * 1.5; // Adjusting height
+
+ctx.drawImage(layerImage, beerX, beerY, beerWidth, beerHeight);
           }else if (layerImageUrl === layerImageUrls[66]) {
             // Beer Layer
-            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-            ctx.drawImage(layerImage, beerX, beerY);
+           const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+const beerY = canvas.height - layerImage.height * 1.5; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+const beerWidth = layerImage.width * 1.5; // Adjusting width
+const beerHeight = layerImage.height * 1.5; // Adjusting height
+
+ctx.drawImage(layerImage, beerX, beerY, beerWidth, beerHeight);
           }else if (layerImageUrl === layerImageUrls[67]) {
             // Beer Layer
-            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-            ctx.drawImage(layerImage, beerX, beerY);
+           const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+const beerY = canvas.height - layerImage.height * 1.5; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+const beerWidth = layerImage.width * 1.5; // Adjusting width
+const beerHeight = layerImage.height * 1.5; // Adjusting height
+
+ctx.drawImage(layerImage, beerX, beerY, beerWidth, beerHeight);
           }else if (layerImageUrl === layerImageUrls[68]) {
             // Beer Layer
-            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-            ctx.drawImage(layerImage, beerX, beerY);
+           const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+const beerY = canvas.height - layerImage.height * 1.5; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+const beerWidth = layerImage.width * 1.5; // Adjusting width
+const beerHeight = layerImage.height * 1.5; // Adjusting height
+
+ctx.drawImage(layerImage, beerX, beerY, beerWidth, beerHeight);
           }else if (layerImageUrl === layerImageUrls[69]) {
             // Beer Layer
-            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-            ctx.drawImage(layerImage, beerX, beerY);
+           const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+const beerY = canvas.height - layerImage.height * 1.5; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+const beerWidth = layerImage.width * 1.5; // Adjusting width
+const beerHeight = layerImage.height * 1.5; // Adjusting height
+
+ctx.drawImage(layerImage, beerX, beerY, beerWidth, beerHeight);
           }else if (layerImageUrl === layerImageUrls[70]) {
             // Beer Layer
-            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-            ctx.drawImage(layerImage, beerX, beerY);
+           const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+const beerY = canvas.height - layerImage.height * 1.5; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+const beerWidth = layerImage.width * 1.5; // Adjusting width
+const beerHeight = layerImage.height * 1.5; // Adjusting height
+
+ctx.drawImage(layerImage, beerX, beerY, beerWidth, beerHeight);
           }else if (layerImageUrl === layerImageUrls[71]) {
             // Beer Layer
-            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-            ctx.drawImage(layerImage, beerX, beerY);
+           const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+const beerY = canvas.height - layerImage.height * 1.5; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+const beerWidth = layerImage.width * 1.5; // Adjusting width
+const beerHeight = layerImage.height * 1.5; // Adjusting height
+
+ctx.drawImage(layerImage, beerX, beerY, beerWidth, beerHeight);
           }else if (layerImageUrl === layerImageUrls[72]) {
             // Beer Layer
-            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-            ctx.drawImage(layerImage, beerX, beerY);
+           const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+const beerY = canvas.height - layerImage.height * 1.5; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+const beerWidth = layerImage.width * 1.5; // Adjusting width
+const beerHeight = layerImage.height * 1.5; // Adjusting height
+
+ctx.drawImage(layerImage, beerX, beerY, beerWidth, beerHeight);
           }else if (layerImageUrl === layerImageUrls[73]) {
             // Beer Layer
-            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-            ctx.drawImage(layerImage, beerX, beerY);
+           const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+const beerY = canvas.height - layerImage.height * 1.5; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+const beerWidth = layerImage.width * 1.5; // Adjusting width
+const beerHeight = layerImage.height * 1.5; // Adjusting height
+
+ctx.drawImage(layerImage, beerX, beerY, beerWidth, beerHeight);
           }else if (layerImageUrl === layerImageUrls[74]) {
             // Beer Layer
-            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-            ctx.drawImage(layerImage, beerX, beerY);
+           const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+const beerY = canvas.height - layerImage.height * 1.5; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+const beerWidth = layerImage.width * 1.5; // Adjusting width
+const beerHeight = layerImage.height * 1.5; // Adjusting height
+
+ctx.drawImage(layerImage, beerX, beerY, beerWidth, beerHeight);
           }else if (layerImageUrl === layerImageUrls[75]) {
             // Beer Layer
-            const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-            const beerY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-            ctx.drawImage(layerImage, beerX, beerY);
+           const beerX = 0; // Aligning the left edge of the layer with the left edge of the canvas
+const beerY = canvas.height - layerImage.height * 1.5; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+const beerWidth = layerImage.width * 1.5; // Adjusting width
+const beerHeight = layerImage.height * 1.5; // Adjusting height
+
+ctx.drawImage(layerImage, beerX, beerY, beerWidth, beerHeight);
           }else if (layerImageUrl === layerImageUrls[76]) {
             // Pizza
             const pizzaX = 0; // Aligning the left edge of the layer with the left edge of the canvas
-            const pizzaY = canvas.height - layerImage.height; // Aligning the bottom edge of the layer with the bottom edge of the canvas
-            ctx.drawImage(layerImage, pizzaX, pizzaY);
+            const pizzaY = canvas.height - layerImage.height * 1.5; // Aligning the bottom edge of the layer with the bottom edge of the canvas
+            const pizzaWidth = layerImage.width * 1.7; // Adjusting width
+            const pizzaHeight = layerImage.height * 1.7; // Adjusting height
+            
+            ctx.drawImage(layerImage, pizzaX, pizzaY, pizzaWidth, pizzaHeight);
+            
           }else if (layerImageUrl === layerImageUrls[77]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           }else if (layerImageUrl === layerImageUrls[124]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           }else if (layerImageUrl === layerImageUrls[125]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           }else if (layerImageUrl === layerImageUrls[126]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           }else if (layerImageUrl === layerImageUrls[127]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           }else if (layerImageUrl === layerImageUrls[128]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           }else if (layerImageUrl === layerImageUrls[129]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           }else if (layerImageUrl === layerImageUrls[130]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           }else if (layerImageUrl === layerImageUrls[78]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           }else if (layerImageUrl === layerImageUrls[79]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           }else if (layerImageUrl === layerImageUrls[80]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           }else if (layerImageUrl === layerImageUrls[81]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           }else if (layerImageUrl === layerImageUrls[82]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           }else if (layerImageUrl === layerImageUrls[83]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           }else if (layerImageUrl === layerImageUrls[84]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           }else if (layerImageUrl === layerImageUrls[85]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           }else if (layerImageUrl === layerImageUrls[86]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           }else if (layerImageUrl === layerImageUrls[87]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           }else if (layerImageUrl === layerImageUrls[88]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           }else if (layerImageUrl === layerImageUrls[89]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           }else if (layerImageUrl === layerImageUrls[90]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           }else if (layerImageUrl === layerImageUrls[91]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           }else if (layerImageUrl === layerImageUrls[92]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           }else if (layerImageUrl === layerImageUrls[93]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           }else if (layerImageUrl === layerImageUrls[94]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           }else if (layerImageUrl === layerImageUrls[95]) {
             // Shot layer
-            const shotX = canvas.width - layerImage.width - 150;
-            const shotY = canvas.height - layerImage.height;
-            ctx.drawImage(layerImage, shotX, shotY);
+             const shotX = canvas.width - layerImage.width * 1.5 - 150; // Adjusting x position
+            const shotY = canvas.height - layerImage.height * 1.5; // Adjusting y position
+            const shotWidth = layerImage.width * 1.5; // Adjusting width
+            const shotHeight = layerImage.height * 1.5; // Adjusting height
+            
+            ctx.drawImage(layerImage, shotX, shotY, shotWidth, shotHeight);
           }
           
           // Other layers can be added here
