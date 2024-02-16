@@ -2063,9 +2063,9 @@ function selectLayer(imageUrl) {
           }else if (layerImageUrl === layerImageUrls[131]) {
             // Bottle Layer
             const bottleX = 150; // Adjust this value for the desired left-side position
-            const bottleY = canvas.height - layerImage.height * 1.5;
-            const bottleWidth = layerImage.width * 1.5; // Adjusting width
-            const bottleHeight = layerImage.height * 1.5; // Adjusting height
+            const bottleY = canvas.height - layerImage.height * 2;
+            const bottleWidth = layerImage.width * 2; // Adjusting width
+            const bottleHeight = layerImage.height * 2; // Adjusting height
         
             ctx.drawImage(layerImage, bottleX, bottleY, bottleWidth, bottleHeight);
     
