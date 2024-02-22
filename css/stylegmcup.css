@@ -176,3 +176,13 @@ button {
   height: 25%; /* Adjust the height as per your requirement */
   z-index: 2; /* Ensure the shot is above the NFT image */
 }
+.taco {
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  transform: translateX(-50%);
+  transform: translateY(-15.5%);
+  width: 60%; 
+  height: 60%
+  z-index: 2;
+} 
