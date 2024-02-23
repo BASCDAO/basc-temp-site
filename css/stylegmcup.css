@@ -186,3 +186,13 @@ button {
   height: 60%
   z-index: 2;
 } 
+.tea {
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  transform: translateX(-25%);
+  transform: translateY(-11.6%);
+  width: 80%; /* Adjust the width as per your requirement */
+  height: 80%; /* Adjust the height as per your requirement */
+  z-index: 2; /* Ensure the cup is above the NFT image */
+}
