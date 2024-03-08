@@ -1,0 +1,26 @@
+{
+    "version": 1,
+    "shortcuts": [
+        {
+            "label": "View Website",
+            "uri": "https://www.bascdao.net/",
+            "icon": "generic-link"
+        },
+        {
+            "label": "Join Discord",
+            "uri": "https://discord.com/invite/bascdao",
+            "icon": "discord",
+            "prefersExternalTarget": true
+        },
+        {
+            "label": "Follow us on X",
+            "uri": "https://twitter.com/BoredApeSolClub",
+            "icon": "twitter"
+        },
+        {
+            "label": "Stake",
+            "uri": "https://staking.bascdao.net",
+            "icon": "stake"
+        }
+    ]
+}
